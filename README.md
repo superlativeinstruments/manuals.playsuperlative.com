@@ -4,10 +4,6 @@ THE SUPERLATIVE USER MANUALS WEBSITE
 This repository contains the sorce code for the Superlative user manuals website.
 
 
-## Installation
-
-- 
-
 ## Run locally
 
 ```bash
