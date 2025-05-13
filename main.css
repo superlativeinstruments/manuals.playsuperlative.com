@@ -22,16 +22,15 @@
 :root {
 	--black: #141414;
 	--dark_gray: #232323;
-	--gray: #8c8c8c;
+	--gray: #8C8C8C;
 	--light_gray: #F6F4F2;
 	--white: #FFFFFF;
-	--orange:#e66f27;
+	--orange: #E66F27;
 
 	font-family: 'SL-Regular', sans-serif;
 	font-size: 15px;
 	/* By default ligatures (sb01) are off; turn on for specific elements. */
 	font-variant-ligatures: none;
-
 	box-sizing: border-box;
 }
 
@@ -92,6 +91,17 @@ main {
 	background: var(--light_gray);
 	padding: 2rem;
 	border: 1rem solid var(--white);
+	background-color: var(--light_gray);
+}
+
+h1 {
+	font-family: 'SL-Light', sans-serif;
+	font-size: 2rem;
+	line-height: 1;
+	text-align: center;
+	text-transform: uppercase;
+	color: var(--dark_gray);
+	margin: 0;
 }
 
 a {
@@ -114,6 +124,7 @@ figure {
 	font-variant-ligatures: normal;
 	text-transform: uppercase;
 	margin: 0;
+	color: var(--dark_gray);
 }
 
 figure img {
