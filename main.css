@@ -108,8 +108,11 @@ figure {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	grid-template-rows: 1fr 1fr;
+	column-gap: 2rem;
 	place-items: center;
+	font-family: 'SL-Light', sans-serif;
 	font-variant-ligatures: normal;
+	text-transform: uppercase;
 	margin: 0;
 }
 
@@ -122,6 +125,11 @@ figure img {
 figcaption {
 	grid-row: 2;
 	font-size: clamp(100%, 4rem, 6vw);
+	line-height: 1;
+}
+
+figcaption small {
+	font-size: 0.7em;
 }
 
 @media (orientation: portrait) {
