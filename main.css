@@ -144,16 +144,40 @@ main a {
 main a .arrow {
 	position: relative;
 	display: inline-block;
-	transform: translate3d(0, 0, 0);
-	transition: transform 0.1s ease-in-out;
+	animation: arrowAnimationReverse 0.3s ease-in-out forwards;
 }
 
 main a:hover .arrow {
-	transform: translate3d(.25rem, -.25rem, 0);
+	animation: arrowAnimation 0.2s ease-out forwards;
 }
 
 main a:hover img {
 	transform: translate3d(-.25rem, .25rem, 0);
+	transition: transform 0.2s ease-in-out;
+}
+
+@keyframes arrowAnimation {
+	0% {
+		transform: translate3d(0, 0, 0) rotate(0deg);
+	}
+
+	50% {
+		transform: translate3d(0, 0, 0) rotate(45deg);
+	}
+
+	100% {
+		transform: translate3d(0.5rem, 0, 0) rotate(45deg);
+	}
+}
+
+@keyframes arrowAnimationReverse {
+	0% {
+		transform: translate3d(0.5rem, 0, 0) rotate(45deg);
+	}
+
+	100% {
+		transform: translate3d(0, 0, 0) rotate(0deg);
+	}
 }
 
 figure {
@@ -172,7 +196,7 @@ figure img {
 	grid-row: 1 / span 2;
 	width: 100%;
 	height: auto;
-	transition: transform 0.2s ease-in-out;
+	transition: transform 0.5s ease-in-out;
 }
 
 figcaption {
