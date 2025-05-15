@@ -118,14 +118,42 @@ h1 {
 	margin: 0;
 }
 
-a {
+header a {
+	text-decoration: none;
+	color: var(--black);
+	width: 100%;
+	max-width: 60rem;
+	height: fit-content;
+	margin-right: 1rem;
+}
+
+header a:hover {
+	color: var(--gray);
+}
+
+main a {
 	display: block;
 	text-decoration: none;
 	color: var(--black);
 	width: 100%;
 	max-width: 60rem;
 	height: fit-content;
-	transform: none;
+	color: var(--dark_gray);
+}
+
+main a .arrow {
+	position: relative;
+	display: inline-block;
+	transform: translate3d(0, 0, 0);
+	transition: transform 0.1s ease-in-out;
+}
+
+main a:hover .arrow {
+	transform: translate3d(.25rem, -.25rem, 0);
+}
+
+main a:hover img {
+	transform: translate3d(-.25rem, .25rem, 0);
 }
 
 figure {
@@ -138,23 +166,24 @@ figure {
 	font-variant-ligatures: normal;
 	text-transform: uppercase;
 	margin: 0;
-	color: var(--dark_gray);
 }
 
 figure img {
 	grid-row: 1 / span 2;
 	width: 100%;
 	height: auto;
+	transition: transform 0.2s ease-in-out;
 }
 
 figcaption {
 	grid-row: 2;
 	font-size: clamp(100%, 4rem, 6vw);
-	line-height: 1;
+	line-height: 0.8;
 }
 
 figcaption small {
-	font-size: 0.7em;
+	font-family: 'SL-Regular', sans-serif;
+	font-size: 0.4em;
 }
 
 @media (orientation: portrait) {
