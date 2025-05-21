@@ -6,7 +6,7 @@ The `MOD` control adjust the amount that the LFO will change the pitch of the os
 
 The `RANGE` knob controls the octave of the oscillator.
 
-## Pulse Width
+### Pulse Width
 
 Pulse width (sometimes called duty cycle) is the proportion of time that a pulse waveform is high or low.
 
