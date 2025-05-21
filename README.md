@@ -4,6 +4,18 @@ THE SUPERLATIVE USER MANUALS WEBSITE
 This repository contains the sorce code for the Superlative user manuals website.
 
 
+## Dev Requirements
+
+- Pandoc
+
+
+## Build
+
+```bash
+make
+```
+
+
 ## Run locally
 
 ```bash

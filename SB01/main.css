@@ -1,0 +1,9 @@
+main {
+	background-color: var(--white);
+	border: none;
+}
+
+main::after {
+	background-image: none;
+	border: none;
+}

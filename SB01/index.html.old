@@ -17,23 +17,13 @@
 	<link rel="stylesheet" href="/main.css?v=5">
 <body>
 	<header>
-		<span class="header-title">Superlative Manuals</span>
+		<span class="header-title"><a href="/">↖</a> SB01 Manual</span>
 		<img class="header-lockup" src="/assets/graphics/superlative_lockup_black.svg" alt="Superlative™">
 		<img class="header-logo" src="/assets/graphics/superlative_logo.svg" alt="Superlative logo">
 	</header>
 
-	<main class="root">
-		<a href="/SB01">
-			<figure>
-				<img src="/assets/images/sb01_iso_quotes_filled.svg" alt="">
-				<figcaption>
-					SB01
-					<span class="arrow">↗</span>
-					<br>
-					<small>Space Bee</small>
-				</figcaption>
-			</figure>
-		</a>
+	<main>
+		<h1>Coming soon</h1>
 	</main>
 </body>
 </html>

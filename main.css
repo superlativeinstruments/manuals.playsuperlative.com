@@ -108,6 +108,13 @@ main::after {
 	z-index: -1;
 }
 
+section {
+	width: 100%;
+	max-width: 60rem;
+	margin: auto;
+	background-color: var(--white);
+}
+
 h1 {
 	font-family: 'SL-Light', sans-serif;
 	font-size: 2rem;
@@ -116,6 +123,47 @@ h1 {
 	text-transform: uppercase;
 	color: var(--dark_gray);
 	margin: 0;
+}
+
+h2 {
+	font-family: 'SL-Regular-Condensed', sans-serif;
+	font-size: 1.5rem;
+	line-height: 1;
+	text-transform: uppercase;
+	color: var(--dark_gray);
+	margin: 2rem 0;
+}
+
+table {
+	width: 100%;
+	border-width: 1px;
+	border-style: solid;
+	border-color: black;
+	border-collapse: collapse;
+	margin: 2rem 0;
+}
+
+th,
+td {
+	padding: 0.5rem;
+}
+
+th {
+	text-align: left;
+}
+
+tr {
+	border-bottom: 1px solid black;
+	padding: 1rem;
+}
+
+td {
+	height: calc((0.5rem * 3.36) + 1rem);
+	white-space: nowrap;
+}
+
+thead tr {
+	border-bottom: 0.5rem solid black;
 }
 
 header a {
@@ -180,7 +228,7 @@ main a:hover img {
 	}
 }
 
-figure {
+.root figure {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	grid-template-rows: 1fr 1fr;
@@ -192,22 +240,69 @@ figure {
 	margin: 0;
 }
 
-figure img {
+.root figure img {
 	grid-row: 1 / span 2;
 	width: 100%;
 	height: auto;
 	transition: transform 0.5s ease-in-out;
 }
 
-figcaption {
+.root figcaption {
 	grid-row: 2;
 	font-size: clamp(100%, 4rem, 6vw);
 	line-height: 0.8;
 }
 
-figcaption small {
+.root figcaption small {
 	font-family: 'SL-Regular', sans-serif;
 	font-size: 0.4em;
+}
+
+.body figure {
+	display: grid;
+	grid-template-rows: 1fr fit-content;
+	grid-template-columns: auto;
+	align-items: center;
+	justify-items: center;
+	gap: 1rem;
+	margin: 0;
+	margin-bottom: 2rem;
+}
+
+.body figcaption {
+	font-size: 1rem;
+}
+
+.body img {
+	display: inline-block;
+	position: relative;
+	width: 100%;
+	height: auto;
+	min-height: 200px;
+}
+
+.body img::before {
+	content: '';
+	width: 100%;
+	height: 100%;
+	background-color: var(--light_gray);
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.body img::after {
+	content: "\2639" " " attr(alt);
+	font-size: 2rem;
+	color: var(--orange);
+	display: grid;
+	place-items: center;
+	position: absolute;
+	z-index: 2;
+	top: 5px;
+	left: 0;
+	width: 100%;
+	height: 100%;
 }
 
 @media (orientation: portrait) {
@@ -223,5 +318,76 @@ figcaption small {
 
 	.header-lockup {
 		display: none;
+	}
+}
+
+.toc ul {
+	list-style: none;
+	padding: 0;
+	font-weight: bold;
+}
+
+.toc ul ul {
+	margin-left: 2rem;
+}
+
+.toc li {
+	margin: 0.5rem 0;
+}
+
+.toc a {
+	text-decoration: none;
+	color: black;
+}
+
+.toc a:hover {
+	text-decoration: underline;
+}
+
+.toc a {
+	display: block;
+	position: relative;
+	overflow: hidden;
+}
+
+.toc a:after {
+	position: absolute;
+	padding-inline-start: .25ch;
+	content: " . . . . . . . . . . . . . . . . . . . "
+		". . . . . . . . . . . . . . . . . . . . . . . "
+		". . . . . . . . . . . . . . . . . . . . . . . "
+		". . . . . . . . . . . . . . . . . . . . . . . "
+		". . . . . . . . . . . . . . . . . . . . . . . "
+		". . . . . . . . . . . . . . . . . . . . . . . "
+		". . . . . . . . . . . . . . . . . . . . . . . ";
+	text-align: right;
+}
+
+hr {
+	page-break-before: always;
+	break-before: page;
+	margin: 4rem 0;
+	border-top: 0.5px solid var(--light_gray);
+}
+
+@media (max-width: 600px) {
+	section {
+		max-width: 100%;
+	}
+
+	table {
+		width: 100%;
+		max-width: initial;
+	}
+}
+
+@media print {
+	hr {
+		visibility: hidden;
+		margin: 0;
+	}
+
+	table {
+		width: 100%;
 	}
 }
