@@ -175,12 +175,13 @@ header a:hover {
 .body a {
 	text-decoration: none;
 	color: var(--black);
-	font-weight: bold;
+	font-weight: 600;
+	font-family: 'SL-Regular-Condensed', sans-serif;
+	text-transform: uppercase;
 }
 
 .body a:not([href^="#"])::after {
 	content: " ↗";
-	font-size: 0.75rem;
 }
 
 .body a:hover {

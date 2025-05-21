@@ -18,10 +18,10 @@ Remember that attack, decay, and release all control the time, sustain controls 
 
 On the SB01, the envelope controls are:
 
-- `A`- controls the attack time of the envelope
+- `A` - controls the attack time of the envelope
 - `D` - controls the decay time of the envelope
 - `S` - controls the envelope sustain level
-- `R` controls the release time of the envelope
+- `R` - controls the release time of the envelope
 
 The `ENV` mode switch controls how the envelope is triggered.
 

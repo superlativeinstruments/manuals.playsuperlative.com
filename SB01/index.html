@@ -335,10 +335,10 @@ sustain, and a long release.</p>
 sustain controls the level.</p>
 <p>On the SB01, the envelope controls are:</p>
 <ul>
-<li><code>A</code>- controls the attack time of the envelope</li>
+<li><code>A</code> - controls the attack time of the envelope</li>
 <li><code>D</code> - controls the decay time of the envelope</li>
 <li><code>S</code> - controls the envelope sustain level</li>
-<li><code>R</code> controls the release time of the envelope</li>
+<li><code>R</code> - controls the release time of the envelope</li>
 </ul>
 <p>The <code>ENV</code> mode switch controls how the envelope is
 triggered.</p>
@@ -483,7 +483,8 @@ enabled browser</a>.</p>
 <p>Connect the SB01 to your computer using a USB-C cable and click the
 on-screen notification.<br />
 If you don’t see a notification, try directing your browser to <a
-href="https://control.playsuperlative.com/">control.playsuperlative.com</a>.</p>
+href="https://control.playsuperlative.com/"
+target="_blank">control.playsuperlative.com</a>.</p>
 <p>When SB01 is connected, the app will look like <a
 href="#figure-2.1">FIGURE 2.1</a>.</p>
 <figure id="figure-2.1">
@@ -519,9 +520,10 @@ clock and sets the speed of the arpeggiator and sequencer.</p>
 <p>The <code>LFO/CLK RATE</code> LED should be blinking orange and
 green. You can now release the <code>SHIFT</code> key</p>
 <p>In a compatible browser, navigate to <a
-href="https://firmware.playsuperlative.com/">firmware.playsuperlative.com</a>.
-Note that in some instances your browser may automatically prompt you
-for this when the SB01 is first connected.</p>
+href="https://firmware.playsuperlative.com/"
+target="_blank">firmware.playsuperlative.com</a>. Note that in some
+instances your browser may automatically prompt you for this when the
+SB01 is first connected.</p>
 <table>
 <thead>
 <tr>
@@ -547,7 +549,7 @@ for this when the SB01 is first connected.</p>
 <tr>
 <td>Edge</td>
 <td>✔</td>
-<td>-</td>
+<td>✔</td>
 <td>-</td>
 </tr>
 <tr>
@@ -574,11 +576,11 @@ power switch and turn it on again.</p>
 <h2 id="linux-webusb-compatibility">Linux WebUSB Compatibility</h2>
 <p>Linux generally don’t ship with the necessary permissions to let the
 user open USB devices. If you are experiencing problems with WebUSB (the
-feature that allows <a
-href="https://control.playsuperlative.com">control.playsuperlative.com</a>
-and <a
-href="https://firmware.playsuperlative.com">firmware.playsuperlative.com</a>
-to function), this is most likely the issue.</p>
+feature that allows <a href="https://control.playsuperlative.com"
+target="_blank">control.playsuperlative.com</a> and <a
+href="https://firmware.playsuperlative.com"
+target="_blank">firmware.playsuperlative.com</a> to function), this is
+most likely the issue.</p>
 <p>Please note that these instructions are for Debian-like
 distributions, the fix for your distro may be different.</p>
 <p>Run this script to enable WebUSB for the SB01:</p>
@@ -586,7 +588,6 @@ distributions, the fix for your distro may be different.</p>
 class="sourceCode bash"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">curl</span> <span class="at">-L</span> https://control.playsuperlative.com/enable-superlative-sb01-webusb.sh <span class="kw">|</span> <span class="fu">sh</span> /dev/stdin</span></code></pre></div>
 <p>You may need to reboot your system for the changes to take
 effect.</p>
-<hr />
 <p>Alternatively, manually perform the following:</p>
 <ol type="1">
 <li><p>Ensure your user is in the <code>plugdev</code> group</p>

@@ -3,7 +3,7 @@
 The SB01 can be configured through a [WebUSB enabled browser](#browser-chart).
 
 Connect the SB01 to your computer using a USB-C cable and click the on-screen notification.  
-If you don't see a notification, try directing your browser to [control.playsuperlative.com](https://control.playsuperlative.com/).
+If you don't see a notification, try directing your browser to [control.playsuperlative.com](https://control.playsuperlative.com/){target="_blank"}.
 
 When SB01 is connected, the app will look like [FIGURE 2.1](#figure-2.1).
 
