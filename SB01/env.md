@@ -6,17 +6,11 @@ An envelop works in two stages. First, when the envelope is triggered (typically
 
 Once the note is released, the envelope will go to zero voltage. The amount of time this takes is controlled by the "release" parameter.
 
-```
+<div style="width: 66.666%;">
 
-      /| \
-     / |  \
-    /  |   \
-   /   |    \ _____________
-  /    |     | Sustain     |\
- /     |     |             | \
-|------|-----|-------------|--| 
- Attack Decay               Release
-```
+![FIGURE 1.3](assets/adsr.svg)
+
+</div>
 
 The envelope is very powerful for shaping the properties of a sound, especially when routed to the filter cutoff. For example, a typical "pluck" sound has no attack, a short delay, no sustain, and no release, while a "pad" sound may have a long attack and decay, a middling sustain, and a long release.
 

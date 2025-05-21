@@ -1,6 +1,6 @@
 ## Bender
 
-![FIGURE 1.1](assets/figure_bender_1.1.png)
+![FIGURE 1.4](assets/bender.png)
 
 The main performance element of the bender section is the joystick.
 

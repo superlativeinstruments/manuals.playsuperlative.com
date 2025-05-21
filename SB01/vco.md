@@ -12,17 +12,19 @@ Pulse width (sometimes called duty cycle) is the proportion of time that a pulse
 
 For example, a square wave has equal parts high and low, like this:
 
-```
- ___     ___
-|   |___|   |___
-```
+<div style="width: 66.666%;">
+
+![FIGURE 1.1](assets/pulse-width-1.svg)
+
+</div>
 
 While a wave with a narrower pulse width may look like this:
 
-```
- _       _
-| |_____| |_____
-```
+<div style="width: 66.666%;">
+
+![FIGURE 1.2](assets/pulse-width-2.svg)
+
+</div>
 
 Both of these examples have the same frequency, so the pitch of the note is is the same, but because of the changes in pulse width, they will have a different timbre and spectral characteristics.
 

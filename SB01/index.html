@@ -14,8 +14,8 @@
 	<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
 
-	<link rel="stylesheet" href="/main.css?v=5">
-	<link rel="stylesheet" href="./main.css?v=5">
+	<link rel="stylesheet" href="/fonts.css">
+	<link rel="stylesheet" href="./main.css?v=6">
 <body>
 	<header>
 		<span class="header-title"><a href="/">↖</a> SB01 Manual</span>
@@ -92,7 +92,9 @@ id="toc-linux-webusb-compatibility">Linux WebUSB Compatibility</a></li>
 </ul>
 		  </section>
 
+
 		  <section class="body">
+<hr />
 <h2 id="power">Power</h2>
 <p>To turn the SB01 on, slide the power switch on the leftmost corner of
 the unit.</p>
@@ -213,11 +215,19 @@ oscillator.</p>
 that a pulse waveform is high or low.</p>
 <p>For example, a square wave has equal parts high and low, like
 this:</p>
-<pre><code> ___     ___
-|   |___|   |___</code></pre>
+<div style="width: 66.666%;">
+<figure>
+<img src="assets/pulse-width-1.svg" alt="FIGURE 1.1" />
+<figcaption aria-hidden="true">FIGURE 1.1</figcaption>
+</figure>
+</div>
 <p>While a wave with a narrower pulse width may look like this:</p>
-<pre><code> _       _
-| |_____| |_____</code></pre>
+<div style="width: 66.666%;">
+<figure>
+<img src="assets/pulse-width-2.svg" alt="FIGURE 1.2" />
+<figcaption aria-hidden="true">FIGURE 1.2</figcaption>
+</figure>
+</div>
 <p>Both of these examples have the same frequency, so the pitch of the
 note is is the same, but because of the changes in pulse width, they
 will have a different timbre and spectral characteristics.</p>
@@ -304,15 +314,12 @@ to get to the sustain level after the attack phase is controlled by the
 note is let go.</p>
 <p>Once the note is released, the envelope will go to zero voltage. The
 amount of time this takes is controlled by the “release” parameter.</p>
-<pre><code>
-      /| \
-     / |  \
-    /  |   \
-   /   |    \ _____________
-  /    |     | Sustain     |\
- /     |     |             | \
-|------|-----|-------------|--| 
- Attack Decay               Release</code></pre>
+<div style="width: 66.666%;">
+<figure>
+<img src="assets/adsr.svg" alt="FIGURE 1.3" />
+<figcaption aria-hidden="true">FIGURE 1.3</figcaption>
+</figure>
+</div>
 <p>The envelope is very powerful for shaping the properties of a sound,
 especially when routed to the filter cutoff. For example, a typical
 “pluck” sound has no attack, a short delay, no sustain, and no release,
@@ -442,8 +449,8 @@ Arpeggiator mode button</p>
 <hr />
 <h2 id="bender">Bender</h2>
 <figure>
-<img src="assets/figure_bender_1.1.png" alt="FIGURE 1.1" />
-<figcaption aria-hidden="true">FIGURE 1.1</figcaption>
+<img src="assets/bender.png" alt="FIGURE 1.4" />
+<figcaption aria-hidden="true">FIGURE 1.4</figcaption>
 </figure>
 <p>The main performance element of the bender section is the
 joystick.</p>
@@ -569,8 +576,8 @@ to function), this is most likely the issue.</p>
 <p>Please note that these instructions are for Debian-like
 distributions, the fix for your distro may be different.</p>
 <p>Run this script to enable WebUSB for the SB01:</p>
-<div class="sourceCode" id="cb4"><pre
-class="sourceCode bash"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ex">curl</span> <span class="at">-L</span> https://control.playsuperlative.com/enable-superlative-sb01-webusb.sh <span class="kw">|</span> <span class="fu">sh</span> /dev/stdin</span></code></pre></div>
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">curl</span> <span class="at">-L</span> https://control.playsuperlative.com/enable-superlative-sb01-webusb.sh <span class="kw">|</span> <span class="fu">sh</span> /dev/stdin</span></code></pre></div>
 <p>You may need to reboot your system for the changes to take
 effect.</p>
 <hr />
