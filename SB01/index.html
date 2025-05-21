@@ -24,13 +24,19 @@
 	</header>
 
   	  <main>
+  	  	  <section>
+			  <h1 style="font-variant-ligatures: normal;">SB01 User Manual</h1>
+		  </section>
+
   	  	  <section class="toc">
 <ul>
-<li><a href="#power" id="toc-power">Power</a></li>
+<li><a href="#power" id="toc-power">Power</a>
+<ul>
 <li><a href="#checking-the-battery-level"
 id="toc-checking-the-battery-level">Checking the battery level</a></li>
 <li><a href="#powering-external-gear"
 id="toc-powering-external-gear">Powering external gear</a></li>
+</ul></li>
 <li><a href="#rear-panel-connections"
 id="toc-rear-panel-connections">Rear panel connections</a></li>
 <li><a href="#controls" id="toc-controls">Controls</a></li>
@@ -68,6 +74,17 @@ id="toc-pitch-modulation-vibrato">Pitch Modulation / Vibrato</a></li>
 <li><a href="#pitch-bend-and-filter-control"
 id="toc-pitch-bend-and-filter-control">Pitch Bend and Filter
 Control</a></li>
+<li><a href="#configure" id="toc-configure">Configure</a>
+<ul>
+<li><a href="#enabling-midi-for-internalexternal-machines"
+id="toc-enabling-midi-for-internalexternal-machines">Enabling MIDI for
+internal/external machines</a></li>
+<li><a href="#setting-midi-channels"
+id="toc-setting-midi-channels">Setting MIDI channels</a></li>
+<li><a href="#enabling-midi-clock-midi-sync"
+id="toc-enabling-midi-clock-midi-sync">Enabling MIDI clock (MIDI
+sync)</a></li>
+</ul></li>
 <li><a href="#firmware-update" id="toc-firmware-update">Firmware
 Update</a></li>
 <li><a href="#linux-webusb-compatibility"
@@ -77,29 +94,29 @@ id="toc-linux-webusb-compatibility">Linux WebUSB Compatibility</a></li>
 
 		  <section class="body">
 <h2 id="power">Power</h2>
-<p>To turn the SB-01 on, slide the power switch on the leftmost corner
-of the unit.</p>
-<p>The SB-01 is powered by a rechargeable battery. To charge the
-battery, connect a USB-C power supply to the <code>USB</code> connection
-on the back of the unit. The LED above the <code>TUNE</code> knob should
-turn green to indicate that the unit is charging. When the SB-01 is on
-but not charging, this light will be amber. The battery can be charged
-both while the SB-01 is switched on or while it is switched off.</p>
+<p>To turn the SB01 on, slide the power switch on the leftmost corner of
+the unit.</p>
+<p>The SB01 is powered by a rechargeable battery. To charge the battery,
+connect a USB-C power supply to the <code>USB</code> connection on the
+back of the unit. The LED above the <code>TUNE</code> knob should turn
+green to indicate that the unit is charging. When the SB01 is on but not
+charging, this light will be amber. The battery can be charged both
+while the SB01 is switched on or while it is switched off.</p>
 <p>If the unit is low on battery, the LED above the <code>TUNE</code>
 knob will blink amber.</p>
-<h2 id="checking-the-battery-level">Checking the battery level</h2>
-<p>To check the battery level of the SB-01, hold down the
+<h3 id="checking-the-battery-level">Checking the battery level</h3>
+<p>To check the battery level of the SB01, hold down the
 <code>SHIFT</code> button and then press and hold the
 <code>BANK SELECT</code> button. The approximate battery level will be
 indicated by the seven LEDs in the leftmost bank of buttons. More green
 LEDs means a higher charge.</p>
-<h2 id="powering-external-gear">Powering external gear</h2>
-<p>The SB-01 can also be used as a battery bank to power external gear.
-Simply connect a device to the USB port on the back of the SB-01. You
-can even charge your phone from it!</p>
+<h3 id="powering-external-gear">Powering external gear</h3>
+<p>The SB01 can also be used as a battery bank to power external gear.
+Simply connect a device to the USB port on the back of the SB01. You can
+even charge your phone from it!</p>
 <hr />
 <h2 id="rear-panel-connections">Rear panel connections</h2>
-<p><code>USB</code>: Used to charge the SB-01. Connect to a computer for
+<p><code>USB</code>: Used to charge the SB01. Connect to a computer for
 USB MIDI, device configuration, and firmware updates.</p>
 <p><code>MIDI IN</code>: Type-A 3.5mm MIDI input</p>
 <p><code>MIDI OUT</code>: Type-A 3.5mm MIDI output</p>
@@ -186,7 +203,7 @@ sequencer and can be selected as a trigger source for the envelope.</p>
 <h2 id="voltage-controlled-oscillator-vco">Voltage Controlled Oscillator
 (VCO)</h2>
 <p>The voltage controlled oscillator (VCO) is where the sound of the
-SB-01 is created.</p>
+SB01 is created.</p>
 <p>The <code>MOD</code> control adjust the amount that the LFO will
 change the pitch of the oscillator.</p>
 <p>The <code>RANGE</code> knob controls the octave of the
@@ -240,7 +257,7 @@ is mixed in.</p>
 (VCF)</h2>
 <p>The voltage controlled filter (VCF) is used to shape the spectral
 properties of the raw sound coming from the Source Mixer section. The
-VCF in the SB-01 is a four-pole low-pass filter based on the AS1222.</p>
+VCF in the SB01 is a four-pole low-pass filter based on the AS1222.</p>
 <p>The <code>FREQ</code> slider controls the cutoff point of the filter.
 All the way up will allow all frequencies to pass through the filter.
 All the way down will block all frequencies and will stop any sound from
@@ -303,7 +320,7 @@ while a “pad” sound may have a long attack and decay, a middling
 sustain, and a long release.</p>
 <p>Remember that attack, decay, and release all control the time,
 sustain controls the level.</p>
-<p>On the SB-01, the envelope controls are:</p>
+<p>On the SB01, the envelope controls are:</p>
 <ul>
 <li><code>A</code>- controls the attack time of the envelope</li>
 <li><code>D</code> - controls the decay time of the envelope</li>
@@ -329,19 +346,22 @@ notes.</p>
 <p>To enable portamento, move the <code>PORTAMENTO</code> switch to
 either <code>ON</code> or <code>AUTO</code>. The time of the glide can
 be controlled using the <code>PORTAMENTO</code> knob.</p>
-<p>In the <code>ON</code> position, the SB-01 will smoothly glide the
+<p>In the <code>ON</code> position, the SB01 will smoothly glide the
 pitch between played notes.</p>
-<p>In <code>AUTO</code> mode, the SB-01’s glide effect activates only
+<p>In <code>AUTO</code> mode, the SB01’s glide effect activates only
 when you play a key <em>while still holding a previous key</em>. This
 “hold-and-glide” allows for expressive control.</p>
-<p><strong>Example:</strong> * Hold the C key. Then, play the G key. *
-The oscillator will glide from C to G. * If you release the C key before
-playing G, no glide will occur.</p>
+<p><strong>Example:</strong></p>
+<ul>
+<li>Hold the C key. Then, play the G key.</li>
+<li>The oscillator will glide from C to G.</li>
+<li>If you release the C key before playing G, no glide will occur.</li>
+</ul>
 <p>In the <code>OFF</code> position, the glide effect will not be
 applied to any played notes.</p>
 <hr />
 <h2 id="sequencer">Sequencer</h2>
-<p>The SB-01 features a digital sequencer capable of storing and playing
+<p>The SB01 features a digital sequencer capable of storing and playing
 up to X???? steps.</p>
 <ul>
 <li><strong>Tempo Control:</strong>
@@ -399,8 +419,8 @@ playback.</li>
 <p>The Arpeggiator will automatically play any held notes as an
 arpeggio.</p>
 <p>The speed of the Arpeggiator is controlled by the speed of the LFO.
-If the SB-01 is configured to accept an external MIDI clock, the speed
-of the Arpeggiator will instend be controlled by the external MIDI
+If the SB01 is configured to accept an external MIDI clock, the speed of
+the Arpeggiator will instend be controlled by the external MIDI
 clock.</p>
 <p>To enable the Arpeggiator, press any of the three Arpeggiator mode
 buttons:</p>
@@ -444,20 +464,51 @@ amount of change to the respective parameter will be applied when the
 joystick is moved left or right. At the lowest slider position, no
 change will be made.</p>
 <hr />
+<h2 id="configure">Configure</h2>
+<p>The SB01 can be configured through a <a href="#browser-chart">WebUSB
+enabled browser</a>.</p>
+<p>Connect the SB01 to your computer using a USB-C cable and click the
+on-screen notification.<br />
+If you don’t see a notification, try directing your browser to <a
+href="https://control.playsuperlative.com/">control.playsuperlative.com</a>.</p>
+<p>When SB01 is connected, the app will look like <a
+href="#figure-2.1">FIGURE 2.1</a>.</p>
+<figure id="figure-2.1">
+<img src="assets/control-dark.png" alt="FIGURE 2.1" />
+<figcaption aria-hidden="true">FIGURE 2.1</figcaption>
+</figure>
+<h3 id="enabling-midi-for-internalexternal-machines">Enabling MIDI for
+internal/external machines</h3>
+<p>Use the switch matrix at the top of the controls app to enable or
+disable TRS and USB MIDI for the internal and external machines.</p>
+<h3 id="setting-midi-channels">Setting MIDI channels</h3>
+<p>Use the <code>MIDI CHANNEL IN</code> and
+<code>MIDI CHANNEL OUT</code> selectors to set which channels the SB01
+will listen to and transmit on.</p>
+<h3 id="enabling-midi-clock-midi-sync">Enabling MIDI clock (MIDI
+sync)</h3>
+<p>Use the <code>MIDI CLOCK TRS IN</code> switch to enable or disable
+MIDI sync on the TRS MIDI input.<br />
+Use the <code>MIDI CLOCK USB IN</code> switch to enable or disable MIDI
+sync on the USB MIDI input.<br />
+When enabled, the SB01 will listen to incoming MIDI clock messages.</p>
+<p>The <code>CLOCK SUBDIVISION</code> slider divides the incoming MIDI
+clock and sets the speed of the arpeggiator and sequencer.</p>
+<hr />
 <h2 id="firmware-update">Firmware Update</h2>
 <p>To enter firmware update mode, perform the following:</p>
 <ol type="1">
-<li>Turn off your SB-01 using its power switch</li>
-<li>Connect your SB-01 to your computer with a USB-C cable</li>
-<li>Press and hold the <code>SHIFT</code> key on the SB-01</li>
-<li>While, holding <code>SHIFT</code>, switch on your SB-01</li>
+<li>Turn off your SB01 using its power switch</li>
+<li>Connect your SB01 to your computer with a USB-C cable</li>
+<li>Press and hold the <code>SHIFT</code> key on the SB01</li>
+<li>While, holding <code>SHIFT</code>, switch on your SB01</li>
 </ol>
 <p>The <code>LFO/CLK RATE</code> LED should be blinking orange and
 green. You can now release the <code>SHIFT</code> key</p>
 <p>In a compatible browser, navigate to <a
 href="https://firmware.playsuperlative.com/">firmware.playsuperlative.com</a>.
 Note that in some instances your browser may automatically prompt you
-for this when the SB-01 is first connected.</p>
+for this when the SB01 is first connected.</p>
 <table>
 <thead>
 <tr>
@@ -501,9 +552,10 @@ for this when the SB-01 is first connected.</p>
 </tbody>
 </table>
 <p>* <em>For Linux users, you may have to add a udev rule to allow
-access to the SB-01 USB device. Refer to <a href="linux.md">this
-guide</a> for more information.</em></p>
-<p>To exit Firmware Update Mode, simply turn off your SB-01 using the
+access to the SB01 USB device. Refer to <a
+href="#linux-webusb-compatibility">this guide</a> for more
+information.</em></p>
+<p>To exit Firmware Update Mode, simply turn off your SB01 using the
 power switch and turn it on again.</p>
 <hr />
 <h2 id="linux-webusb-compatibility">Linux WebUSB Compatibility</h2>

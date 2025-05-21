@@ -2,7 +2,7 @@
 
 The Arpeggiator will automatically play any held notes as an arpeggio.
 
-The speed of the Arpeggiator is controlled by the speed of the LFO. If the SB-01 is configured to accept an external MIDI clock, the speed of the Arpeggiator will instend be controlled by the external MIDI clock.
+The speed of the Arpeggiator is controlled by the speed of the LFO. If the SB01 is configured to accept an external MIDI clock, the speed of the Arpeggiator will instend be controlled by the external MIDI clock.
 
 To enable the Arpeggiator, press any of the three Arpeggiator mode buttons:
 

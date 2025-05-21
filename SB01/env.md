@@ -22,7 +22,7 @@ The envelope is very powerful for shaping the properties of a sound, especially 
 
 Remember that attack, decay, and release all control the time, sustain controls the level.
 
-On the SB-01, the envelope controls are:
+On the SB01, the envelope controls are:
 
 - `A`- controls the attack time of the envelope
 - `D` - controls the decay time of the envelope

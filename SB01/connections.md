@@ -1,6 +1,6 @@
 ## Rear panel connections
 
-`USB`: Used to charge the SB-01. Connect to a computer for USB MIDI, device configuration, and firmware updates.
+`USB`: Used to charge the SB01. Connect to a computer for USB MIDI, device configuration, and firmware updates.
 
 `MIDI IN`: Type-A 3.5mm MIDI input
 

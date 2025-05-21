@@ -108,6 +108,10 @@ main::after {
 	z-index: -1;
 }
 
+.body {
+	font-variant-ligatures: normal;
+}
+
 section {
 	width: 100%;
 	max-width: 60rem;
@@ -179,7 +183,7 @@ header a:hover {
 	color: var(--gray);
 }
 
-main a {
+.root a {
 	display: block;
 	text-decoration: none;
 	color: var(--black);
@@ -189,19 +193,34 @@ main a {
 	color: var(--dark_gray);
 }
 
-main a .arrow {
+.root a .arrow {
 	position: relative;
 	display: inline-block;
 	animation: arrowAnimationReverse 0.3s ease-in-out forwards;
 }
 
-main a:hover .arrow {
+.root a:hover .arrow {
 	animation: arrowAnimation 0.2s ease-out forwards;
 }
 
-main a:hover img {
+.root a:hover img {
 	transform: translate3d(-.25rem, .25rem, 0);
 	transition: transform 0.2s ease-in-out;
+}
+
+.body a {
+	text-decoration: none;
+	color: var(--black);
+	font-weight: bold;
+}
+
+.body a:not([href^="#"])::after {
+	content: " ↗";
+	font-size: 0.75rem;
+}
+
+.body a:hover {
+	color: var(--gray);
 }
 
 @keyframes arrowAnimation {

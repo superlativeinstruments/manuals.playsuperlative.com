@@ -1,6 +1,6 @@
 ## Voltage Controlled Oscillator (VCO)
 
-The voltage controlled oscillator (VCO) is where the sound of the SB-01 is created.
+The voltage controlled oscillator (VCO) is where the sound of the SB01 is created.
 
 The `MOD` control adjust the amount that the LFO will change the pitch of the oscillator.
 

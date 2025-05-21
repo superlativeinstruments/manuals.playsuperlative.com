@@ -1,6 +1,6 @@
 ## Sequencer
 
-The SB-01 features a digital sequencer capable of storing and playing up to X???? steps.
+The SB01 features a digital sequencer capable of storing and playing up to X???? steps.
 
 * **Tempo Control:**
     * Adjust the tempo using the LFO/CLK RATE knob.
