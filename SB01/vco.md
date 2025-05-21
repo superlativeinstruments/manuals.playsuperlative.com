@@ -1,4 +1,4 @@
-# Voltage Controlled Oscillator (VCO)
+## Voltage Controlled Oscillator (VCO)
 
 The voltage controlled oscillator (VCO) is where the sound of the SB-01 is created.
 
@@ -35,3 +35,5 @@ When the switch is set to `MAN`ual, the `PULSE WIDTH` slider will directly contr
 When the switch is set to `LFO`, the LFO will control the pulse width of the oscillator, and the `PULSE WIDTH` slider will control the amount of modulation that is applied.
 
 When the switch is set to `ENV` , the envelope generator will control the pulse width of the oscillator, and the `PULSE WIDTH` slider will control the amount that the envelop affects the pulse width.
+
+---
