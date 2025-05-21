@@ -102,10 +102,29 @@ p {
 	margin: 0 0 1.5rem;
 }
 
+code {
+	font-family: "SL-Regular-Condensed", sans-serif;
+	font-size: 1rem;
+	line-height: inherit;
+	color: inherit;
+}
+
 pre {
 	white-space: pre-wrap;
 	word-break: break-all;
 	overflow-x: auto;
+	background-color: var(--light_gray);
+	padding: 1rem;
+	border-radius: 0.25rem;
+}
+
+pre code {
+	font-family: "Space Mono", monospace;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 1rem;
+	line-height: 1.5;
+	color: var(--black);
 }
 
 table {
