@@ -25,4 +25,6 @@ When enabled, the SB01 will listen to incoming MIDI clock messages.
 
 The `CLOCK SUBDIVISION` slider divides the incoming MIDI clock and sets the speed of the arpeggiator and sequencer.
 
+**Tip:** Use the sun/moon icon at the top right of the app to switch between light and dark mode.
+
 ---
