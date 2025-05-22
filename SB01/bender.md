@@ -2,9 +2,11 @@
 
 ## Bender
 
-![FIGURE 1.4](assets/bender.png)
+::: {.prevent-break}
+![FIGURE 1.4](assets/placeholder.svg)
 
 The main performance element of the bender section is the joystick.
+:::
 
 ::: {.prevent-break}
 ### Pitch Modulation / Vibrato
