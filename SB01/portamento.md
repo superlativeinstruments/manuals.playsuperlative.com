@@ -1,3 +1,5 @@
+<article>
+
 ## Portamento
 
 Portamento is the musical term for continuous pitch glide between notes.
@@ -15,5 +17,7 @@ In `AUTO` mode, the SB01's glide effect activates only when you play a key *whil
 * If you release the C key before playing G, no glide will occur.
 
 In the `OFF` position, the glide effect will not be applied to any played notes.
+
+</article>
 
 ---

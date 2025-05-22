@@ -1,3 +1,5 @@
+<article>
+
 ## Controls
 
 - `Tune`
@@ -35,5 +37,7 @@
 - `BENDER VCO`
 - `BENDER VCF`
 - Bender
+
+</article>
 
 ---

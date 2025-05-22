@@ -1,3 +1,5 @@
+<article>
+
 ## Rear panel connections
 
 `USB`: Used to charge the SB01. Connect to a computer for USB MIDI, device configuration, and firmware updates.
@@ -25,5 +27,7 @@
 `PHONES`: Amplified audio output for stereo headphones.
 
 `OUTPUT`: Line level mono audio output (unbalanced).
+
+</article>
 
 ---

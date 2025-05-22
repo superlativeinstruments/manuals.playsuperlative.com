@@ -1,3 +1,5 @@
+<article>
+
 ## Configure
 
 The SB01 can be configured through a [WebUSB enabled browser](#browser-chart).
@@ -26,5 +28,7 @@ When enabled, the SB01 will listen to incoming MIDI clock messages.
 The `CLOCK SUBDIVISION` slider divides the incoming MIDI clock and sets the speed of the arpeggiator and sequencer.
 
 **Tip:** Use the sun/moon icon at the top right of the app to switch between [light]{.light-switch} and [dark]{.dark-switch} mode.
+
+</article>
 
 ---

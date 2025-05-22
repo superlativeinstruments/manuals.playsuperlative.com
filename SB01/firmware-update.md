@@ -1,3 +1,5 @@
+<article>
+
 ## Firmware Update
 
 To enter firmware update mode, perform the following:
@@ -24,5 +26,7 @@ In a compatible browser, navigate to [firmware.playsuperlative.com](https://firm
 
 
 To exit Firmware Update Mode, simply turn off your SB01 using the power switch and turn it on again.
+
+</article>
 
 ---

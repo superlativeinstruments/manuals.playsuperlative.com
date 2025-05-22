@@ -70,9 +70,15 @@ main {
 
 section {
 	width: 100%;
-	max-width: 60rem;
+	max-width: 55rem;
 	margin: auto;
 	background-color: var(--white);
+	break-inside: avoid;
+}
+
+article {
+	column-count: 2;
+	column-gap: 2rem;
 }
 
 h1 {
@@ -92,6 +98,7 @@ h2 {
 	text-transform: uppercase;
 	color: var(--dark_gray);
 	margin: 2rem 0;
+	column-span: all;
 }
 
 h3 {
@@ -137,12 +144,15 @@ pre code {
 }
 
 table {
-	width: 66.666%;
+	/* width: 66.666%; */
+	width: 100%;
 	border-width: 1px;
 	border-style: solid;
 	border-color: black;
 	border-collapse: collapse;
 	margin: 2rem 0;
+	break-inside: avoid;
+	page-break-inside: avoid;
 }
 
 th,
@@ -230,6 +240,8 @@ header a:hover {
 	gap: 1rem;
 	margin: 0;
 	margin-bottom: 2rem;
+	break-inside: avoid;
+	page-break-inside: avoid;
 }
 
 .body figcaption {
@@ -267,6 +279,11 @@ header a:hover {
 	left: 0;
 	width: 100%;
 	height: 100%;
+}
+
+.body ul {
+	page-break-inside: avoid;
+	break-inside: avoid;
 }
 
 .toc ul {
@@ -321,11 +338,13 @@ header a:hover {
 }
 
 [class*="w1/3"] {
-	width: 33.333%;
+	/* width: 33.333%; */
+	width: 100%;
 }
 
 [class*="w2/3"] {
-	width: 66.666%;
+	/* width: 66.666%; */
+	width: 100%;
 }
 
 hr {
@@ -338,6 +357,12 @@ hr {
 hr:last-child {
 	page-break-after: initial;
 	break-before: initial;
+}
+
+@media (max-width: 55rem) {
+	article {
+		column-count: 1;
+	}
 }
 
 @media (max-width: 600px) {
@@ -379,5 +404,10 @@ hr:last-child {
 
 	table {
 		width: 100%;
+	}
+
+	article {
+		column-count: 2;
+		column-gap: 2rem;
 	}
 }

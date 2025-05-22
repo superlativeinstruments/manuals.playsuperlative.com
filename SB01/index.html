@@ -55,9 +55,11 @@ id="toc-voltage-controlled-oscillator-vco">Voltage Controlled Oscillator
 <li><a href="#source-mixer" id="toc-source-mixer">Source Mixer</a></li>
 <li><a href="#voltage-controlled-filter-vcf"
 id="toc-voltage-controlled-filter-vcf">Voltage Controlled Filter
-(VCF)</a></li>
+(VCF)</a>
+<ul>
 <li><a href="#self-resonance" id="toc-self-resonance">Self
 Resonance</a></li>
+</ul></li>
 <li><a href="#voltage-controlled-amplifier"
 id="toc-voltage-controlled-amplifier">Voltage Controlled
 Amplifier</a></li>
@@ -74,12 +76,14 @@ Playback</a></li>
 Sequences</a></li>
 </ul></li>
 <li><a href="#arpeggiator" id="toc-arpeggiator">Arpeggiator</a></li>
-<li><a href="#bender" id="toc-bender">Bender</a></li>
+<li><a href="#bender" id="toc-bender">Bender</a>
+<ul>
 <li><a href="#pitch-modulation-vibrato"
 id="toc-pitch-modulation-vibrato">Pitch Modulation / Vibrato</a></li>
 <li><a href="#pitch-bend-and-filter-control"
 id="toc-pitch-bend-and-filter-control">Pitch Bend and Filter
 Control</a></li>
+</ul></li>
 <li><a href="#configure" id="toc-configure">Configure</a>
 <ul>
 <li><a href="#enabling-midi-for-internalexternal-machines"
@@ -101,6 +105,7 @@ id="toc-linux-webusb-compatibility">Linux WebUSB Compatibility</a></li>
 
 		  <section class="body">
 <hr />
+<article>
 <h2 id="power">Power</h2>
 <p>To turn the SB01 on, slide the power switch on the leftmost corner of
 the unit.</p>
@@ -112,17 +117,23 @@ charging, this light will be amber. The battery can be charged both
 while the SB01 is switched on or while it is switched off.</p>
 <p>If the unit is low on battery, the LED above the <code>TUNE</code>
 knob will blink amber.</p>
-<h3 id="checking-the-battery-level">Checking the battery level</h3>
+<section id="checking-the-battery-level" class="prevent-break">
+<h3>Checking the battery level</h3>
 <p>To check the battery level of the SB01, hold down the
 <code>SHIFT</code> button and then press and hold the
 <code>BANK SELECT</code> button. The approximate battery level will be
 indicated by the seven LEDs in the leftmost bank of buttons. More green
 LEDs means a higher charge.</p>
-<h3 id="powering-external-gear">Powering external gear</h3>
+</section>
+<section id="powering-external-gear" class="prevent-break">
+<h3>Powering external gear</h3>
 <p>The SB01 can also be used as a battery bank to power external gear.
 Simply connect a device to the USB port on the back of the SB01. You can
 even charge your phone from it!</p>
+</section>
+</article>
 <hr />
+<article>
 <h2 id="rear-panel-connections">Rear panel connections</h2>
 <p><code>USB</code>: Used to charge the SB01. Connect to a computer for
 USB MIDI, device configuration, and firmware updates.</p>
@@ -141,7 +152,9 @@ engine.</p>
 <p><code>PHONES</code>: Amplified audio output for stereo
 headphones.</p>
 <p><code>OUTPUT</code>: Line level mono audio output (unbalanced).</p>
+</article>
 <hr />
+<article>
 <h2 id="controls">Controls</h2>
 <ul>
 <li><code>Tune</code></li>
@@ -190,7 +203,9 @@ headphones.</p>
 <li><code>BENDER VCF</code></li>
 <li>Bender</li>
 </ul>
+</article>
 <hr />
+<article>
 <h2 id="modulator-lfo">Modulator / LFO</h2>
 <p>The <code>MODULATOR</code> section of the front panel includes the
 <code>LFO/CLK RATE</code> slider and the <code>WAVEFORM</code> selector
@@ -208,7 +223,9 @@ period of the LFO. The noise waveform is just white noise and is not
 affected by the LFO rate control.</p>
 <p>The speed of the LFO also controls the speed of the arpeggiator and
 sequencer and can be selected as a trigger source for the envelope.</p>
+</article>
 <hr />
+<article>
 <h2 id="voltage-controlled-oscillator-vco">Voltage Controlled Oscillator
 (VCO)</h2>
 <p>The voltage controlled oscillator (VCO) is where the sound of the
@@ -217,7 +234,8 @@ SB01 is created.</p>
 change the pitch of the oscillator.</p>
 <p>The <code>RANGE</code> knob controls the octave of the
 oscillator.</p>
-<h3 id="pulse-width">Pulse Width</h3>
+<section id="pulse-width" class="prevent-break">
+<h3>Pulse Width</h3>
 <p>Pulse width (sometimes called duty cycle) is the proportion of time
 that a pulse waveform is high or low.<br />
 For example, a square wave has equal parts high and low, like this:</p>
@@ -234,6 +252,7 @@ For example, a square wave has equal parts high and low, like this:</p>
 <figcaption aria-hidden="true">FIGURE 1.2</figcaption>
 </figure>
 </div>
+</section>
 <p>Both of these examples have the same frequency, so the pitch of the
 note is is the same, but because of the changes in pulse width, they
 will have a different timbre and spectral characteristics.</p>
@@ -249,7 +268,9 @@ will control the amount of modulation that is applied.</p>
 will control the pulse width of the oscillator, and the
 <code>PULSE WIDTH</code> slider will control the amount that the envelop
 affects the pulse width.</p>
+</article>
 <hr />
+<article>
 <h2 id="source-mixer">Source Mixer</h2>
 <p>The Source Mixer section contains controls to mix together the
 different waveforms created by the VCO into the timber of your
@@ -268,7 +289,9 @@ oscillator, a square wave two octaves below, or a 25% duty cycle pulse
 wave two octaves below.</p>
 <p>the <code>NOISE</code> slider controls the amount of white noise that
 is mixed in.</p>
+</article>
 <hr />
+<article>
 <h2 id="voltage-controlled-filter-vcf">Voltage Controlled Filter
 (VCF)</h2>
 <p>The voltage controlled filter (VCF) is used to shape the spectral
@@ -290,13 +313,15 @@ is applied to the filter based on the control voltage of the note that
 is played. This can be useful for creating a patch that is darker in the
 lower notes, but gets brighter as the filter opens up in the higher
 notes.</p>
-<h2 id="self-resonance">Self Resonance</h2>
+<h3 id="self-resonance">Self Resonance</h3>
 <p>The filter can be played in a “self resonant” mode. This can be used
 to create a fairly pure sine wave output.</p>
 <p>To enable self-resonance, set <code>FREQ</code> to the minimum, and
 set <code>RES</code> and <code>KYBD</code> to the maximum. The filter
 output should track the note played to within 1%.</p>
+</article>
 <hr />
+<article>
 <h2 id="voltage-controlled-amplifier">Voltage Controlled Amplifier</h2>
 <p>The voltage controlled amplifier (VCA) section controls the volume of
 a note over time as it is played.</p>
@@ -306,7 +331,9 @@ reduced to the minimum as soon as the note is released.</p>
 <p>When the VCA is configured in <code>ENV</code> mode, the volume of
 the note will be controlled over time based on the settings in the
 envelope section.</p>
+</article>
 <hr />
+<article>
 <h2 id="envelope-generator">Envelope Generator</h2>
 <p>The envelope generator is a standard four-stage envelope. It can be
 used to modulate pulse width, filter cutoff, and the VCA.</p>
@@ -352,7 +379,9 @@ let go. If additional notes are played, the envelope will reset at the
 beginning for the new note.</p>
 <p>In <code>LFO</code> mode, the envelope will be triggered by each
 cycle of the LFO regardless if notes are played or not.</p>
+</article>
 <hr />
+<article>
 <h2 id="portamento">Portamento</h2>
 <p>Portamento is the musical term for continuous pitch glide between
 notes.</p>
@@ -372,7 +401,9 @@ when you play a key <em>while still holding a previous key</em>. This
 </ul>
 <p>In the <code>OFF</code> position, the glide effect will not be
 applied to any played notes.</p>
+</article>
 <hr />
+<article>
 <h2 id="sequencer">Sequencer</h2>
 <p>The SB01 features a digital sequencer capable of storing and playing
 up to X???? steps.</p>
@@ -383,7 +414,8 @@ up to X???? steps.</p>
 <li>Synchronize with an external MIDI clock.</li>
 </ul></li>
 </ul>
-<h3 id="sequence-recording">Sequence Recording</h3>
+<section id="sequence-recording" class="prevent-break">
+<h3>Sequence Recording</h3>
 <ul>
 <li><strong>Start Recording:</strong> Press the <code>LOAD</code>
 button.</li>
@@ -396,7 +428,9 @@ pitch information will be stored.</li>
 <li><strong>Add Legato/Slides:</strong> While recording, press the
 <code>LEGATO</code> button.</li>
 </ul>
-<h3 id="sequence-playback">Sequence Playback</h3>
+</section>
+<section id="sequence-playback" class="prevent-break">
+<h3>Sequence Playback</h3>
 <ul>
 <li><strong>Play:</strong> Press the <code>PLAY</code> button. The
 sequence will loop continuously until stopped.</li>
@@ -412,7 +446,9 @@ to LFO.</li>
 <li><strong>Hold Pedal Stop:</strong> When using a Hold pedal, press and
 release the pedal to stop the sequence.</li>
 </ul>
-<h3 id="editing-sequences">Editing Sequences</h3>
+</section>
+<section id="editing-sequences" class="prevent-break">
+<h3>Editing Sequences</h3>
 <ul>
 <li><strong>Correcting:</strong>
 <ul>
@@ -427,7 +463,10 @@ release the pedal to stop the sequence.</li>
 playback.</li>
 </ul></li>
 </ul>
+</section>
+</article>
 <hr />
+<article>
 <h2 id="arpeggiator">Arpeggiator</h2>
 <p>The Arpeggiator will automatically play any held notes as an
 arpeggio.</p>
@@ -452,7 +491,9 @@ arpeggiated notes in random order</li>
 and free your hands for knob twiddling</p>
 <p>To disable the Arpeggiator, press the currently illuminated
 Arpeggiator mode button</p>
+</article>
 <hr />
+<article>
 <h2 id="bender">Bender</h2>
 <figure>
 <img src="assets/bender.png" alt="FIGURE 1.4" />
@@ -460,7 +501,8 @@ Arpeggiator mode button</p>
 </figure>
 <p>The main performance element of the bender section is the
 joystick.</p>
-<h2 id="pitch-modulation-vibrato">Pitch Modulation / Vibrato</h2>
+<section id="pitch-modulation-vibrato" class="prevent-break">
+<h3>Pitch Modulation / Vibrato</h3>
 <p>Pushing the joystick up will increase the amount of LFO modulation
 that is sent to the VCO pitch. The maximum amount of added modulation is
 controlled by the <code>LFO MOD</code> knob above the joystick.
@@ -468,15 +510,19 @@ Increasing the knob will increase the depth of pitch modulation that is
 added when the joystick is pushed up. The rate of LFO modulation is
 still controlled by the <code>LFO/CLK RATE</code> slider in the
 <code>LFO</code> section.</p>
-<h2 id="pitch-bend-and-filter-control">Pitch Bend and Filter
-Control</h2>
+</section>
+<section id="pitch-bend-and-filter-control" class="prevent-break">
+<h3>Pitch Bend and Filter Control</h3>
 <p>The left and right motion of the bender joystick can be configured to
 control both the oscillator pitch and the filter cutoff. The
 <code>BENDER VCO</code> and<code>BENDER VCF</code> sliders control the
 amount of change to the respective parameter will be applied when the
 joystick is moved left or right. At the lowest slider position, no
 change will be made.</p>
+</section>
+</article>
 <hr />
+<article>
 <h2 id="configure">Configure</h2>
 <p>The SB01 can be configured through a <a href="#browser-chart">WebUSB
 enabled browser</a>.</p>
@@ -511,7 +557,9 @@ clock and sets the speed of the arpeggiator and sequencer.</p>
 <p><strong>Tip:</strong> Use the sun/moon icon at the top right of the
 app to switch between <span class="light-switch">light</span> and <span
 class="dark-switch">dark</span> mode.</p>
+</article>
 <hr />
+<article>
 <h2 id="firmware-update">Firmware Update</h2>
 <p>To enter firmware update mode, perform the following:</p>
 <ol type="1">
@@ -575,7 +623,9 @@ href="#linux-webusb-compatibility">this guide</a> for more
 information.</em></p>
 <p>To exit Firmware Update Mode, simply turn off your SB01 using the
 power switch and turn it on again.</p>
+</article>
 <hr />
+<article>
 <h2 id="linux-webusb-compatibility">Linux WebUSB Compatibility</h2>
 <p>Linux generally don’t ship with the necessary permissions to let the
 user open USB devices. If you are experiencing problems with WebUSB (the
@@ -604,6 +654,7 @@ following contents:</p>
 </ol>
 <p>You may need to reboot your system for the changes to take
 effect.</p>
+</article>
 <hr />
 		  </section>
 	  </main>

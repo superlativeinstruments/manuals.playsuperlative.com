@@ -1,3 +1,5 @@
+<article>
+
 ## Sequencer
 
 The SB01 features a digital sequencer capable of storing and playing up to X???? steps.
@@ -6,6 +8,7 @@ The SB01 features a digital sequencer capable of storing and playing up to X????
     * Adjust the tempo using the LFO/CLK RATE knob.
     * Synchronize with an external MIDI clock.
 
+::: {.prevent-break}
 ### Sequence Recording
 
 * **Start Recording:** Press the `LOAD` button.
@@ -13,7 +16,9 @@ The SB01 features a digital sequencer capable of storing and playing up to X????
 * **Record Notes:** Play notes on the keyboard. Only pitch information will be stored.
 * **Add Rests:** While recording, press the `REST` button.
 * **Add Legato/Slides:** While recording, press the `LEGATO` button.
+:::
 
+::: {.prevent-break}
 ### Sequence Playback
 
 * **Play:** Press the `PLAY` button. The sequence will loop continuously until stopped.
@@ -22,7 +27,9 @@ The SB01 features a digital sequencer capable of storing and playing up to X????
     * For legato/slides, ensure the Envelope Generator's GATE/TRIG selector is set to GATE before recording.
     * For short value sequences without slurs, set the GATE/TRIG selector to LFO.
 * **Hold Pedal Stop:** When using a Hold pedal, press and release the pedal to stop the sequence.
+:::
 
+::: {.prevent-break}
 ### Editing Sequences
 
 * **Correcting:**
@@ -31,5 +38,8 @@ The SB01 features a digital sequencer capable of storing and playing up to X????
     * Set LFO/CLK rate to slow for easier editing.
 * **Real-time Controls:**
     * The Bender and Portamento controls remain active during sequence playback.
+:::
+
+</article>
 
 ---

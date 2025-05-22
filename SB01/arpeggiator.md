@@ -1,3 +1,5 @@
+<article>
+
 ## Arpeggiator
 
 The Arpeggiator will automatically play any held notes as an arpeggio.
@@ -16,5 +18,7 @@ You can switch modes while the Arpeggiator is playing.
 Use the `HOLD` button to lock notes into the Arpeggiator and free your hands for knob twiddling
 
 To disable the Arpeggiator, press the currently illuminated Arpeggiator mode button
+
+</article>
 
 ---

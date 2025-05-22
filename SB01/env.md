@@ -1,3 +1,5 @@
+<article>
+
 ## Envelope Generator
 
 The envelope generator is a standard four-stage envelope. It can be used to modulate pulse width, filter cutoff, and the VCA.
@@ -30,5 +32,7 @@ In `GATE` mode the envelope is started by a keypress event and will transition t
 In `GATE|TRIG` mode, the envelope will be started by a keypress event and will transition to the release phase when any key is let go. If additional notes are played, the envelope will reset at the beginning for the new note.
 
 In `LFO` mode, the envelope will be triggered by each cycle of the LFO regardless if notes are played or not.
+
+</article>
 
 ---

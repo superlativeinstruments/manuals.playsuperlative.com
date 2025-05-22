@@ -1,3 +1,5 @@
+<article>
+
 ## Linux WebUSB Compatibility
 
 Linux generally don't ship with the necessary permissions to let the user open USB devices. If you are experiencing problems with WebUSB (the feature that allows [control.playsuperlative.com](https://control.playsuperlative.com){target="_blank"} and [firmware.playsuperlative.com](https://firmware.playsuperlative.com){target="_blank"} to function), this is most likely the issue.
@@ -32,5 +34,7 @@ Alternatively, manually perform the following:
    ```
 
 You may need to reboot your system for the changes to take effect.
+
+</article>
 
 ---
