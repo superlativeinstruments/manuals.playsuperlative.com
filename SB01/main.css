@@ -314,6 +314,11 @@ hr {
 	border-top: 0.5px solid var(--light_gray);
 }
 
+hr:last-child {
+	page-break-after: initial;
+	break-before: initial;
+}
+
 @media (max-width: 600px) {
 	header {
 		grid-template-columns: 1fr 1fr;
