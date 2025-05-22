@@ -320,6 +320,14 @@ header a:hover {
 	cursor: pointer;
 }
 
+[class*="w1/3"] {
+	width: 33.333%;
+}
+
+[class*="w2/3"] {
+	width: 66.666%;
+}
+
 hr {
 	page-break-before: always;
 	break-before: page;
@@ -348,6 +356,14 @@ hr:last-child {
 	table {
 		width: 100%;
 		max-width: initial;
+	}
+
+	[class*="w1/3"] {
+		width: 100%;
+	}
+
+	[class*="w2/3"] {
+		width: 100%;
 	}
 }
 

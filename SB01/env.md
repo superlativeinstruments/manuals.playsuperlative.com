@@ -6,7 +6,7 @@ An envelop works in two stages. First, when the envelope is triggered (typically
 
 Once the note is released, the envelope will go to zero voltage. The amount of time this takes is controlled by the "release" parameter.
 
-<div style="width: 66.666%;">
+<div class="w2/3">
 
 ![FIGURE 1.3](assets/adsr.svg)
 
