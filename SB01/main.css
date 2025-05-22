@@ -302,22 +302,16 @@ header a:hover {
 	text-align: right;
 }
 
+.light-switch,
+.dark-switch {
+	cursor: pointer;
+}
+
 hr {
 	page-break-before: always;
 	break-before: page;
 	margin: 4rem 0;
 	border-top: 0.5px solid var(--light_gray);
-}
-
-@media (max-width: 600px) {
-	section {
-		max-width: 100%;
-	}
-
-	table {
-		width: 100%;
-		max-width: initial;
-	}
 }
 
 @media (max-width: 600px) {
@@ -328,9 +322,22 @@ hr {
 	.header-lockup {
 		display: none;
 	}
+
+	section {
+		max-width: 100%;
+	}
+
+	table {
+		width: 100%;
+		max-width: initial;
+	}
 }
 
 @media print {
+	header {
+		display: none;
+	}
+
 	hr {
 		visibility: hidden;
 		margin: 0;

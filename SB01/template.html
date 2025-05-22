@@ -41,5 +41,19 @@ $toc$
 $body$
 		  </section>
 	  </main>
+
+	  <script>
+		  document.querySelectorAll('.light-switch, .dark-switch').forEach((el) => {
+			  el.addEventListener('click', (e) => {
+			  	  console.log('clicked');
+				  e.preventDefault();
+				  let target = document.getElementById('figure-2.1');
+				  target = target.querySelector('img');
+				  if (target) {
+					  target.src = target.src.includes('light') ? target.src.replace('light', 'dark') : target.src.replace('dark', 'light');
+				  }
+			  });
+		  });
+	  </script>
 </body>
 </html>

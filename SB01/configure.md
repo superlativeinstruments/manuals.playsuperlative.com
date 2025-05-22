@@ -7,7 +7,7 @@ If you don't see a notification, try directing your browser to [control.playsupe
 
 When SB01 is connected, the app will look like [FIGURE 2.1](#figure-2.1).
 
-![FIGURE 2.1](assets/control-dark.png){#figure-2.1}
+![FIGURE 2.1](assets/control-light.png){#figure-2.1}
 
 ### Enabling MIDI for internal/external machines
 
@@ -25,6 +25,6 @@ When enabled, the SB01 will listen to incoming MIDI clock messages.
 
 The `CLOCK SUBDIVISION` slider divides the incoming MIDI clock and sets the speed of the arpeggiator and sequencer.
 
-**Tip:** Use the sun/moon icon at the top right of the app to switch between light and dark mode.
+**Tip:** Use the sun/moon icon at the top right of the app to switch between [light]{.light-switch} and [dark]{.dark-switch} mode.
 
 ---

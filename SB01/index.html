@@ -489,7 +489,7 @@ target="_blank">control.playsuperlative.com</a>.</p>
 <p>When SB01 is connected, the app will look like <a
 href="#figure-2.1">FIGURE 2.1</a>.</p>
 <figure id="figure-2.1">
-<img src="assets/control-dark.png" alt="FIGURE 2.1" />
+<img src="assets/control-light.png" alt="FIGURE 2.1" />
 <figcaption aria-hidden="true">FIGURE 2.1</figcaption>
 </figure>
 <h3 id="enabling-midi-for-internalexternal-machines">Enabling MIDI for
@@ -510,7 +510,8 @@ When enabled, the SB01 will listen to incoming MIDI clock messages.</p>
 <p>The <code>CLOCK SUBDIVISION</code> slider divides the incoming MIDI
 clock and sets the speed of the arpeggiator and sequencer.</p>
 <p><strong>Tip:</strong> Use the sun/moon icon at the top right of the
-app to switch between light and dark mode.</p>
+app to switch between <span class="light-switch">light</span> and <span
+class="dark-switch">dark</span> mode.</p>
 <hr />
 <h2 id="firmware-update">Firmware Update</h2>
 <p>To enter firmware update mode, perform the following:</p>
@@ -607,5 +608,19 @@ effect.</p>
 <hr />
 		  </section>
 	  </main>
+
+	  <script>
+		  document.querySelectorAll('.light-switch, .dark-switch').forEach((el) => {
+			  el.addEventListener('click', (e) => {
+			  	  console.log('clicked');
+				  e.preventDefault();
+				  let target = document.getElementById('figure-2.1');
+				  target = target.querySelector('img');
+				  if (target) {
+					  target.src = target.src.includes('light') ? target.src.replace('light', 'dark') : target.src.replace('dark', 'light');
+				  }
+			  });
+		  });
+	  </script>
 </body>
 </html>
