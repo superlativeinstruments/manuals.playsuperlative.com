@@ -1,6 +1,6 @@
 <article>
 
-## Voltage Controlled Amplifier
+## Voltage Controlled Amplifier (VCA)
 
 The voltage controlled amplifier (VCA) section controls the volume of a note over time as it is played.
 
