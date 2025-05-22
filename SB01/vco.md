@@ -8,8 +8,7 @@ The `RANGE` knob controls the octave of the oscillator.
 
 ### Pulse Width
 
-Pulse width (sometimes called duty cycle) is the proportion of time that a pulse waveform is high or low.
-
+Pulse width (sometimes called duty cycle) is the proportion of time that a pulse waveform is high or low.  
 For example, a square wave has equal parts high and low, like this:
 
 <div style="width: 66.666%;">

@@ -292,7 +292,8 @@ header a:hover {
 }
 
 .toc a:hover {
-	text-decoration: underline;
+	text-decoration: none;
+	color: var(--gray);
 }
 
 .toc a {
