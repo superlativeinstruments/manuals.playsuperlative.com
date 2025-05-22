@@ -1,6 +1,6 @@
-<article>
-
 ## Controls
+
+<article>
 
 - `Tune`
 - Modulator

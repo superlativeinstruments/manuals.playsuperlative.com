@@ -1,6 +1,6 @@
-<article>
-
 ## Envelope Generator
+
+<article>
 
 The envelope generator is a standard four-stage envelope. It can be used to modulate pulse width, filter cutoff, and the VCA.
 

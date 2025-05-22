@@ -1,6 +1,6 @@
-<article>
-
 ## Configure
+
+<article>
 
 The SB01 can be configured through a [WebUSB enabled browser](#browser-chart).
 

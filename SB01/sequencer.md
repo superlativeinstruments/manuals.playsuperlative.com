@@ -1,6 +1,6 @@
-<article>
-
 ## Sequencer
+
+<article>
 
 The SB01 features a digital sequencer capable of storing and playing up to X???? steps.
 

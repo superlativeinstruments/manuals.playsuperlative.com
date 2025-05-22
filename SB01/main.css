@@ -98,7 +98,6 @@ h2 {
 	text-transform: uppercase;
 	color: var(--dark_gray);
 	margin: 2rem 0;
-	column-span: all;
 }
 
 h3 {

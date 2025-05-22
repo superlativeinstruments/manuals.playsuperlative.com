@@ -1,6 +1,6 @@
-<article>
-
 ## Arpeggiator
+
+<article>
 
 The Arpeggiator will automatically play any held notes as an arpeggio.
 

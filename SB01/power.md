@@ -1,6 +1,6 @@
-<article>
-
 ## Power
+
+<article>
 
 To turn the SB01 on, slide the power switch on the leftmost corner of the unit.
 

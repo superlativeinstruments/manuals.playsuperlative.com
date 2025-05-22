@@ -1,6 +1,6 @@
-<article>
-
 ## Voltage Controlled Oscillator (VCO)
+
+<article>
 
 The voltage controlled oscillator (VCO) is where the sound of the SB01 is created.
 

@@ -1,6 +1,6 @@
-<article>
-
 ## Firmware Update
+
+<article>
 
 To enter firmware update mode, perform the following:
 

@@ -1,6 +1,6 @@
-<article>
-
 ## Bender
+
+<article>
 
 ::: {.prevent-break}
 ![FIGURE 1.4](assets/placeholder.svg)

@@ -1,6 +1,6 @@
-<article>
-
 ## Portamento
+
+<article>
 
 Portamento is the musical term for continuous pitch glide between notes.
 

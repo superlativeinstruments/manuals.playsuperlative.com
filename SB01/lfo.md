@@ -1,6 +1,6 @@
-<article>
-
 ## Modulator / LFO
+
+<article>
 
 The `MODULATOR` section of the front panel includes the `LFO/CLK RATE` slider and the `WAVEFORM` selector knob.
 
