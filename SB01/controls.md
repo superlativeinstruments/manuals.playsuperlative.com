@@ -2,41 +2,41 @@
 
 <article>
 
-- `Tune`
+- `TUNE`
 - Modulator
   - `LFO/CLK RATE`
   - `WAVEFORM`
-- VCO
+- `VCO`
   - `MOD`
   - `RANGE`
   - `PULSE WIDTH` Slider
   - `PULSE WIDTH` Switch
-- Source Mixer
-  - `PULSE` Volume Slider
-  - `SAW` Volume Slider
-  - `SUB OSC` Volume Slider
-  - `SUB OSC` Shape/Octave Switch
-- VCF
+- `SOURCE MIXER`
+  - `PULSE` Level Slider
+  - `SAW` Level Slider
+  - `SUB OSC` Level Slider
+  - `SUB OSC` Selector Switch
+- `VCF`
   - `FREQ`
   - `RES`
   - `ENV`
   - `MOD`
   - `KYBD`
 - `VCA` Envelope Switch
-- ENV
-  - Trigger Source Switch
+- `ENV`
+  - Trigger Mode
   - `A`
   - `D`
   - `S`
   - `R`
 - `VOLUME`
 - `PORTAMENTO`
-- `PORTAMENTO` Mode Switch
-- `TRANSPOSE` switch
-- `LFO MOD` knob
-- `BENDER VCO`
-- `BENDER VCF`
-- Bender
+- `PORTAMENTO` Mode Toggle
+- `TRANSPOSE` Toggle
+- `BENDER`
+  - `BENDER VCF`
+  - `BENDER VCO`
+  - `LFO MOD`
 
 </article>
 

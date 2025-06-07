@@ -12,8 +12,9 @@ SB01:
 		SB01/vca.md \
 		SB01/env.md \
 		SB01/portamento.md \
-		SB01/sequencer.md \
 		SB01/arpeggiator.md \
+		SB01/sequencer.md \
+		SB01/saving-sequences.md \
 		SB01/bender.md \
 		SB01/configure.md \
 		SB01/firmware-update.md \

@@ -2,9 +2,11 @@
 
 <article>
 
-The Arpeggiator will automatically play any held notes as an arpeggio.
+The Arpeggiator will automatically play any held notes as a progressive arpeggio.
 
-The speed of the Arpeggiator is controlled by the speed of the LFO. If the SB01 is configured to accept an external MIDI clock, the speed of the Arpeggiator will instend be controlled by the external MIDI clock.
+The speed of the Arpeggiator is controlled by the speed of the LFO/CLK RATE. If the SB01 is configured to accept an external MIDI clock, the speed of the Arpeggiator will instend be controlled by the external MIDI clock.
+
+### Arpeggiator Modes
 
 To enable the Arpeggiator, press any of the three Arpeggiator mode buttons:
 
@@ -15,7 +17,7 @@ To enable the Arpeggiator, press any of the three Arpeggiator mode buttons:
 
 You can switch modes while the Arpeggiator is playing.
 
-Use the `HOLD` button to lock notes into the Arpeggiator and free your hands for knob twiddling
+Use the `HOLD` button to latch notes into the Arpeggiator and free hands for adjusting the sound
 
 To disable the Arpeggiator, press the currently illuminated Arpeggiator mode button
 

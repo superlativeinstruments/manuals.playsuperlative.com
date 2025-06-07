@@ -6,12 +6,12 @@ The voltage controlled oscillator (VCO) is where the sound of the SB01 is create
 
 The `MOD` control adjust the amount that the LFO will change the pitch of the oscillator.
 
-The `RANGE` knob controls the octave of the oscillator.
+The `RANGE` knob controls the pitch of the oscillator in one octave steps from 16' to 2'. When this knob is set to 8' and the `TRANSPOSE` is set to M, the lowest C note maps to the middle C of a piano.
 
 ::: {.prevent-break}
 ### Pulse Width
 
-Pulse width (sometimes called duty cycle) is the proportion of time that a pulse waveform is high or low.  
+Pulse width modulation allows control over the duty cycle of the square wave, which is the proportion of time that a pulse waveform is high or low.  
 For example, a square wave has equal parts high and low, like this:
 
 <div class="w2/3">
@@ -29,15 +29,15 @@ While a wave with a narrower pulse width may look like this:
 </div>
 :::
 
-Both of these examples have the same frequency, so the pitch of the note is is the same, but because of the changes in pulse width, they will have a different timbre and spectral characteristics.
+Both of these examples have the same frequency, but the harmonic content of the pulse wave will vary in proportion to the width of the pulses.
 
 The `PULSE WIDTH` switch controls the mode that the pulse width modulation will operate in.
 
-When the switch is set to `MAN`ual, the `PULSE WIDTH` slider will directly control the pulse width of the oscillator.
+When the switch is set to `MANUAL`, the `PULSE WIDTH` slider will manually control the pulse width of the square wave from 50% to 5%.
 
-When the switch is set to `LFO`, the LFO will control the pulse width of the oscillator, and the `PULSE WIDTH` slider will control the amount of modulation that is applied.
+When the switch is set to `LFO`, the triangle wave LFO will control the pulse width of the oscillator, and the `PULSE WIDTH` slider will control the amount of modulation that is applied.
 
-When the switch is set to `ENV` , the envelope generator will control the pulse width of the oscillator, and the `PULSE WIDTH` slider will control the amount that the envelop affects the pulse width.
+When the switch is set to `ENV` , the envelope shape will control the pulse width of the oscillator, and the `PULSE WIDTH` slider will control the amount of modulation that is applied.
 
 </article>
 
