@@ -3,7 +3,7 @@
 <article>
 
 - `TUNE`
-- Modulator
+- `MODULATOR`
   - `LFO/CLK RATE`
   - `WAVEFORM`
 - `VCO`

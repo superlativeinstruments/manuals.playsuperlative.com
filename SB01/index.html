@@ -44,8 +44,8 @@ id="toc-powering-external-gear">Powering external gear</a></li>
 <li><a href="#rear-panel-connections"
 id="toc-rear-panel-connections">Rear panel connections</a></li>
 <li><a href="#controls" id="toc-controls">Controls</a></li>
-<li><a href="#modulator-lfo" id="toc-modulator-lfo">Modulator /
-LFO</a></li>
+<li><a href="#modulator-lfoclk" id="toc-modulator-lfoclk">Modulator
+(LFO/CLK)</a></li>
 <li><a href="#voltage-controlled-oscillator-vco"
 id="toc-voltage-controlled-oscillator-vco">Voltage Controlled Oscillator
 (VCO)</a>
@@ -91,29 +91,15 @@ Active Bank</a></li>
 <li><a href="#recalling-sequences"
 id="toc-recalling-sequences">Recalling Sequences</a></li>
 </ul></li>
-<li><a href="#bender" id="toc-bender">Bender</a>
+<li><a href="#internal-external-channel"
+id="toc-internal-external-channel">Internal / External Channel</a>
 <ul>
-<li><a href="#pitch-modulation-vibrato"
-id="toc-pitch-modulation-vibrato">Pitch Modulation / Vibrato</a></li>
-<li><a href="#pitch-bend-and-filter-control"
-id="toc-pitch-bend-and-filter-control">Pitch Bend and Filter
-Control</a></li>
+<li><a href="#internal-channel" id="toc-internal-channel">INTERNAL
+Channel</a></li>
+<li><a href="#external-channel" id="toc-external-channel">External
+Channel</a></li>
+<li><a href="#both-mode" id="toc-both-mode">BOTH mode</a></li>
 </ul></li>
-<li><a href="#configure" id="toc-configure">Configure</a>
-<ul>
-<li><a href="#enabling-midi-for-internalexternal-machines"
-id="toc-enabling-midi-for-internalexternal-machines">Enabling MIDI for
-internal/external machines</a></li>
-<li><a href="#setting-midi-channels"
-id="toc-setting-midi-channels">Setting MIDI channels</a></li>
-<li><a href="#enabling-midi-clock-midi-sync"
-id="toc-enabling-midi-clock-midi-sync">Enabling MIDI clock (MIDI
-sync)</a></li>
-</ul></li>
-<li><a href="#firmware-update" id="toc-firmware-update">Firmware
-Update</a></li>
-<li><a href="#linux-webusb-compatibility"
-id="toc-linux-webusb-compatibility">Linux WebUSB Compatibility</a></li>
 </ul>
 		  </section>
 
@@ -122,29 +108,30 @@ id="toc-linux-webusb-compatibility">Linux WebUSB Compatibility</a></li>
 <hr />
 <h2 id="power">Power</h2>
 <article>
-<p>To turn the SB01 on, slide the power switch on the leftmost corner of
-the unit.</p>
+<p>To turn the SB01 on, slide the power switch on the left corner of the
+unit towards the right.</p>
 <p>The SB01 is powered by a rechargeable battery. To charge the battery,
 connect a USB-C power supply to the <code>USB</code> connection on the
 back of the unit. The LED above the <code>TUNE</code> knob should turn
-green to indicate that the unit is charging. When the SB01 is on but not
-charging, this light will be amber. The battery can be charged both
-while the SB01 is switched on or while it is switched off.</p>
+green to indicate that the unit is charging. When the synth is on but
+not charging, this light will be amber. The battery can be charged both
+while the synth is switched on or while it is switched off.</p>
 <p>If the unit is low on battery, the LED above the <code>TUNE</code>
-knob will blink amber.</p>
+knob will begin blinking. If depleted, the LED will flash but the synth
+will not play until charged again.</p>
 <section id="checking-the-battery-level" class="prevent-break">
 <h3>Checking the battery level</h3>
 <p>To check the battery level of the SB01, hold down the
 <code>SHIFT</code> button and then press and hold the
 <code>BANK SELECT</code> button. The approximate battery level will be
-indicated by the seven LEDs in the leftmost bank of buttons. More green
-LEDs means a higher charge.</p>
+indicated by the seven LEDs in the sequencer section.</p>
 </section>
 <section id="powering-external-gear" class="prevent-break">
 <h3>Powering external gear</h3>
-<p>The SB01 can also be used as a battery bank to power external gear.
-Simply connect a device to the USB port on the back of the SB01. You can
-even charge your phone from it!</p>
+<p>The SB01 can also be used as a power source for external gear using
+it’s built-in battery. Simply connect a device to the USB port on the
+back of the synth while power is active- you can even charge your phone
+from it.</p>
 </section>
 </article>
 <hr />
@@ -172,7 +159,7 @@ engine.</p>
 <article>
 <ul>
 <li><code>TUNE</code></li>
-<li>Modulator
+<li><code>MODULATOR</code>
 <ul>
 <li><code>LFO/CLK RATE</code></li>
 <li><code>WAVEFORM</code></li>
@@ -221,24 +208,22 @@ engine.</p>
 </ul>
 </article>
 <hr />
-<h2 id="modulator-lfo">Modulator / LFO</h2>
+<h2 id="modulator-lfoclk">Modulator (LFO/CLK)</h2>
 <article>
-<p>The <code>MODULATOR</code> section of the front panel includes the
-<code>LFO/CLK RATE</code> slider and the <code>WAVEFORM</code> selector
-knob.</p>
-<p>The Modulator is a low-frequency oscillator (LFO) that can be used to
-automate a number of parameters across the synth including pitch, pulse
-width, filter cutoff.</p>
+<p>The <code>MODULATOR</code> section houses a low-frequency oscillator
+(LFO) and S/H (Sample &amp; Hold) that can be used to modulate several
+parameters across the synth including pitch, pulse width, and filter
+cutoff.</p>
 <p>The <code>LFO/CLK RATE</code> slider controls the frequency of the
-LFO.</p>
-<p>The <code>WAVEFORM</code> selector switch controls the shape of the
-LFO. It can be configured for triangle, square, random, or noise. The
-random waveform generated by a sample and hold circuit. Each tick of the
-LFO will produce a new random modulation amount that is steady for the
-period of the LFO. The noise waveform is just white noise and is not
-affected by the LFO rate control.</p>
-<p>The speed of the LFO also controls the speed of the arpeggiator and
-sequencer and can be selected as a trigger source for the envelope.</p>
+LFO. The rate of cycling controls the speed of the arpeggiator and
+sequencer unless they are driven by an external clock source using the
+<code>TRIG</code> input.</p>
+<p>The <code>WAVEFORM</code> switch selects the ouput shape of the LFO.
+Triangle and square are the output waveforms from the <code>LFO</code>,
+while the RANDOM output waveform is generated digitally. Each cycle of
+the LFO will produce a new random modulation level that is held until
+the next clock cycle. The noise waveform is the internal white noise
+source and is not affected by the LFO rate control.</p>
 </article>
 <hr />
 <h2 id="voltage-controlled-oscillator-vco">Voltage Controlled Oscillator
@@ -525,10 +510,10 @@ memory while while stopped or playing.</p>
 <section id="saving-a-sequence" class="prevent-break">
 <h3>Saving a Sequence</h3>
 <ul>
-<li><strong>Save to Bank A:</strong> Press and hold <code>SHIFT</code> +
-<code>WRITE A</code> + <code>ANY KEY</code> location.</li>
-<li><strong>Save to Bank B:</strong> Press and hold <code>SHIFT</code> +
-<code>WRITE B</code> + <code>ANY KEY</code> location.</li>
+<li><strong>Bank A:</strong> Press and hold <code>SHIFT</code> +
+<code>WRITE A</code> + <code>KEY (1-32)</code></li>
+<li><strong>Bank B:</strong> Press and hold <code>SHIFT</code> +
+<code>WRITE B</code> + <code>KEY (1-32)</code></li>
 </ul>
 </section>
 <p><strong>Tip:</strong> Writing to a save location will overwrite any
@@ -537,7 +522,7 @@ existing stored sequence.</p>
 <h3>Select Active Bank</h3>
 <ul>
 <li>Hold the <code>BANK SELECT</code> button and press
-<code>WRITE A</code> or <code>WRITE B</code> to activate bank A or B for
+<code>WRITE A</code> or <code>WRITE B</code> to select bank A or B for
 sequence recall.</li>
 </ul>
 </section>
@@ -562,14 +547,58 @@ again.</li>
 location to chain to the stored sequence.</li>
 <li>The target sequence will start immediately after the current
 sequence finishes playing.</li>
-<li>Multiple <code>KEY</code> locations can be entered in this recall
-mode, and the sequencer will chain all queued sequences in order of
-entry until starting over.</li>
+<li>Multiple <code>KEY</code> locations can be entered serially in this
+recall mode, and the sequencer will chain all queued sequences in the
+exact order of entry until repeating. :::</li>
 </ul></li>
 <li><strong>Modulo Mode:</strong>
 <ul>
 <li>Hold the <code>JUMP</code> + <code>CHAIN</code> buttons and press a
 <code>KEY</code> location to “Modulo” jump to the stored sequence.</li>
+<li>This mode will keep the absolute step number constant when jumping
+sequences, allowing alternation between sequences while keeping the
+underlying sequence length</li>
+</ul></li>
+</ul>
+</article>
+<hr />
+<h2 id="internal-external-channel">Internal / External Channel</h2>
+<article>
+<p>The SB01 has two parallel and independent sequencer channels for</p>
+<p>Each channel button represents the active control window, which shows
+the current state of the sequencer, arpeggiator, hold, and transpose
+function for the selected channel. Both channels can be controlled
+controlled together in <code>BOTH</code> mode.</p>
+<section id="internal-channel" class="prevent-break">
+<h3>INTERNAL Channel</h3>
+</section>
+<p>The <code>INTERNAL</code> track will always correspond to the
+internal synth “engine” of the SB01.</p>
+<h3 id="external-channel">External Channel</h3>
+<p>::: The <code>EXTERNAL</code> track offers a layer of external
+control on top of the internal synth, allowing the keyboard,
+arpeggiator, and sequencer to control an external device that accepts
+CV, MIDI, or USB MIDI.</p>
+<section id="both-mode" class="prevent-break">
+<h3>BOTH mode</h3>
+<ul>
+<li>Hold the <code>INTERNAL</code> and <code>EXTERNAL</code> buttons
+together to enter <code>BOTH</code> mode. While both channel LED’s are
+lit, all button actions will now apply to both channels.</li>
+</ul>
+<p>When a function is active in both tracks, the button will toggle
+between <code>INT</code> and <code>EXT</code> channel colors to reflect
+this.</p>
+</section>
+<p>Exit BOTH mode by pressing INT or EXT to enter an individual
+channel’s control.</p>
+<div class="prevent-break">
+<h3 id="recalling-sequences-1">Recalling Sequences</h3>
+<ul>
+<li><strong>Jump Mode:</strong>
+<ul>
+<li>Hold the <code>JUMP</code> button and press a <code>KEY</code>
+location to jump to the stored sequence.</li>
 </ul></li>
 </ul>
 </article>
@@ -741,6 +770,7 @@ following contents:</p>
 effect.</p>
 </article>
 <hr />
+</div>
 		  </section>
 	  </main>
 
