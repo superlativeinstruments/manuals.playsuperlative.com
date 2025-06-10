@@ -15,6 +15,7 @@ SB01:
 		SB01/arpeggiator.md \
 		SB01/sequencer.md \
 		SB01/saving-sequences.md \
+		SB01/int-ext-channel.md \
 		SB01/bender.md \
 		SB01/configure.md \
 		SB01/firmware-update.md \
