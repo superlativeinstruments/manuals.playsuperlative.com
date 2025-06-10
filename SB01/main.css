@@ -100,7 +100,8 @@ h2 {
 	margin: 2rem 0;
 }
 
-h3 {
+h3,
+h4 {
 	font-family: 'SL-Regular-Condensed', sans-serif;
 	font-size: 1.2rem;
 	line-height: 1;
