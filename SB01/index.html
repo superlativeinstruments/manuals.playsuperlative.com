@@ -99,7 +99,32 @@ Channel</a></li>
 <li><a href="#external-channel" id="toc-external-channel">External
 Channel</a></li>
 <li><a href="#both-mode" id="toc-both-mode">BOTH mode</a></li>
+<li><a href="#recalling-sequences-1"
+id="toc-recalling-sequences-1">Recalling Sequences</a></li>
 </ul></li>
+<li><a href="#bender" id="toc-bender">Bender</a>
+<ul>
+<li><a href="#pitch-modulation-vibrato"
+id="toc-pitch-modulation-vibrato">Pitch Modulation / Vibrato</a></li>
+<li><a href="#pitch-bend-and-filter-control"
+id="toc-pitch-bend-and-filter-control">Pitch Bend and Filter
+Control</a></li>
+</ul></li>
+<li><a href="#configure" id="toc-configure">Configure</a>
+<ul>
+<li><a href="#enabling-midi-for-internalexternal-machines"
+id="toc-enabling-midi-for-internalexternal-machines">Enabling MIDI for
+internal/external machines</a></li>
+<li><a href="#setting-midi-channels"
+id="toc-setting-midi-channels">Setting MIDI channels</a></li>
+<li><a href="#enabling-midi-clock-midi-sync"
+id="toc-enabling-midi-clock-midi-sync">Enabling MIDI clock (MIDI
+sync)</a></li>
+</ul></li>
+<li><a href="#firmware-update" id="toc-firmware-update">Firmware
+Update</a></li>
+<li><a href="#linux-webusb-compatibility"
+id="toc-linux-webusb-compatibility">Linux WebUSB Compatibility</a></li>
 </ul>
 		  </section>
 
@@ -569,18 +594,15 @@ underlying sequence length</li>
 the current state of the sequencer, arpeggiator, hold, and transpose
 function for the selected channel. Both channels can be controlled
 controlled together in <code>BOTH</code> mode.</p>
-<section id="internal-channel" class="prevent-break">
-<h3>INTERNAL Channel</h3>
-</section>
+<h3 id="internal-channel">INTERNAL Channel</h3>
 <p>The <code>INTERNAL</code> track will always correspond to the
 internal synth “engine” of the SB01.</p>
 <h3 id="external-channel">External Channel</h3>
-<p>::: The <code>EXTERNAL</code> track offers a layer of external
-control on top of the internal synth, allowing the keyboard,
-arpeggiator, and sequencer to control an external device that accepts
-CV, MIDI, or USB MIDI.</p>
-<section id="both-mode" class="prevent-break">
-<h3>BOTH mode</h3>
+<p>The <code>EXTERNAL</code> track offers a layer of external control on
+top of the internal synth, allowing the keyboard, arpeggiator, and
+sequencer to control an external device that accepts CV, MIDI, or USB
+MIDI.</p>
+<h3 id="both-mode">BOTH mode</h3>
 <ul>
 <li>Hold the <code>INTERNAL</code> and <code>EXTERNAL</code> buttons
 together to enter <code>BOTH</code> mode. While both channel LED’s are
@@ -588,11 +610,8 @@ lit, all button actions will now apply to both channels.</li>
 </ul>
 <p>When a function is active in both tracks, the button will toggle
 between <code>INT</code> and <code>EXT</code> channel colors to reflect
-this.</p>
-</section>
-<p>Exit BOTH mode by pressing INT or EXT to enter an individual
+this. Exit BOTH mode by pressing INT or EXT to enter an individual
 channel’s control.</p>
-<div class="prevent-break">
 <h3 id="recalling-sequences-1">Recalling Sequences</h3>
 <ul>
 <li><strong>Jump Mode:</strong>
@@ -770,7 +789,6 @@ following contents:</p>
 effect.</p>
 </article>
 <hr />
-</div>
 		  </section>
 	  </main>
 
