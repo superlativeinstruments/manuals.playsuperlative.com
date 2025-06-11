@@ -11,8 +11,9 @@ Each key on the keyboard represents a save location, of which there are 32 total
 
 * **Bank A:** Press and hold `SHIFT` + `WRITE A` + `KEY (1-32)`
 * **Bank B:** Press and hold `SHIFT` + `WRITE B` + `KEY (1-32)`
-:::
+
 **Tip:** Writing to a save location will overwrite any existing stored sequence.
+:::
 
 ::: {.prevent-break}
 ### Select Active Bank
@@ -27,18 +28,16 @@ Each key on the keyboard represents a save location, of which there are 32 total
     * Hold the `JUMP` button and press a `KEY` location to jump to the stored sequence.
     * The target sequence will start immediately on the next clock step
     * The target sequence can be restarted by pressing the same location again.
-:::
 
 * **Chain Mode:**
     * Hold the `CHAIN` button and press a `KEY` location to chain to the stored sequence.
     * The target sequence will start immediately after the current sequence finishes playing.
     * Multiple `KEY` locations can be entered serially in this recall mode, and the sequencer will chain all queued sequences in the exact order of entry until repeating.
-:::
 
 * **Modulo Mode:**
     * Hold the `JUMP` +  `CHAIN` buttons and press a `KEY` location to "Modulo" jump to the stored sequence.
-    * This mode will keep the absolute step number constant when jumping sequences, allowing alternation between sequences while keeping the underlying sequence length
-
+    * This mode will keep the absolute step number constant when jumping sequences, allowing alternation between sequences while keeping the underlying sequence length.
+:::
 
 </article>
 
