@@ -151,7 +151,7 @@ a:hover .arrow {
 }
 
 a:hover img {
-	transform: translate3d(-.25rem, .25rem, 0);
+	transform: translate3d(-.25rem, 0, 0);
 	transition: transform 0.2s ease-in-out;
 }
 
