@@ -24,19 +24,19 @@ Each key on the keyboard represents a save location, of which there are 32 total
 ::: {.prevent-break}
 ### Recalling Sequences
 
-* **Jump Mode:**
-    * Hold the `JUMP` button and press a `KEY` location to jump to the stored sequence.
-    * The target sequence will start immediately on the next clock step
-    * The target sequence can be restarted by pressing the same location again.
+#### Jump Mode:
+* Hold the `JUMP` button and press a `KEY` location to jump to the stored sequence.
+* The target sequence will start immediately on the next clock step
+* The target sequence can be restarted by pressing the same location again.
 
-* **Chain Mode:**
-    * Hold the `CHAIN` button and press a `KEY` location to chain to the stored sequence.
-    * The target sequence will start immediately after the current sequence finishes playing.
-    * Multiple `KEY` locations can be entered serially in this recall mode, and the sequencer will chain all queued sequences in the exact order of entry until repeating.
+#### Chain Mode:
+* Hold the `CHAIN` button and press a `KEY` location to chain to the stored sequence.
+* The target sequence will start immediately after the current sequence finishes playing.
+* Multiple `KEY` locations can be entered serially in this recall mode, and the sequencer will chain all queued sequences in the exact order of entry until repeating.
 
-* **Modulo Mode:**
-    * Hold the `JUMP` +  `CHAIN` buttons and press a `KEY` location to "Modulo" jump to the stored sequence.
-    * This mode will keep the absolute step number constant when jumping sequences, allowing alternation between sequences while keeping the underlying sequence length.
+#### Modulo Mode:
+* Hold the `JUMP` +  `CHAIN` buttons and press a `KEY` location to "Modulo" jump to the stored sequence.
+* This mode will keep the absolute step number constant when jumping sequences, allowing alternation between sequences while keeping the underlying sequence length.
 :::
 
 </article>

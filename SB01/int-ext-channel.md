@@ -10,13 +10,13 @@ Each channel button represents the active control window, which shows the curren
 
 The `INTERNAL` track will always correspond to the internal synth "engine" of the SB01. 
 
-### External Channel
+### EXTERNAL Channel
 
 The `EXTERNAL` track offers a layer of external control on top of the internal synth, allowing the keyboard, arpeggiator, and sequencer to control an external device that accepts CV, MIDI, or USB MIDI. 
 
 ### BOTH mode
 
-* Hold the `INTERNAL` and `EXTERNAL` buttons together to enter `BOTH` mode. While both channel LED's are lit, all button actions will now apply to both channels. 
+Hold the `INTERNAL` and `EXTERNAL` buttons together to enter `BOTH` mode. While both channel LED's are lit, all button actions will now apply to both channels. 
 
 When a function is active in both tracks, the button will toggle between `INT` and `EXT` channel colors to reflect this.
 Exit BOTH mode by pressing INT or EXT to enter an individual channel’s control.

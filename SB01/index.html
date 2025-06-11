@@ -73,6 +73,8 @@ Modes</a></li>
 </ul></li>
 <li><a href="#sequencer" id="toc-sequencer">Sequencer</a>
 <ul>
+<li><a href="#tempo-control" id="toc-tempo-control">Tempo
+Control</a></li>
 <li><a href="#sequence-loading" id="toc-sequence-loading">Sequence
 Loading</a></li>
 <li><a href="#sequence-playback" id="toc-sequence-playback">Sequence
@@ -96,7 +98,7 @@ id="toc-internal-external-channel">Internal / External Channel</a>
 <ul>
 <li><a href="#internal-channel" id="toc-internal-channel">INTERNAL
 Channel</a></li>
-<li><a href="#external-channel" id="toc-external-channel">External
+<li><a href="#external-channel" id="toc-external-channel">EXTERNAL
 Channel</a></li>
 <li><a href="#both-mode" id="toc-both-mode">BOTH mode</a></li>
 <li><a href="#recalling-sequences-1"
@@ -523,14 +525,14 @@ Arpeggiator mode button</p>
 <article>
 <p>The SB01 features a digital sequencer capable of storing and playing
 up to 256 steps.</p>
-<ul>
-<li><strong>Tempo Control:</strong>
+<section id="tempo-control" class="prevent-break">
+<h3>Tempo Control</h3>
 <ul>
 <li>Adjust the tempo using the LFO/CLK RATE knob.</li>
 <li>Connect an external clock signal to the TRIG input.</li>
 <li>Synchronize with an external MIDI clock.</li>
-</ul></li>
 </ul>
+</section>
 <section id="sequence-loading" class="prevent-break">
 <h3>Sequence Loading</h3>
 <ul>
@@ -603,8 +605,7 @@ sequence recall.</li>
 </section>
 <section id="recalling-sequences" class="prevent-break">
 <h3>Recalling Sequences</h3>
-<ul>
-<li><strong>Jump Mode:</strong>
+<h4 id="jump-mode">Jump Mode:</h4>
 <ul>
 <li>Hold the <code>JUMP</code> button and press a <code>KEY</code>
 location to jump to the stored sequence.</li>
@@ -612,8 +613,8 @@ location to jump to the stored sequence.</li>
 step</li>
 <li>The target sequence can be restarted by pressing the same location
 again.</li>
-</ul></li>
-<li><strong>Chain Mode:</strong>
+</ul>
+<h4 id="chain-mode">Chain Mode:</h4>
 <ul>
 <li>Hold the <code>CHAIN</code> button and press a <code>KEY</code>
 location to chain to the stored sequence.</li>
@@ -622,15 +623,14 @@ sequence finishes playing.</li>
 <li>Multiple <code>KEY</code> locations can be entered serially in this
 recall mode, and the sequencer will chain all queued sequences in the
 exact order of entry until repeating.</li>
-</ul></li>
-<li><strong>Modulo Mode:</strong>
+</ul>
+<h4 id="modulo-mode">Modulo Mode:</h4>
 <ul>
 <li>Hold the <code>JUMP</code> + <code>CHAIN</code> buttons and press a
 <code>KEY</code> location to “Modulo” jump to the stored sequence.</li>
 <li>This mode will keep the absolute step number constant when jumping
 sequences, allowing alternation between sequences while keeping the
 underlying sequence length.</li>
-</ul></li>
 </ul>
 </section>
 </article>
@@ -645,17 +645,15 @@ controlled together in <code>BOTH</code> mode.</p>
 <h3 id="internal-channel">INTERNAL Channel</h3>
 <p>The <code>INTERNAL</code> track will always correspond to the
 internal synth “engine” of the SB01.</p>
-<h3 id="external-channel">External Channel</h3>
+<h3 id="external-channel">EXTERNAL Channel</h3>
 <p>The <code>EXTERNAL</code> track offers a layer of external control on
 top of the internal synth, allowing the keyboard, arpeggiator, and
 sequencer to control an external device that accepts CV, MIDI, or USB
 MIDI.</p>
 <h3 id="both-mode">BOTH mode</h3>
-<ul>
-<li>Hold the <code>INTERNAL</code> and <code>EXTERNAL</code> buttons
+<p>Hold the <code>INTERNAL</code> and <code>EXTERNAL</code> buttons
 together to enter <code>BOTH</code> mode. While both channel LED’s are
-lit, all button actions will now apply to both channels.</li>
-</ul>
+lit, all button actions will now apply to both channels.</p>
 <p>When a function is active in both tracks, the button will toggle
 between <code>INT</code> and <code>EXT</code> channel colors to reflect
 this. Exit BOTH mode by pressing INT or EXT to enter an individual
