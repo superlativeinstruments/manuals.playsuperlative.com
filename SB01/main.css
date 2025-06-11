@@ -349,12 +349,18 @@ hr:last-child {
 /* 	justify-content: center; */
 /* } */
 
-[class*="16/12"] figure {
+[class*="16/"] figure {
 	grid-template-rows: auto 1fr;
 }
 
 [class*="16/12"] figure img {
     aspect-ratio: 16 / 12;
+    width: 100%;
+    object-fit: contain;
+}
+
+[class*="16/14"] figure img {
+    aspect-ratio: 16 / 14;
     width: 100%;
     object-fit: contain;
 }
