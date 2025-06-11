@@ -30,7 +30,7 @@ Alternatively, manually perform the following:
 
 3. Reload the udev rules
    ```
-   supo udevadm control --reload-rules
+   sudo udevadm control --reload-rules
    ```
 
 You may need to reboot your system for the changes to take effect.
