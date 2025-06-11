@@ -2,6 +2,10 @@
 
 <article>
 
+::: {.16/12}
+![FIGURE 1.10](assets/sb01-portamento.svg)
+:::
+
 Portamento is the musical term for continuous pitch glide or slew between notes.
 
 To enable portamento, toggle the `PORTAMENTO` switch to either `ON` or `AUTO`. The time of the glide can be controlled using the `PORTAMENTO` knob.

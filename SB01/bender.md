@@ -3,7 +3,7 @@
 <article>
 
 ::: {.prevent-break}
-![FIGURE 1.4](assets/placeholder.svg)
+![FIGURE 1.6](assets/sb01-bender.svg)
 
 The main performance element of the bender section is the joystick.
 :::

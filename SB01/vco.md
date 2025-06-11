@@ -2,6 +2,10 @@
 
 <article>
 
+::: {.16/12}
+![FIGURE 1.4](assets/sb01-vco.svg)
+:::
+
 The voltage controlled oscillator (VCO) is where the sound of the SB01 is created.
 
 The `MOD` control adjust the amount that the LFO will change the pitch of the oscillator.
@@ -16,7 +20,7 @@ For example, a square wave has equal parts high and low, like this:
 
 <div class="w2/3">
 
-![FIGURE 1.1](assets/pulse-width-1.svg)
+![FIGURE 1.5](assets/pulse-width-1.svg)
 
 </div>
 
@@ -24,7 +28,7 @@ While a wave with a narrower pulse width may look like this:
 
 <div class="w2/3">
 
-![FIGURE 1.2](assets/pulse-width-2.svg)
+![FIGURE 1.6](assets/pulse-width-2.svg)
 
 </div>
 :::

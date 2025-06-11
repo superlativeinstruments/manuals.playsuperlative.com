@@ -2,6 +2,10 @@
 
 <article>
 
+::: {.16/12}
+![FIGURE 1.10](assets/sb01-env.svg)
+:::
+
 The envelope generator is a standard four-stage envelope. It can be used to modulate pulse width, filter cutoff, and the VCA.
 
 An envelop works in two stages. First, when the envelope is triggered (typically by a keypress), it will increase its voltage to the maximum amount in a period of time controlled by the "attack" parameter. Once the maximum voltage has been reached, the envelope will move to another voltage level determined by the "sustain" parameter. The time it takes to get to the sustain level after the attack phase is controlled by the "decay" parameter. The envelope will stay at the sustain level until the note is let go.
@@ -10,7 +14,7 @@ Once the note is released, the envelope will return to zero voltage. The amount 
 
 <div class="w2/3">
 
-![FIGURE 1.3](assets/adsr.svg)
+![FIGURE 1.5](assets/adsr.svg)
 
 </div>
 

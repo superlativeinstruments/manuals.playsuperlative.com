@@ -339,6 +339,26 @@ hr:last-child {
 	break-before: initial;
 }
 
+/* .same-height figure { */
+/* 	aspect-ratio: 16 / 12; */
+/* 	width: 100%; /* or your desired width */ */
+/* 	margin: 0; /* Remove default figure margins if needed */ */
+/* 	overflow: hidden; */
+/* 	display: flex; /* or display: grid */ */
+/* 	align-items: center; */
+/* 	justify-content: center; */
+/* } */
+
+[class*="16/12"] figure {
+	grid-template-rows: auto 1fr;
+}
+
+[class*="16/12"] figure img {
+    aspect-ratio: 16 / 12;
+    width: 100%;
+    object-fit: contain;
+}
+
 @media (max-width: 55rem) {
 	article {
 		column-count: 1;

@@ -1,5 +1,7 @@
 ## Rear panel connections
 
+![FIGURE 1.1](assets/sb01-back.svg)
+
 <article>
 
 `USB`: Used to charge the SB01. Connect to a computer for USB MIDI, device configuration, and firmware updates.

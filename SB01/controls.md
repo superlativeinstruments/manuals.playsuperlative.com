@@ -1,5 +1,7 @@
 ## Controls
 
+![FIGURE 1.2](assets/sb01-top.svg)
+
 <article>
 
 - `TUNE`
