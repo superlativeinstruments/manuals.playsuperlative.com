@@ -6,7 +6,9 @@ Linux generally don't ship with the necessary permissions to let the user open U
 
 Please note that these instructions are for Debian-like distributions, the fix for your distro may be different.
 
+</article>
 
+<p>&nbsp;</p>
 
 Run this script to enable WebUSB for the SB01:
 
@@ -34,7 +36,5 @@ Alternatively, manually perform the following:
    ```
 
 You may need to reboot your system for the changes to take effect.
-
-</article>
 
 ---
