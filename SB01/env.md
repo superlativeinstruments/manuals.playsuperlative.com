@@ -14,7 +14,7 @@ Once the note is released, the envelope will return to zero voltage. The amount 
 
 <div class="w2/3">
 
-![FIGURE 1.5](assets/adsr.svg)
+![FIGURE 1.11](assets/adsr.svg)
 
 </div>
 
