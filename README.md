@@ -38,3 +38,5 @@ To deploy to staging, run the following command:
 ```bash
 make stage
 ```
+
+This will post the `dev` branch to [manuals-playsuperlative-stage.surge.sh](https://manuals-playsuperlative-stage.surge.sh)
