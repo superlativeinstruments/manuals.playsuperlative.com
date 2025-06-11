@@ -3,7 +3,7 @@
 <article>
 
 ::: {.16/12}
-![FIGURE 1.10](assets/sb01-env.svg)
+![FIGURE 1.10](assets/sb01-env-bw.svg)
 :::
 
 The envelope generator is a standard four-stage envelope. It can be used to modulate pulse width, filter cutoff, and the VCA.

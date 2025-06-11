@@ -1,6 +1,6 @@
 ## Controls
 
-![FIGURE 1.2](assets/sb01-top.svg)
+![FIGURE 1.2](assets/sb01-top-bw.svg)
 
 <article>
 

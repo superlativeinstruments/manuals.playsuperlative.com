@@ -3,7 +3,7 @@
 <article>
 
 ::: {.16/12}
-![FIGURE 1.7](assets/sb01-source-mixer.svg)
+![FIGURE 1.7](assets/sb01-source-mixer-bw.svg)
 :::
 
 The Source Mixer section contains controls to mix together the different waveforms created by the VCO into the timber of your choosing.

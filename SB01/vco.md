@@ -3,7 +3,7 @@
 <article>
 
 ::: {.16/12}
-![FIGURE 1.4](assets/sb01-vco.svg)
+![FIGURE 1.4](assets/sb01-vco-bw.svg)
 :::
 
 The voltage controlled oscillator (VCO) is where the sound of the SB01 is created.

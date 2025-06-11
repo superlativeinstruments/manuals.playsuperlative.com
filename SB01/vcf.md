@@ -3,7 +3,7 @@
 <article>
 
 ::: {.16/12}
-![FIGURE 1.8](assets/sb01-vcf.svg)
+![FIGURE 1.8](assets/sb01-vcf-bw.svg)
 :::
 
 The voltage controlled filter (VCF) is used to shape the spectral properties of the raw sound coming from the Source Mixer section. The VCF in the SB01 is a four-pole low-pass filter based on the IR3109.

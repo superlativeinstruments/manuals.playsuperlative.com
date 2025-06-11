@@ -1,6 +1,6 @@
 ## Rear panel connections
 
-![FIGURE 1.1](assets/sb01-back.svg)
+![FIGURE 1.1](assets/sb01-back-bw.svg)
 
 <article>
 
