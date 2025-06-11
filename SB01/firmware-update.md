@@ -19,7 +19,7 @@ To exit firmware update mode, simply turn your synth on and off again.
 | ------- | :-----: | :----: | :----: |
 | Chrome  | ✔       | ✔      | ✔      |
 | Opera   | ✔       | ✔      | ✔      |
-| Edge    | ✔       | ✔      | —      |
+| Edge    | ✔       | ✔      | ✔      |
 | Safari  | —       | ❌     | —      |
 | Firefox | ❌      | ❌     | ❌     |
 
