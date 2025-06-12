@@ -294,7 +294,7 @@ header a:hover {
 	content: counter(item);
 	position: absolute;
 	left: -1.75rem;
-	top: -2px;
+	top: 0;
 	width: 1rem;
 	height: 1rem;
 	border: 1px solid var(--black);
