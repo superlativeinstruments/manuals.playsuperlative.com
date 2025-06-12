@@ -29,7 +29,7 @@
 
   	  <main>
   	  	  <section>
-			  <h1 style="font-variant-ligatures: normal;">SB01 User Manual</h1>
+			  <h1 class="main-title">SB01 User Manual</h1>
 		  </section>
 
   	  	  <section class="toc">
@@ -43,7 +43,8 @@ id="toc-powering-external-gear">Powering external gear</a></li>
 </ul></li>
 <li><a href="#rear-panel-connections"
 id="toc-rear-panel-connections">Rear panel connections</a></li>
-<li><a href="#controls" id="toc-controls">Controls</a></li>
+<li><a href="#controls" id="toc-controls">Controls</a>
+<ul>
 <li><a href="#modulator-lfoclk" id="toc-modulator-lfoclk">Modulator
 (LFO/CLK)</a></li>
 <li><a href="#voltage-controlled-oscillator-vco"
@@ -111,6 +112,7 @@ id="toc-pitch-modulation-vibrato">Pitch Modulation / Vibrato</a></li>
 <li><a href="#pitch-bend-and-filter-control"
 id="toc-pitch-bend-and-filter-control">Pitch Bend and Filter
 Control</a></li>
+</ul></li>
 </ul></li>
 <li><a href="#configure" id="toc-configure">Configure</a>
 <ul>
@@ -186,62 +188,50 @@ engine.</p>
 <p><code>OUTPUT</code>: Line level audio ouput.</p>
 </article>
 <hr />
-<h2 id="controls">Controls</h2>
+<h1 id="controls">Controls</h1>
 <figure>
 <img src="assets/sb01-top-bw.svg" alt="FIGURE 1.2" />
 <figcaption aria-hidden="true">FIGURE 1.2</figcaption>
 </figure>
-<article>
-<ul>
-<li><code>TUNE</code></li>
-<li><code>MODULATOR</code>
-<ul>
-<li><code>LFO/CLK RATE</code></li>
-<li><code>WAVEFORM</code></li>
-</ul></li>
-<li><code>VCO</code>
-<ul>
-<li><code>MOD</code></li>
-<li><code>RANGE</code></li>
-<li><code>PULSE WIDTH</code> Slider</li>
-<li><code>PULSE WIDTH</code> Switch</li>
-</ul></li>
-<li><code>SOURCE MIXER</code>
-<ul>
-<li><code>PULSE</code> Level Slider</li>
-<li><code>SAW</code> Level Slider</li>
-<li><code>SUB OSC</code> Level Slider</li>
-<li><code>SUB OSC</code> Selector Switch</li>
-</ul></li>
-<li><code>VCF</code>
-<ul>
-<li><code>FREQ</code></li>
-<li><code>RES</code></li>
-<li><code>ENV</code></li>
-<li><code>MOD</code></li>
-<li><code>KYBD</code></li>
-</ul></li>
-<li><code>VCA</code> Envelope Switch</li>
-<li><code>ENV</code>
-<ul>
-<li>Trigger Mode</li>
-<li><code>A</code></li>
-<li><code>D</code></li>
-<li><code>S</code></li>
-<li><code>R</code></li>
-</ul></li>
-<li><code>VOLUME</code></li>
-<li><code>PORTAMENTO</code></li>
-<li><code>PORTAMENTO</code> Mode Toggle</li>
-<li><code>TRANSPOSE</code> Toggle</li>
-<li><code>BENDER</code>
-<ul>
-<li><code>BENDER VCF</code></li>
-<li><code>BENDER VCO</code></li>
-<li><code>LFO MOD</code></li>
-</ul></li>
-</ul>
-</article>
+<!-- <article> -->
+<!---->
+<!-- - `TUNE` -->
+<!-- - `MODULATOR` -->
+<!--   - `LFO/CLK RATE` -->
+<!--   - `WAVEFORM` -->
+<!-- - `VCO` -->
+<!--   - `MOD` -->
+<!--   - `RANGE` -->
+<!--   - `PULSE WIDTH` Slider -->
+<!--   - `PULSE WIDTH` Switch -->
+<!-- - `SOURCE MIXER` -->
+<!--   - `PULSE` Level Slider -->
+<!--   - `SAW` Level Slider -->
+<!--   - `SUB OSC` Level Slider -->
+<!--   - `SUB OSC` Selector Switch -->
+<!-- - `VCF` -->
+<!--   - `FREQ` -->
+<!--   - `RES` -->
+<!--   - `ENV` -->
+<!--   - `MOD` -->
+<!--   - `KYBD` -->
+<!-- - `VCA` Envelope Switch -->
+<!-- - `ENV` -->
+<!--   - Trigger Mode -->
+<!--   - `A` -->
+<!--   - `D` -->
+<!--   - `S` -->
+<!--   - `R` -->
+<!-- - `VOLUME` -->
+<!-- - `PORTAMENTO` -->
+<!-- - `PORTAMENTO` Mode Toggle -->
+<!-- - `TRANSPOSE` Toggle -->
+<!-- - `BENDER` -->
+<!--   - `BENDER VCF` -->
+<!--   - `BENDER VCO` -->
+<!--   - `LFO MOD` -->
+<!---->
+<!-- </article> -->
 <hr />
 <h2 id="modulator-lfoclk">Modulator (LFO/CLK)</h2>
 <article>
@@ -698,7 +688,7 @@ right. At the lowest slider position, no change will be made.</p>
 </section>
 </article>
 <hr />
-<h2 id="configure">Configure</h2>
+<h1 id="configure">Configure</h1>
 <article>
 <p>Advanced settings for the SB01 can be configured through a <a
 href="#browser-chart">WebUSB enabled browser</a>.</p>
@@ -738,7 +728,7 @@ app to switch between <span class="light-switch">light</span> and <span
 class="dark-switch">dark</span> mode.</p>
 </article>
 <hr />
-<h2 id="firmware-update">Firmware Update</h2>
+<h1 id="firmware-update">Firmware Update</h1>
 <article>
 <p>To enter firmware update mode, perform the following:</p>
 <ol type="1">
@@ -782,7 +772,7 @@ again.</p>
 <td>Edge</td>
 <td style="text-align: center;">✔</td>
 <td style="text-align: center;">✔</td>
-<td style="text-align: center;">—</td>
+<td style="text-align: center;">✔</td>
 </tr>
 <tr>
 <td>Safari</td>
@@ -804,7 +794,7 @@ href="#linux-webusb-compatibility">this guide</a> for more
 information.</em></p>
 </article>
 <hr />
-<h2 id="linux-webusb-compatibility">Linux WebUSB Compatibility</h2>
+<h1 id="linux-webusb-compatibility">Linux WebUSB Compatibility</h1>
 <article>
 <p>Linux generally don’t ship with the necessary permissions to let the
 user open USB devices. If you are experiencing problems with WebUSB (the
@@ -833,7 +823,7 @@ effect.</p>
 following contents:</p>
 <pre><code>SUBSYSTEM==&quot;usb&quot;, ATTR{idVendor}==&quot;0483&quot;, ATTR{idProduct}==&quot;a417&quot;, GROUP=&quot;plugdev&quot;</code></pre></li>
 <li><p>Reload the udev rules</p>
-<pre><code>supo udevadm control --reload-rules</code></pre></li>
+<pre><code>sudo udevadm control --reload-rules</code></pre></li>
 </ol>
 <p>You may need to reboot your system for the changes to take
 effect.</p>

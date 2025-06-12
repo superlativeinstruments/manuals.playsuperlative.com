@@ -1,4 +1,4 @@
-## Firmware Update
+# Firmware Update
 
 <article>
 

@@ -1,4 +1,4 @@
-## Linux WebUSB Compatibility
+# Linux WebUSB Compatibility
 
 <article>
 
