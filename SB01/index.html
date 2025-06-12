@@ -32,6 +32,8 @@
 			  <h1 class="main-title">SB01 User Manual</h1>
 		  </section>
 
+		  <button id="change-toc-split">Split TOC toggle</button>
+
   	  	  <section class="toc">
 <ul>
 <li><a href="#power" id="toc-power">Power</a>
@@ -469,11 +471,11 @@ between every note.</p>
 when you play a key <em>while still holding a previous key</em>. This
 “hold-and-glide” allows for expressive control.</p>
 <p><strong>Example:</strong></p>
-<ul>
+<ol type="1">
 <li>Hold the C key. Then, play the G key.</li>
 <li>The oscillator will glide from C to G.</li>
 <li>If you release the C key before playing G, no glide will occur.</li>
-</ul>
+</ol>
 <p>In the <code>OFF</code> position, the glide effect will not be
 applied to any played notes.</p>
 <p>The SB01 has independent portamento states for each channel, so you
@@ -596,16 +598,16 @@ sequence recall.</li>
 <section id="recalling-sequences" class="prevent-break">
 <h3>Recalling Sequences</h3>
 <h4 id="jump-mode">Jump Mode:</h4>
-<ul>
+<ol type="1">
 <li>Hold the <code>JUMP</code> button and press a <code>KEY</code>
 location to jump to the stored sequence.</li>
 <li>The target sequence will start immediately on the next clock
 step</li>
 <li>The target sequence can be restarted by pressing the same location
 again.</li>
-</ul>
+</ol>
 <h4 id="chain-mode">Chain Mode:</h4>
-<ul>
+<ol type="1">
 <li>Hold the <code>CHAIN</code> button and press a <code>KEY</code>
 location to chain to the stored sequence.</li>
 <li>The target sequence will start immediately after the current
@@ -613,15 +615,15 @@ sequence finishes playing.</li>
 <li>Multiple <code>KEY</code> locations can be entered serially in this
 recall mode, and the sequencer will chain all queued sequences in the
 exact order of entry until repeating.</li>
-</ul>
+</ol>
 <h4 id="modulo-mode">Modulo Mode:</h4>
-<ul>
+<ol type="1">
 <li>Hold the <code>JUMP</code> + <code>CHAIN</code> buttons and press a
 <code>KEY</code> location to “Modulo” jump to the stored sequence.</li>
 <li>This mode will keep the absolute step number constant when jumping
 sequences, allowing alternation between sequences while keeping the
 underlying sequence length.</li>
-</ul>
+</ol>
 </section>
 </article>
 <hr />
@@ -844,6 +846,11 @@ effect.</p>
 					  target.src = target.src.includes('light') ? target.src.replace('light', 'dark') : target.src.replace('dark', 'light');
 				  }
 			  });
+		  });
+
+		  document.getElementById('change-toc-split').addEventListener('click', (e) => {
+			  e.preventDefault();
+			  document.querySelector('.toc').classList.toggle('split');
 		  });
 	  </script>
 </body>

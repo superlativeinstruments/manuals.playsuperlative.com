@@ -16,9 +16,9 @@ In `AUTO` mode, the SB01's glide effect activates only when you play a key *whil
 
 **Example:**
 
-* Hold the C key. Then, play the G key.
-* The oscillator will glide from C to G.
-* If you release the C key before playing G, no glide will occur.
+1. Hold the C key. Then, play the G key.
+2. The oscillator will glide from C to G.
+3. If you release the C key before playing G, no glide will occur.
 
 In the `OFF` position, the glide effect will not be applied to any played notes.
 
