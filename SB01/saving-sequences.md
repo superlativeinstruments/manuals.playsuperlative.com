@@ -35,8 +35,9 @@ Each key on the keyboard represents a save location, of which there are 32 total
 3. Multiple `KEY` locations can be entered serially in this recall mode, and the sequencer will chain all queued sequences in the exact order of entry until repeating.
 
 #### Modulo Mode:
-1. Hold the `JUMP` +  `CHAIN` buttons and press a `KEY` location to "Modulo" jump to the stored sequence.
-2. This mode will keep the absolute step number constant when jumping sequences, allowing alternation between sequences while keeping the underlying sequence length.
+* Hold the `JUMP` +  `CHAIN` buttons and press a `KEY` location to "Modulo" jump to the stored sequence.
+
+This mode will keep the absolute step number constant when jumping sequences, allowing alternation between sequences while keeping the underlying sequence length.
 :::
 
 </article>
