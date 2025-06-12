@@ -14,7 +14,7 @@ In a compatible browser, navigate to [firmware.playsuperlative.com](https://firm
 
 To exit firmware update mode, simply turn your synth on and off again.
 
-
+<div id="browser-chart">
 | Browser | Windows | Mac OS | Linux* |
 | ------- | :-----: | :----: | :----: |
 | Chrome  | ✔       | ✔      | ✔      |
@@ -22,6 +22,7 @@ To exit firmware update mode, simply turn your synth on and off again.
 | Edge    | ✔       | ✔      | ✔      |
 | Safari  | —       | ❌     | —      |
 | Firefox | ❌      | ❌     | ❌     |
+</div>
 
 \* *For Linux users, you may have to add a udev rule to allow access to the USB device. Refer to [this guide](#linux-webusb-compatibility) for more information.*
 
