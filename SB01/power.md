@@ -17,7 +17,7 @@ To check the battery level of the SB01, hold down the `SHIFT` button and then pr
 ::: {.prevent-break}
 ### Powering external gear
 
-The SB01 can also be used as a power source for external gear using it's built-in battery. Simply connect a device to the USB port on the back of the synth while power is active- you can even charge your phone from it.
+The SB01 can also be used as a power source for external gear using it's built-in battery. Simply connect a device to the USB port on the back of the synth while power is active. You can even charge your phone from it.
 :::
 
 </article>
