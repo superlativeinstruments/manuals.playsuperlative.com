@@ -22,7 +22,7 @@ The `KYBD` slider will control the amount of offset that is applied to the filte
 
 With the resonance control set to maximum, the filter will feedback into self-oscillation. This type of oscillation results in a pure sine wave output with no harmonics.
 
-To enable self-resonance, set `FREQ` to the minimum, and set `RES` and `KYBD` to the maximum. The filter output will track the note played to within 1%.
+To enable self-resonance, set `FREQ` to about half, and set `RES` and `KYBD` to the maximum. The filter output will track the note played to within 1%. Use the `FREQ` slider to adjust note tuning.
 
 </article>
 
