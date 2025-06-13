@@ -8,8 +8,6 @@ Please note that these instructions are for Debian-like distributions, the fix f
 
 </article>
 
-<p>&nbsp;</p>
-
 Run this script to enable WebUSB for the SB01:
 
 ```bash
