@@ -24,7 +24,8 @@ Exit BOTH mode by pressing INT or EXT to enter an individual channel’s control
 ### Recalling Sequences
 
 #### Jump Mode:
-* Hold the `JUMP` button and press a `KEY` location to jump to the stored sequence.
+
+Hold the `JUMP` button and press a `KEY` location to jump to the stored sequence.
 
 </article>
 
