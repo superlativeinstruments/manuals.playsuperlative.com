@@ -12,7 +12,7 @@
 
 `PEDAL`: Hold/Sustain pedal input.
 
-`MOD CV`: Control voltage input for VCO/VCF. 0 to +5V.
+`MOD CV`: Control voltage input to the bender section for controlling VCO/VCF. 0 to +5V.
 
 `TRIG IN`: Trigger input. +2.5V or higher.
 
