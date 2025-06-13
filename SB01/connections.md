@@ -12,17 +12,17 @@
 
 `PEDAL`: Hold/Sustain pedal input.
 
-`MOD CV`: Mod CV input for VCO/VCF (0 ~ 5v)
+`MOD CV`: Control voltage input for VCO/VCF. 0 to +5V.
 
-`TRIG IN`: Trigger input, +2.5V or higher.
+`TRIG IN`: Trigger input. +2.5V or higher.
 
-`TRIG OUT`: Trigger output. 5V signal.
+`TRIG OUT`: Trigger output. +5V signal.
 
-`CV IN`: 1V / 1Oct Control voltage input, 0-7V
+`CV IN`: Control voltage input. 1V per octave. 0 to +7V.
 
-`GATE IN`: Gate input, +2.5V or higher.
+`GATE IN`: Gate input. +2.5V or higher.
 
-`CV OUT`: CV output from the `EXTERNAL` engine.
+`CV OUT`: Control voltage output from the `EXTERNAL` engine.
 
 `GATE OUT`: Gate signal from the `EXTERNAL` engine.
 
