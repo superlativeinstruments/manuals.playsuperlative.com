@@ -32,8 +32,6 @@
 			  <h1 class="main-title">SB01 User Manual</h1>
 		  </section>
 
-		  <button id="change-toc-split">Split TOC toggle</button>
-
   	  	  <section class="toc">
 $toc$
 		  </section>
@@ -55,11 +53,6 @@ $body$
 					  target.src = target.src.includes('light') ? target.src.replace('light', 'dark') : target.src.replace('dark', 'light');
 				  }
 			  });
-		  });
-
-		  document.getElementById('change-toc-split').addEventListener('click', (e) => {
-			  e.preventDefault();
-			  document.querySelector('.toc').classList.toggle('split');
 		  });
 	  </script>
 </body>
