@@ -4,7 +4,7 @@
 
 <article>
 
-`USB`: Used to charge the SB01. Connect to a computer for USB MIDI, device configuration, and firmware updates.
+`USB`: Used for power and data. Connect to a computer for USB MIDI, device configuration, and firmware updates.
 
 `MIDI IN`: TRS Type-A 3.5mm MIDI input.
 
@@ -12,19 +12,19 @@
 
 `PEDAL`: Hold/Sustain pedal input.
 
-`MOD CV`: Control voltage input to the bender section for controlling VCO/VCF. 0 to +5V.
+`MOD CV`: CV input routable to VCO/VCF (0 to +5V).
 
-`TRIG IN`: Trigger input. +2.5V or higher.
+`TRIG IN`: Trigger input (+2.5V or higher).
 
-`TRIG OUT`: Trigger output. +5V signal.
+`TRIG OUT`: Trigger output (+14V).
 
-`CV IN`: Control voltage input. 1V per octave. 0 to +7V.
+`CV IN`: Control voltage input (1V/octave, 0 to +7V).
 
-`GATE IN`: Gate input. +2.5V or higher.
+`GATE IN`: Gate input (+2.5V or higher).
 
-`CV OUT`: Control voltage output from the `EXTERNAL` engine.
+`CV OUT`: Control voltage output from the `EXTERNAL` engine (0 to +5V).
 
-`GATE OUT`: Gate signal from the `EXTERNAL` engine.
+`GATE OUT`: Gate output from the `EXTERNAL` engine (+14V).
 
 `PHONES`: Stereo headphone output.
 

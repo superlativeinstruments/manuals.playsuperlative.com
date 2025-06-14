@@ -15,11 +15,12 @@ To enable the Arpeggiator, press any of the three Arpeggiator mode buttons:
 - `UP`: plays the arpeggiated notes from lowest to highest
 - `DOWN` + `U+D` + `UP`: plays the arpeggiated notes in random order
 
-You can switch modes while the Arpeggiator is playing.
-
-Use the `HOLD` button to latch notes into the Arpeggiator and free hands for adjusting the sound
-
 To disable the Arpeggiator, press the currently illuminated Arpeggiator mode button
+
+Tip: You can switch modes while the Arpeggiator is playing.
+
+Use the `HOLD` button to latch notes into the Arpeggiator and free hands for adjusting the sound.
+
 
 </article>
 

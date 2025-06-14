@@ -6,9 +6,9 @@
 ![FIGURE 1.4](assets/sb01-vco-bw.svg)
 :::
 
-The voltage controlled oscillator (VCO) is where the sound of the SB01 is created.
+The voltage controlled oscillator (`VCO`) is where the multiple tone sources of the SB01 are created.
 
-The `MOD` control adjust the amount that the LFO will change the pitch of the oscillator.
+The `MOD` control adjusts the amount that the `LFO` will change the pitch of the oscillator.
 
 The `RANGE` knob controls the pitch of the oscillator in one octave steps from 16' to 2'. When this knob is set to 8' and the `TRANSPOSE` is set to M, the lowest C note maps to the middle C of a piano.
 
@@ -37,11 +37,11 @@ Both of these examples have the same frequency, but the harmonic content of the 
 
 The `PULSE WIDTH` switch controls the mode that the pulse width modulation will operate in.
 
-When the switch is set to `MANUAL`, the `PULSE WIDTH` slider will manually control the pulse width of the square wave from 50% to 5%.
+- In `MANUAL` setting, the `PULSE WIDTH` slider will manually control the pulse width of the square wave from 50% to 5%.
 
-When the switch is set to `LFO`, the triangle wave LFO will control the pulse width of the oscillator, and the `PULSE WIDTH` slider will control the amount of modulation that is applied.
+- In `LFO` setting, the triangle wave `LFO` will control the pulse width of the oscillator, and the `PULSE WIDTH` slider will control the amount of modulation that is applied.
 
-When the switch is set to `ENV` , the envelope shape will control the pulse width of the oscillator, and the `PULSE WIDTH` slider will control the amount of modulation that is applied.
+- In `ENV` setting, the envelope shape will control the pulse width of the oscillator, and the `PULSE WIDTH` slider will control the amount of modulation that is applied.
 
 </article>
 
