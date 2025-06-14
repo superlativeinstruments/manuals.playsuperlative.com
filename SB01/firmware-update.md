@@ -1,28 +1,34 @@
-## Firmware Update
+# Firmware Update
+
+<article>
 
 To enter firmware update mode, perform the following:
 
-1. Turn off your SB-01 using its power switch
-2. Connect your SB-01 to your computer with a USB-C cable
-3. Press and hold the `SHIFT` key on the SB-01
-4. While, holding `SHIFT`, switch on your SB-01
+1. Turn off your SB01 using its power switch
+2. Connect to your computer with a USB-C cable
+3. Press and hold the `SHIFT` key while turning power on
 
-The `LFO/CLK RATE` LED should be blinking orange and green. You can now release the `SHIFT` key
+The `LFO/CLK RATE` LED should now blink orange and green.
 
-In a compatible browser, navigate to [firmware.playsuperlative.com](https://firmware.playsuperlative.com/). Note that in some instances your browser may automatically prompt you for this when the SB-01 is first connected.
+In a compatible browser, navigate to [firmware.playsuperlative.com](https://firmware.playsuperlative.com/){target="_blank"}. Note that in some instances your browser may automatically prompt you for this when the device is first connected.
 
+To exit firmware update mode, simply turn your synth on and off again.
+
+<div id="browser-chart">
 | Browser | Windows | Mac OS | Linux* |
-| ------- | ------- | ------ | ------ |
+| ------- | :-----: | :----: | :----: |
 | Chrome  | ✔       | ✔      | ✔      |
 | Opera   | ✔       | ✔      | ✔      |
-| Edge    | ✔       | -      | -      |
-| Safari  | -       | ❌      | -      |
-| Firefox | ❌       | ❌      | ❌      |
+| Edge    | ✔       | ✔      | ✔      |
+| Safari  | —       | ❌     | —      |
+| Firefox | ❌      | ❌     | ❌     |
+</div>
 
-\* *For Linux users, you may have to add a udev rule to allow access to the SB-01 USB device. Refer to [this guide](linux.md) for more information.*
+\* *For Linux users, you may have to add a udev rule to allow access to the USB device. Refer to [this guide](#linux-webusb-compatibility) for more information.*
 
 
 
-To exit Firmware Update Mode, simply turn off your SB-01 using the power switch and turn it on again.
+
+</article>
 
 ---

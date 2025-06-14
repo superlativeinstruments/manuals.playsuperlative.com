@@ -1,35 +1,49 @@
 ## Sequencer
 
-The SB-01 features a digital sequencer capable of storing and playing up to X???? steps.
+<article>
 
-* **Tempo Control:**
-    * Adjust the tempo using the LFO/CLK RATE knob.
-    * Synchronize with an external MIDI clock.
+The SB01 features a digital sequencer capable of storing and playing up to 256 steps.
 
-### Sequence Recording
+::: {.prevent-break}
+### Tempo Control
+* Adjust the tempo using the LFO/CLK RATE knob.
+* Connect an external clock signal to the TRIG input.
+* Synchronize with an external MIDI clock.
+:::
 
-* **Start Recording:** Press the `LOAD` button.
+::: {.prevent-break}
+### Sequence Loading
+
+* **Start Recording:** Press the `LOAD` button and enter notes from the keyboard.
 * **Stop Recording:** Press the `LOAD` button again.
-* **Record Notes:** Play notes on the keyboard. Only pitch information will be stored.
-* **Add Rests:** While recording, press the `REST` button.
-* **Add Legato/Slides:** While recording, press the `LEGATO` button.
+* **Add Rests:** While recording, press the `REST` button to add an empty step.
+* **Add Legato/Slides:** While recording, press and hold the `LEGATO` button to tie notes together.
+:::
 
+::: {.prevent-break}
 ### Sequence Playback
 
 * **Play:** Press the `PLAY` button. The sequence will loop continuously until stopped.
 * **Stop:** Press the `PLAY` button again.
-* **Gate/Trig Selector:**
-    * For legato/slides, ensure the Envelope Generator's GATE/TRIG selector is set to GATE before recording.
-    * For short value sequences without slurs, set the GATE/TRIG selector to LFO.
-* **Hold Pedal Stop:** When using a Hold pedal, press and release the pedal to stop the sequence.
+:::
 
-### Editing Sequences
+::: {.prevent-break}
+### Sequencer Play Directions
 
-* **Correcting:**
-    * Play the sequence up to the point you want to edit.
-    * While the last note before the edit point is playing, press the `LOAD` button.
-    * Set LFO/CLK rate to slow for easier editing.
-* **Real-time Controls:**
-    * The Bender and Portamento controls remain active during sequence playback.
+To change the sequencer playback direction, hold `SHIFT` and press any of the three Arpeggiator mode buttons:
+
+- `DOWN`: plays the sequence notes from last note to first
+- `U+D`: reverses play direction after reaching the last note
+- `UP`: plays the sequence from first note to last
+- `DOWN` + `U+D` + `UP`: plays the sequence in random order
+
+**Tip:** You can switch directions while the sequencer is playing.
+
+Both the `INT` and `EXT` tracks can have independent sequencer directions.
+
+Sequence directions are not retained when storing a sequence.
+:::
+
+</article>
 
 ---

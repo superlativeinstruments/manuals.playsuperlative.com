@@ -14,8 +14,12 @@
 	<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
 
-	<link rel="stylesheet" href="/main.css?v=5">
-	<link rel="stylesheet" href="./main.css?v=5">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="/fonts.css">
+	<link rel="stylesheet" href="./main.css?v=6">
 <body>
 	<header>
 		<span class="header-title"><a href="/">↖</a> SB01 Manual</span>
@@ -24,13 +28,32 @@
 	</header>
 
   	  <main>
+  	  	  <section>
+			  <h1 class="main-title">SB01 User Manual</h1>
+		  </section>
+
   	  	  <section class="toc">
 $toc$
 		  </section>
+
 
 		  <section class="body">
 $body$
 		  </section>
 	  </main>
+
+	  <script>
+		  document.querySelectorAll('.light-switch, .dark-switch').forEach((el) => {
+			  el.addEventListener('click', (e) => {
+			  	  console.log('clicked');
+				  e.preventDefault();
+				  let target = document.getElementById('figure-2.1');
+				  target = target.querySelector('img');
+				  if (target) {
+					  target.src = target.src.includes('light') ? target.src.replace('light', 'dark') : target.src.replace('dark', 'light');
+				  }
+			  });
+		  });
+	  </script>
 </body>
 </html>

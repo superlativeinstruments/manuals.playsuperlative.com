@@ -1,10 +1,12 @@
-## Linux WebUSB Compatibility
+# Linux WebUSB Compatibility
 
-Linux generally don't ship with the necessary permissions to let the user open USB devices. If you are experiencing problems with WebUSB (the feature that allows [control.playsuperlative.com](https://control.playsuperlative.com) and [firmware.playsuperlative.com](https://firmware.playsuperlative.com) to function), this is most likely the issue.
+<article>
+
+Linux generally don't ship with the necessary permissions to let the user open USB devices. If you are experiencing problems with WebUSB (the feature that allows [control.playsuperlative.com](https://control.playsuperlative.com){target="_blank"} and [firmware.playsuperlative.com](https://firmware.playsuperlative.com){target="_blank"} to function), this is most likely the issue.
 
 Please note that these instructions are for Debian-like distributions, the fix for your distro may be different.
 
-
+</article>
 
 Run this script to enable WebUSB for the SB01:
 
@@ -13,8 +15,6 @@ curl -L https://control.playsuperlative.com/enable-superlative-sb01-webusb.sh | 
 ```
 
 You may need to reboot your system for the changes to take effect.
-
----
 
 Alternatively, manually perform the following:
 
@@ -30,7 +30,7 @@ Alternatively, manually perform the following:
 
 3. Reload the udev rules
    ```
-   supo udevadm control --reload-rules
+   sudo udevadm control --reload-rules
    ```
 
 You may need to reboot your system for the changes to take effect.

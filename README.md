@@ -29,3 +29,14 @@ Open your browser and go to `http://localhost:8000/`
 
 This repository is deployed using GitHub Pages. The `main` branch is used for deployment.  
 Every commit to the `main` branch will trigger a deployment to GitHub Pages.
+
+## Deployment to staging environment
+
+Staging is set up using surge.sh.  
+To deploy to staging, run the following command:
+
+```bash
+make stage
+```
+
+This will post the `dev` branch to [manuals-playsuperlative-stage.surge.sh](https://manuals-playsuperlative-stage.surge.sh)
