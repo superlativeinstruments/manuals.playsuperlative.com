@@ -16,7 +16,7 @@ When applied during a sequence, the `HOLD` function will sustain every note. The
 
 ### Transpose
 
-To enable the Transpose function, hold the `TRANSPOSE` button down while pressing any key except for the lowest C key. The indicator will light and the SB01 will now play in the key of the chosen note.
+To enable the Transpose function, hold the `TRANSPOSE` button down while pressing any key except for the lowest C key. The indicator will light and the keyboard will now play in the key of the chosen note.
 
 - If you press a key *lower* than the lowest C, it will be transposed *down* by the distance in pitch between the pressed key and the C.
 - If you press a key *higher* than the loewst C, it will be transposed *up* by the interval between the pressed key and C.
@@ -27,7 +27,7 @@ To disable the Transpose function, hold the `TRANSPOSE` button down while pressi
 
 :::
 
-### Transpose LATCH{.unlisted}
+### Transpose Latching{.unlisted}
 
 Press `SHIFT` + `TRANSPOSE` to activate the transpose `LATCH` function. This mode allows the function to latch ON without needing to hold the button down while pressing a new key, allowing a single hand to dynamically transpose a running arpeggiator or sequence.
 

@@ -5,7 +5,7 @@
 The SB01 features a digital sequencer capable of storing and playing up to 256 steps.
 
 ::: {.prevent-break}
-#### Tempo Control
+### Tempo Control{.unlisted}
 * Adjust the tempo using the LFO/CLK RATE knob.
 * Connect an external clock signal to the TRIG input.
 * Synchronize with an external MIDI clock.

@@ -247,13 +247,15 @@ the VCO section.</p>
 <p>The <code>SAW</code> slider controls the amount of sawtooth wave that
 is mixed in.</p>
 <p>The <code>SUB OSC</code> slider controls the amount of sub-oscillator
-that is mixed in. The sub-oscillator is a waveform that is derived from
-the main oscillator and will track the pitch of the main oscillator.
-Using the <code>SUB OSC</code> switch, the sub oscillator can be
-configured to be either a square wave one octave below the main
-oscillator, a square wave two octaves below, or a 25% duty cycle pulse
-wave two octaves below.</p>
-<p>the <code>NOISE</code> slider controls the amount of white noise that
+that is mixed in. The sub-oscillator is a waveform that is divided in
+half from the main oscillator and will thus follow the pitch. Using the
+<code>SUB OSC</code> switch, the sub oscillator can be set to:</p>
+<ul>
+<li>A square wave one octave below the main oscillator</li>
+<li>A square wave two octaves below</li>
+<li>A 25% duty cycle pulse wave two octaves below</li>
+</ul>
+<p>The <code>NOISE</code> slider controls the amount of white noise that
 is mixed in.</p>
 </article>
 <hr />
@@ -303,14 +305,13 @@ output will track the note played to within 1%. Use the
 <figcaption aria-hidden="true">FIGURE 1.9</figcaption>
 </figure>
 </div>
-<p>The voltage controlled amplifier (VCA) section controls the volume of
-a note over time as it is played.</p>
-<p>When the VCA is configured in <code>GATE</code> mode, the volume of
-the note will be at the maximum as soon as a note is played, and will be
-reduced to the minimum as soon as the note is released.</p>
-<p>When the VCA is configured in <code>ENV</code> mode, the volume of
-the note will be controlled over time based on the settings in the
-envelope section.</p>
+<p>The voltage controlled amplifier (VCA) section controls the
+amplitude, or volume of a note over time as it is played.</p>
+<p>When the VCA is set to <code>GATE</code> mode, the volume of the note
+will be at the maximum as soon as a note is played, and will stop as
+soon as the note is released.</p>
+<p>When the VCA is set to <code>ENV</code> mode, the volume of the note
+will follow the shape of the envelope section.</p>
 </article>
 <hr />
 <h2 id="envelope-generator-env">Envelope Generator (ENV)</h2>
@@ -442,20 +443,6 @@ state in each channel.</p>
 <p>The main performance element of the bender section is the
 joystick.</p>
 </div>
-<section id="lfo-mod-vibrato" class="prevent-break">
-<h4>LFO Mod / Vibrato</h4>
-<p>Pushing the joystick forward increases the amount of <code>LFO</code>
-modulation (Sine wave) that is applied to <code>VCO</code> pitch. The
-maximum amount of modulation is set by the <code>LFO MOD</code> knob
-above the joystick.</p>
-</section>
-<section id="vibrato-latch" class="prevent-break">
-<h4>Vibrato Latch</h4>
-<p>Clicking the joystick will momentarily toggle the <code>LFO</code>
-vibrato modulation on. Holding <code>SHIFT</code> while clicking the
-joystick will latch the vibrato on and off, having the same effect as
-pushing the joystick forward.</p>
-</section>
 <section id="pitch-and-filter-bend" class="prevent-break">
 <h4>Pitch and Filter Bend</h4>
 <p>The left and right direction of the bender joystick can be configured
@@ -463,6 +450,20 @@ to control both the oscillator pitch and the filter cutoff. The
 <code>BENDER VCO</code> and <code>BENDER VCF</code> controls set the
 depth of modulation applied to each parameter when the joystick is
 moved.</p>
+</section>
+<section id="lfo-mod-vibrato" class="prevent-break">
+<h4>LFO Mod / Vibrato</h4>
+<p>Pushing the joystick forward increases the amount of <code>LFO</code>
+modulation (Sine wave) that is applied to <code>VCO</code> pitch. The
+modulation depth is set by the <code>LFO MOD</code> knob above the
+joystick.</p>
+</section>
+<section id="vibrato-latch" class="prevent-break">
+<h4>Vibrato Latch</h4>
+<p>Pressing the joystick will momentarily toggle the <code>LFO</code>
+vibrato modulation on. Holding <code>SHIFT</code> while pressing will
+latch the vibrato ON and OFF, having the same effect as holding the
+joystick forward.</p>
 </section>
 <section id="mod-cv" class="prevent-break">
 <h4>Mod CV</h4>
@@ -490,8 +491,8 @@ a piano.</p>
 <h3>Transpose</h3>
 <p>To enable the Transpose function, hold the <code>TRANSPOSE</code>
 button down while pressing any key except for the lowest C key. The
-indicator will light and the SB01 will now play in the key of the chosen
-note.</p>
+indicator will light and the keyboard will now play in the key of the
+chosen note.</p>
 <ul>
 <li>If you press a key <em>lower</em> than the lowest C, it will be
 transposed <em>down</em> by the distance in pitch between the pressed
@@ -506,7 +507,7 @@ the SB01 has retruend to the normal condition (the key of C.)</p>
 <p><em>Tip:</em> You can freely change transposition while the
 Arpeggiator or Sequencer are playing.</p>
 </section>
-<h3 class="unlisted" id="transpose-latch">Transpose LATCH</h3>
+<h3 class="unlisted" id="transpose-latching">Transpose Latching</h3>
 <p>Press <code>SHIFT</code> + <code>TRANSPOSE</code> to activate the
 transpose <code>LATCH</code> function. This mode allows the function to
 latch ON without needing to hold the button down while pressing a new
@@ -522,7 +523,8 @@ progressive arpeggio.</p>
 LFO/CLK RATE. If the SB01 is configured to accept an external MIDI
 clock, the speed of the Arpeggiator will instend be controlled by the
 external MIDI clock.</p>
-<h3 id="arpeggiator-modes">Arpeggiator Modes</h3>
+<section id="arpeggiator-modes" class="prevent-break">
+<h3>Arpeggiator Modes</h3>
 <p>To enable the Arpeggiator, press any of the three Arpeggiator mode
 buttons:</p>
 <ul>
@@ -535,9 +537,11 @@ highest</li>
 <li><code>DOWN</code> + <code>U+D</code> + <code>UP</code>: plays the
 arpeggiated notes in random order</li>
 </ul>
-<p>To disable the Arpeggiator, press the currently illuminated
-Arpeggiator mode button</p>
-<p>Tip: You can switch modes while the Arpeggiator is playing.</p>
+</section>
+<p>To disable the Arpeggiator, press the currently active mode
+again.</p>
+<p><em>Tip:</em> You can switch modes while the Arpeggiator is
+playing.</p>
 <p>Use the <code>HOLD</code> button to latch notes into the Arpeggiator
 and free hands for adjusting the sound.</p>
 </article>
@@ -546,8 +550,8 @@ and free hands for adjusting the sound.</p>
 <article>
 <p>The SB01 features a digital sequencer capable of storing and playing
 up to 256 steps.</p>
-<section id="tempo-control" class="prevent-break">
-<h4>Tempo Control</h4>
+<section id="tempo-control" class="unlisted prevent-break">
+<h3 class="unlisted">Tempo Control</h3>
 <ul>
 <li>Adjust the tempo using the LFO/CLK RATE knob.</li>
 <li>Connect an external clock signal to the TRIG input.</li>
@@ -697,14 +701,14 @@ knob will begin blinking at the rate of the <code>LFO</code>. If
 depleted, the LED will flash but the synth will not play until charged
 again.</p>
 </div>
-<section id="checking-the-battery-level" class="prevent-break">
-<h4>Checking the battery level</h4>
+<section id="checking-the-battery-level" class="unlisted prevent-break">
+<h3 class="unlisted">Checking the battery level</h3>
 <p>To check the battery level, hold <code>SHIFT</code> while pressing
 the <code>BATT</code> button. The approximate battery level will be
 indicated by the seven LEDs in the sequencer section.</p>
 </section>
-<section id="powering-external-gear" class="prevent-break">
-<h4>Powering external gear</h4>
+<section id="powering-external-gear" class="unlisted prevent-break">
+<h3 class="unlisted">Powering external gear</h3>
 <p>The SB01 can also be used as a power source for external gear using
 it’s built-in battery. Simply connect a device to the USB port on the
 back of the synth while power is active. You can even charge your phone
