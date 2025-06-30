@@ -13,7 +13,7 @@ The `MOD` control adjusts the amount that the `LFO` will change the pitch of the
 The `RANGE` knob controls the pitch of the oscillator in one octave steps from 16' to 2'. When this knob is set to 8' and the `TRANSPOSE` is set to M, the lowest C note maps to the middle C of a piano.
 
 ::: {.prevent-break}
-### Pulse Width
+#### Pulse Width
 
 Pulse width modulation allows control over the duty cycle of the square wave, which is the proportion of time that a pulse waveform is high or low.  
 For example, a square wave has equal parts high and low, like this:

@@ -1,4 +1,4 @@
-## Power
+# Power
 
 <article>
 
@@ -10,13 +10,13 @@ To charge the synth, connect a USB-C power supply to the `USB` connection on the
 If the unit is low on battery, the LED above the `TUNE` knob will begin blinking at the rate of the `LFO`. If depleted, the LED will flash but the synth will not play until charged again.
 :::
 ::: {.prevent-break}
-#### Checking the battery level
+### Checking the battery level{.unlisted}
 
 To check the battery level, hold `SHIFT` while pressing the `BATT` button. The approximate battery level will be indicated by the seven LEDs in the sequencer section.
 :::
 
 ::: {.prevent-break}
-#### Powering external gear
+### Powering external gear{.unlisted}
 
 The SB01 can also be used as a power source for external gear using it's built-in battery. Simply connect a device to the USB port on the back of the synth while power is active. You can even charge your phone from it.
 :::
