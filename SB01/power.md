@@ -1,4 +1,4 @@
-## Power
+# Power
 
 <article>
 

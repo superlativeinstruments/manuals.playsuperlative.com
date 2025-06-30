@@ -1,4 +1,4 @@
-## Arpeggiator
+# Arpeggiator
 
 <article>
 

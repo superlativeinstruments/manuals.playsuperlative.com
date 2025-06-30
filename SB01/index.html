@@ -34,33 +34,32 @@
 
   	  	  <section class="toc">
 <ul>
-<li><a href="#power" id="toc-power">Power</a></li>
 <li><a href="#rear-panel-connections"
 id="toc-rear-panel-connections">Rear panel connections</a></li>
 <li><a href="#controls" id="toc-controls">Controls</a>
 <ul>
-<li><a href="#modulator-lfoclk" id="toc-modulator-lfoclk">Modulator
-(LFO/CLK)</a></li>
 <li><a href="#voltage-controlled-oscillator-vco"
 id="toc-voltage-controlled-oscillator-vco">Voltage Controlled Oscillator
-(VCO)</a>
-<ul>
-<li><a href="#pulse-width" id="toc-pulse-width">Pulse Width</a></li>
-</ul></li>
+(VCO)</a></li>
 <li><a href="#source-mixer" id="toc-source-mixer">Source Mixer</a></li>
 <li><a href="#voltage-controlled-filter-vcf"
 id="toc-voltage-controlled-filter-vcf">Voltage Controlled Filter
-(VCF)</a>
-<ul>
-<li><a href="#self-oscillation"
-id="toc-self-oscillation">Self-Oscillation</a></li>
-</ul></li>
+(VCF)</a></li>
 <li><a href="#voltage-controlled-amplifier-vca"
 id="toc-voltage-controlled-amplifier-vca">Voltage Controlled Amplifier
 (VCA)</a></li>
 <li><a href="#envelope-generator-env"
 id="toc-envelope-generator-env">Envelope Generator (ENV)</a></li>
+<li><a href="#modulator-lfoclk" id="toc-modulator-lfoclk">Modulator
+(LFO/CLK)</a></li>
 <li><a href="#portamento" id="toc-portamento">Portamento</a></li>
+<li><a href="#bender" id="toc-bender">Bender</a></li>
+</ul></li>
+<li><a href="#keyboard" id="toc-keyboard">Keyboard</a>
+<ul>
+<li><a href="#hold" id="toc-hold">Hold</a></li>
+<li><a href="#transpose" id="toc-transpose">Transpose</a></li>
+</ul></li>
 <li><a href="#arpeggiator" id="toc-arpeggiator">Arpeggiator</a>
 <ul>
 <li><a href="#arpeggiator-modes" id="toc-arpeggiator-modes">Arpeggiator
@@ -68,8 +67,6 @@ Modes</a></li>
 </ul></li>
 <li><a href="#sequencer" id="toc-sequencer">Sequencer</a>
 <ul>
-<li><a href="#tempo-control" id="toc-tempo-control">Tempo
-Control</a></li>
 <li><a href="#sequence-loading" id="toc-sequence-loading">Sequence
 Loading</a></li>
 <li><a href="#sequence-playback" id="toc-sequence-playback">Sequence
@@ -91,73 +88,26 @@ id="toc-recalling-sequences">Recalling Sequences</a></li>
 <li><a href="#internal-external-channel"
 id="toc-internal-external-channel">Internal / External Channel</a>
 <ul>
-<li><a href="#internal-channel" id="toc-internal-channel">INTERNAL
+<li><a href="#internal-channel" id="toc-internal-channel">Internal
 Channel</a></li>
-<li><a href="#external-channel" id="toc-external-channel">EXTERNAL
+<li><a href="#external-channel" id="toc-external-channel">External
 Channel</a></li>
 <li><a href="#both-mode" id="toc-both-mode">BOTH mode</a></li>
 </ul></li>
-<li><a href="#bender" id="toc-bender">Bender</a>
-<ul>
-<li><a href="#lfo-mod-vibrato" id="toc-lfo-mod-vibrato">LFO Mod /
-Vibrato</a></li>
-<li><a href="#vibrato-latch" id="toc-vibrato-latch">Vibrato
-Latch</a></li>
-<li><a href="#pitch-and-filter-bend"
-id="toc-pitch-and-filter-bend">Pitch and Filter Bend</a></li>
-<li><a href="#mod-cv" id="toc-mod-cv">Mod CV</a></li>
-</ul></li>
-</ul></li>
-<li><a href="#configure" id="toc-configure">Configure</a>
-<ul>
-<li><a href="#enabling-midi-for-internalexternal-machines"
-id="toc-enabling-midi-for-internalexternal-machines">Enabling MIDI for
-internal/external machines</a></li>
-<li><a href="#setting-midi-channels"
-id="toc-setting-midi-channels">Setting MIDI channels</a></li>
-<li><a href="#enabling-midi-clock-midi-sync"
-id="toc-enabling-midi-clock-midi-sync">Enabling MIDI clock (MIDI
-sync)</a></li>
-</ul></li>
+<li><a href="#power" id="toc-power">Power</a></li>
+<li><a href="#configuration-tool"
+id="toc-configuration-tool">Configuration Tool</a></li>
 <li><a href="#firmware-update" id="toc-firmware-update">Firmware
-Update</a></li>
+Update</a>
+<ul>
 <li><a href="#linux-webusb-compatibility"
 id="toc-linux-webusb-compatibility">Linux WebUSB Compatibility</a></li>
+</ul></li>
 </ul>
 		  </section>
 
 
 		  <section class="body">
-<hr />
-<h2 id="power">Power</h2>
-<article>
-<div class="prevent-break">
-<p>The SB01 is powered by a rechargeable battery. To turn the synth on,
-slide the power switch on the left corner of the unit towards the right.
-The power LED above the <code>TUNE</code> knob will light amber.</p>
-<p>To charge the synth, connect a USB-C power supply to the
-<code>USB</code> connection on the back of the unit. The LED above the
-<code>TUNE</code> knob will turn green to indicate that the unit is
-currently charging.</p>
-<p>If the unit is low on battery, the LED above the <code>TUNE</code>
-knob will begin blinking at the rate of the <code>LFO</code>. If
-depleted, the LED will flash but the synth will not play until charged
-again.</p>
-</div>
-<section id="checking-the-battery-level" class="prevent-break">
-<h4>Checking the battery level</h4>
-<p>To check the battery level, hold <code>SHIFT</code> while pressing
-the <code>BATT</code> button. The approximate battery level will be
-indicated by the seven LEDs in the sequencer section.</p>
-</section>
-<section id="powering-external-gear" class="prevent-break">
-<h4>Powering external gear</h4>
-<p>The SB01 can also be used as a power source for external gear using
-it’s built-in battery. Simply connect a device to the USB port on the
-back of the synth while power is active. You can even charge your phone
-from it.</p>
-</section>
-</article>
 <hr />
 <h2 id="rear-panel-connections">Rear panel connections</h2>
 <figure>
@@ -228,33 +178,6 @@ engine (+14V).</p>
 <!---->
 <!-- </article> -->
 <hr />
-<h2 id="modulator-lfoclk">Modulator (LFO/CLK)</h2>
-<article>
-<div class="{.16/12}">
-<figure>
-<img src="assets/sb01-modulator-bw.svg" alt="FIGURE 1.3" />
-<figcaption aria-hidden="true">FIGURE 1.3</figcaption>
-</figure>
-</div>
-<div class="prevent-break">
-<p>The <code>MODULATOR</code> section houses a low-frequency oscillator
-(<code>LFO</code>) and <code>RANDOM</code> waveform (Sample &amp; Hold)
-that can be used to modulate several parameters across the synth
-including pitch, pulse width, and filter cutoff.</p>
-</div>
-<p>The <code>LFO/CLK RATE</code> slider controls the frequency of the
-LFO. The rate of cycling controls the speed of the arpeggiator and
-sequencer unless they are driven by an external clock source using the
-<code>TRIG</code> input.</p>
-<p>The <code>WAVEFORM</code> switch selects the ouput shape of the LFO.
-Triangle and square are the output waveforms from the <code>LFO</code>,
-while the <code>RANDOM</code> output waveform is generated digitally.
-Each cycle of the LFO will produce a new random modulation level that is
-held until the next clock cycle. The <code>NOISE</code> waveform is the
-internal white noise source and is not affected by the LFO rate
-control.</p>
-</article>
-<hr />
 <h2 id="voltage-controlled-oscillator-vco">Voltage Controlled Oscillator
 (VCO)</h2>
 <article>
@@ -273,7 +196,7 @@ one octave steps from 16’ to 2’. When this knob is set to 8’ and the
 <code>TRANSPOSE</code> is set to M, the lowest C note maps to the middle
 C of a piano.</p>
 <section id="pulse-width" class="prevent-break">
-<h3>Pulse Width</h3>
+<h4>Pulse Width</h4>
 <p>Pulse width modulation allows control over the duty cycle of the
 square wave, which is the proportion of time that a pulse waveform is
 high or low.<br />
@@ -329,9 +252,7 @@ the VCO section.</p>
 is mixed in.</p>
 <p>The <code>SUB OSC</code> slider controls the amount of sub-oscillator
 that is mixed in. The sub-oscillator is a waveform that is derived from
-the 
-  
-  oscillator and will track the pitch of the main oscillator.
+the main oscillator and will track the pitch of the main oscillator.
 Using the <code>SUB OSC</code> switch, the sub oscillator can be
 configured to be either a square wave one octave below the main
 oscillator, a square wave two octaves below, or a 25% duty cycle pulse
@@ -350,8 +271,9 @@ is mixed in.</p>
 </figure>
 </div>
 <p>The voltage controlled filter (VCF) is used to shape the spectral
-properties of the raw sound coming from the Source Mixer section. The
-VCF in the SB01 is a four-pole low-pass filter based on the IR3109.</p>
+properties of the combined sound coming from the Source Mixer section.
+The VCF in the SB01 is a four-pole low-pass filter based on the
+IR3109.</p>
 <p>The <code>FREQ</code> slider controls the cutoff point of the filter.
 This control sets the cutoff point of a low-pass filter that defines the
 brightness of the sound.</p>
@@ -366,7 +288,7 @@ LFO has on the filter cutoff position.</p>
 that is applied to the filter cutoff based on the note that is played.
 This can be useful for creating a sound that is darker in the lower
 notes, but gets brighter as higher notes are played.</p>
-<h3 id="self-oscillation">Self-Oscillation</h3>
+<h4 id="self-oscillation">Self-Oscillation</h4>
 <p>With the resonance control set to maximum, the filter will feedback
 into self-oscillation. This type of oscillation results in a pure sine
 wave output with no harmonics.</p>
@@ -404,15 +326,16 @@ envelope section.</p>
 </figure>
 </div>
 <p>The envelope generator is a standard four-stage envelope. It can be
-used to modulate pulse width, filter cutoff, and the VCA.</p>
-<p>An envelop works in two stages. First, when the envelope is triggered
-(typically by a keypress), it will increase its voltage to the maximum
-amount in a period of time controlled by the “attack” parameter. Once
-the maximum voltage has been reached, the envelope will move to another
-voltage level determined by the “sustain” parameter. The time it takes
-to get to the sustain level after the attack phase is controlled by the
-“decay” parameter. The envelope will stay at the sustain level until the
-note is let go.</p>
+used to modulate pulse width, filter cutoff, and most commonly- the
+VCA.</p>
+<p>An envelope works in two stages. First, when the envelope is
+triggered (by a keypress or gate), it will increase its voltage to the
+maximum amount in a period of time controlled by the “attack” parameter.
+Once the maximum voltage has been reached, the envelope will decrease to
+another voltage level determined by the “sustain” parameter. The time it
+takes to get to the sustain level after the attack phase is controlled
+by the “decay” parameter. The envelope will stay at the sustain level
+until the note is let go.</p>
 <p>Once the note is released, the envelope will return to zero voltage.
 The amount of time this takes is controlled by the “release”
 parameter.</p>
@@ -425,8 +348,8 @@ parameter.</p>
 <p>The envelope is very powerful for shaping the properties of a sound,
 especially when routed to the filter cutoff. For example, a typical
 “pluck” sound has no attack, a short delay, no sustain, and no release,
-while a “pad” sound may have a long attack and decay, a middling
-sustain, and a long release.</p>
+while a “pad” sound may have a long attack and decay, a middle sustain,
+and a long release.</p>
 <p>Remember that attack, decay, and release all control the time, while
 sustain controls the level.</p>
 <p>On the SB01, the envelope controls are:</p>
@@ -436,18 +359,46 @@ sustain controls the level.</p>
 <li><code>S</code> - controls the envelope sustain level</li>
 <li><code>R</code> - controls the release time of the envelope</li>
 </ul>
-<p>The <code>ENV</code> mode switch controls how the envelope is
-triggered.</p>
-<p>In <code>GATE</code> mode the envelope is started by a keypress event
-and will transition to the release phase when the last key is let go. If
-additional notes are played, the envelope will not reset to the
+<p>The three settings of the <code>ENV</code> mode switch controls how
+the envelope is triggered.</p>
+<p>In <code>GATE</code> mode, the envelope is started by a keypress
+event and will transition to the release phase when the last key is let
+go. If additional notes are played, the envelope will not reset to the
 beginning.</p>
 <p>In <code>GATE+TRIG</code> mode, the envelope will be started by a
 keypress event and will transition to the release phase when any key is
 let go. If additional notes are played, the envelope will reset at the
 beginning for the new note.</p>
 <p>In <code>LFO</code> mode, the envelope will be triggered by each
-cycle of the LFO regardless if notes are played or not.</p>
+cycle of the <code>LFO</code> when a note on the keyboard is played and
+held.</p>
+</article>
+<hr />
+<h2 id="modulator-lfoclk">Modulator (LFO/CLK)</h2>
+<article>
+<div class="{.16/12}">
+<figure>
+<img src="assets/sb01-modulator-bw.svg" alt="FIGURE 1.3" />
+<figcaption aria-hidden="true">FIGURE 1.3</figcaption>
+</figure>
+</div>
+<div class="prevent-break">
+<p>The <code>MODULATOR</code> section houses a low-frequency oscillator
+(<code>LFO</code>) and <code>RANDOM</code> waveform (Sample &amp; Hold)
+that can be used to modulate several parameters across the synth
+including pitch, pulse width, and filter cutoff.</p>
+</div>
+<p>The <code>LFO/CLK RATE</code> slider controls the frequency of the
+<code>LFO</code>. The rate of cycling controls the speed of the
+arpeggiator and sequencer unless they are driven by an external clock
+source using the <code>TRIG</code> input.</p>
+<p>The <code>WAVEFORM</code> switch selects the ouput shape of the
+<code>LFO</code>. Triangle and square are the output waveforms from the
+<code>LFO</code>, while the <code>RANDOM</code> output waveform is
+generated digitally. Each cycle of the <code>LFO</code> will produce a
+new random modulation level that is held until the next clock cycle. The
+<code>NOISE</code> waveform is the internal white noise source and is
+not affected by the rate control.</p>
 </article>
 <hr />
 <h2 id="portamento">Portamento</h2>
@@ -483,7 +434,91 @@ Moving the toggle in each mode refreshes the <code>PORTAMENTO</code>
 state in each channel.</p>
 </article>
 <hr />
-<h2 id="arpeggiator">Arpeggiator</h2>
+<h2 id="bender">Bender</h2>
+<article>
+<div class="prevent-break">
+<div class="{.16/14}">
+<figure>
+<img src="assets/sb01-bender-bw.svg" alt="FIGURE 1.13" />
+<figcaption aria-hidden="true">FIGURE 1.13</figcaption>
+</figure>
+</div>
+<p>The main performance element of the bender section is the
+joystick.</p>
+</div>
+<section id="lfo-mod-vibrato" class="prevent-break">
+<h4>LFO Mod / Vibrato</h4>
+<p>Pushing the joystick forward increases the amount of <code>LFO</code>
+modulation (Sine wave) that is applied to <code>VCO</code> pitch. The
+maximum amount of modulation is set by the <code>LFO MOD</code> knob
+above the joystick.</p>
+</section>
+<section id="vibrato-latch" class="prevent-break">
+<h4>Vibrato Latch</h4>
+<p>Clicking the joystick will momentarily toggle the <code>LFO</code>
+vibrato modulation on. Holding <code>SHIFT</code> while clicking the
+joystick will latch the vibrato on and off, having the same effect as
+pushing the joystick forward.</p>
+</section>
+<section id="pitch-and-filter-bend" class="prevent-break">
+<h4>Pitch and Filter Bend</h4>
+<p>The left and right direction of the bender joystick can be configured
+to control both the oscillator pitch and the filter cutoff. The
+<code>BENDER VCO</code> and <code>BENDER VCF</code> controls set the
+depth of modulation applied to each parameter when the joystick is
+moved.</p>
+</section>
+<section id="mod-cv" class="prevent-break">
+<h4>Mod CV</h4>
+<p>The <code>MOD CV</code> input can be used to control the bender using
+an external control voltage. Signal applied to the <code>MOD CV</code>
+input is equivalent to moving the bender joystick to the right.</p>
+</section>
+</article>
+<hr />
+<h1 id="keyboard">Keyboard</h1>
+<article>
+<p>The SB01 has 32 keys and 2.5 octaves, but can be played as a 56 key
+keyboard by using the <code>TRANSPOSE</code> button.</p>
+<p>With the <code>RANGE</code> of the VCO is set to 8’ and the
+<code>TRANSPOSE</code> is set to <code>NORMAL</code>, the lowest C note
+maps to the middle C of a piano.</p>
+<h3 id="hold">Hold</h3>
+<p>Any key played can be held on after release by using the
+<code>HOLD</code> button (indicator will light).</p>
+<p>When applied during a sequence, the <code>HOLD</code> function will
+sustain every note. The <code>PEDAL</code> input will also activate the
+<code>HOLD</code> function when pressed, similar to the damper pedal of
+a piano.</p>
+<section id="transpose" class="prevent-break">
+<h3>Transpose</h3>
+<p>To enable the Transpose function, hold the <code>TRANSPOSE</code>
+button down while pressing any key except for the lowest C key. The
+indicator will light and the SB01 will now play in the key of the chosen
+note.</p>
+<ul>
+<li>If you press a key <em>lower</em> than the lowest C, it will be
+transposed <em>down</em> by the distance in pitch between the pressed
+key and the C.</li>
+<li>If you press a key <em>higher</em> than the loewst C, it will be
+transposed <em>up</em> by the interval between the pressed key and
+C.</li>
+</ul>
+<p>To disable the Transpose function, hold the <code>TRANSPOSE</code>
+button down while pressing the lowest C. The indicator will go out and
+the SB01 has retruend to the normal condition (the key of C.)</p>
+<p><em>Tip:</em> You can freely change transposition while the
+Arpeggiator or Sequencer are playing.</p>
+</section>
+<h4 id="transpose-latch">Transpose LATCH</h4>
+<p>Press <code>SHIFT</code> + <code>TRANSPOSE</code> to activate the
+transpose <code>LATCH</code> function. This mode allows the function to
+latch ON without needing to hold the button down while pressing a new
+key, allowing a single hand to dynamically transpose a running
+arpeggiator or sequence.</p>
+</article>
+<hr />
+<h1 id="arpeggiator">Arpeggiator</h1>
 <article>
 <p>The Arpeggiator will automatically play any held notes as a
 progressive arpeggio.</p>
@@ -511,12 +546,12 @@ Arpeggiator mode button</p>
 and free hands for adjusting the sound.</p>
 </article>
 <hr />
-<h2 id="sequencer">Sequencer</h2>
+<h1 id="sequencer">Sequencer</h1>
 <article>
 <p>The SB01 features a digital sequencer capable of storing and playing
 up to 256 steps.</p>
 <section id="tempo-control" class="prevent-break">
-<h3>Tempo Control</h3>
+<h4>Tempo Control</h4>
 <ul>
 <li>Adjust the tempo using the LFO/CLK RATE knob.</li>
 <li>Connect an external clock signal to the TRIG input.</li>
@@ -566,8 +601,8 @@ independent sequencer directions.</p>
 </section>
 </article>
 <hr />
-<h2 id="storing-and-recalling-sequences">Storing and Recalling
-Sequences</h2>
+<h1 id="storing-and-recalling-sequences">Storing and Recalling
+Sequences</h1>
 <article>
 <p>The SB01 has 64 memory locations split across two banks that can be
 used for storing user sequences.</p>
@@ -625,7 +660,7 @@ underlying sequence length.</p>
 </section>
 </article>
 <hr />
-<h2 id="internal-external-channel">Internal / External Channel</h2>
+<h1 id="internal-external-channel">Internal / External Channel</h1>
 <article>
 <p>The SB01 has a unique dual channel control architecture consisting of
 two parallel and independent keyboard and sequencer channels.</p>
@@ -633,10 +668,10 @@ two parallel and independent keyboard and sequencer channels.</p>
 the current state of the sequencer, arpeggiator, hold, and transpose
 functions for the selected channel. Both channels share the same clock,
 and can also be controlled together in <code>BOTH</code> mode.</p>
-<h3 id="internal-channel">INTERNAL Channel</h3>
+<h3 id="internal-channel">Internal Channel</h3>
 <p>The <code>INTERNAL</code> track will always correspond to the
 internal synth “engine” of the SB01.</p>
-<h3 id="external-channel">EXTERNAL Channel</h3>
+<h3 id="external-channel">External Channel</h3>
 <p>The <code>EXTERNAL</code> track offers another control layer on top
 of the internal synth, allowing a second keyboard, arpeggiator, and
 sequencer to freely control an external device that accepts CV, MIDI, or
@@ -651,49 +686,37 @@ this. Exit BOTH mode by pressing INT or EXT to enter an individual
 channel’s control.</p>
 </article>
 <hr />
-<h2 id="bender">Bender</h2>
+<h1 id="power">Power</h1>
 <article>
 <div class="prevent-break">
-<div class="{.16/14}">
-<figure>
-<img src="assets/sb01-bender-bw.svg" alt="FIGURE 1.13" />
-<figcaption aria-hidden="true">FIGURE 1.13</figcaption>
-</figure>
+<p>The SB01 is powered by a rechargeable battery. To turn the synth on,
+slide the power switch on the left corner of the unit towards the right.
+The power LED above the <code>TUNE</code> knob will light amber.</p>
+<p>To charge the synth, connect a USB-C power supply to the
+<code>USB</code> connection on the back of the unit. The LED above the
+<code>TUNE</code> knob will turn green to indicate that the unit is
+currently charging.</p>
+<p>If the unit is low on battery, the LED above the <code>TUNE</code>
+knob will begin blinking at the rate of the <code>LFO</code>. If
+depleted, the LED will flash but the synth will not play until charged
+again.</p>
 </div>
-<p>The main performance element of the bender section is the
-joystick.</p>
-</div>
-<section id="lfo-mod-vibrato" class="prevent-break">
-<h3>LFO Mod / Vibrato</h3>
-<p>Pushing the joystick forward increases the amount of <code>LFO</code>
-modulation (Sine wave) that is applied to <code>VCO</code> pitch. The
-maximum amount of modulation is set by the <code>LFO MOD</code> knob
-above the joystick.</p>
+<section id="checking-the-battery-level" class="prevent-break">
+<h4>Checking the battery level</h4>
+<p>To check the battery level, hold <code>SHIFT</code> while pressing
+the <code>BATT</code> button. The approximate battery level will be
+indicated by the seven LEDs in the sequencer section.</p>
 </section>
-<section id="vibrato-latch" class="prevent-break">
-<h3>Vibrato Latch</h3>
-<p>Clicking the joystick will momentarily toggle the <code>LFO</code>
-vibrato modulation on. Holding <code>SHIFT</code> while clicking the
-joystick will latch the vibrato on and off, having the same effect as
-pushing the joystick forward.</p>
-</section>
-<section id="pitch-and-filter-bend" class="prevent-break">
-<h3>Pitch and Filter Bend</h3>
-<p>The left and right direction of the bender joystick can be configured
-to control both the oscillator pitch and the filter cutoff. The
-<code>BENDER VCO</code> and <code>BENDER VCF</code> controls set the
-depth of modulation applied to each parameter when the joystick is
-moved.</p>
-</section>
-<section id="mod-cv" class="prevent-break">
-<h3>Mod CV</h3>
-<p>The <code>MOD CV</code> input can be used to control the bender using
-an external control voltage. Signal applied to the <code>MOD CV</code>
-input is equivalent to moving the bender joystick to the right.</p>
+<section id="powering-external-gear" class="prevent-break">
+<h4>Powering external gear</h4>
+<p>The SB01 can also be used as a power source for external gear using
+it’s built-in battery. Simply connect a device to the USB port on the
+back of the synth while power is active. You can even charge your phone
+from it.</p>
 </section>
 </article>
 <hr />
-<h1 id="configure">Configure</h1>
+<h1 id="configuration-tool">Configuration Tool</h1>
 <article>
 <p>Advanced settings for the SB01 can be configured through a <a
 href="#browser-chart">WebUSB enabled browser</a>.</p>
@@ -708,17 +731,17 @@ href="#figure-2.1">FIGURE 2.1</a>.</p>
 <img src="assets/control-light.png" alt="FIGURE 2.1" />
 <figcaption aria-hidden="true">FIGURE 2.1</figcaption>
 </figure>
-<h3 id="enabling-midi-for-internalexternal-machines">Enabling MIDI for
-internal/external machines</h3>
+<h4 id="enabling-midi-for-internalexternal-machines">Enabling MIDI for
+internal/external machines</h4>
 <p>Use the switch matrix at the top of the controls app to enable or
 disable TRS and USB MIDI for the internal and external engines
 (channels).</p>
-<h3 id="setting-midi-channels">Setting MIDI channels</h3>
+<h4 id="setting-midi-channels">Setting MIDI channels</h4>
 <p>Use the <code>MIDI CHANNEL IN</code> and
 <code>MIDI CHANNEL OUT</code> selectors to set which channels the synth
 will listen to and transmit MIDI information on.</p>
-<h3 id="enabling-midi-clock-midi-sync">Enabling MIDI clock (MIDI
-sync)</h3>
+<h4 id="enabling-midi-clock-midi-sync">Enabling MIDI clock (MIDI
+sync)</h4>
 <p>Use the <code>MIDI CLOCK TRS IN</code> switch to enable or disable
 MIDI clock sync on the TRS MIDI input.<br />
 Use the <code>MIDI CLOCK USB IN</code> switch to enable or disable MIDI
@@ -801,7 +824,7 @@ href="#linux-webusb-compatibility">this guide</a> for more
 information.</em></p>
 </article>
 <hr />
-<h1 id="linux-webusb-compatibility">Linux WebUSB Compatibility</h1>
+<h3 id="linux-webusb-compatibility">Linux WebUSB Compatibility</h3>
 <article>
 <p>Linux generally don’t ship with the necessary permissions to let the
 user open USB devices. If you are experiencing problems with WebUSB (the
