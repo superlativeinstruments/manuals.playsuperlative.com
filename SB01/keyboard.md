@@ -24,8 +24,10 @@ To enable the Transpose function, hold the `TRANSPOSE` button down while pressin
 To disable the Transpose function, hold the `TRANSPOSE` button down while pressing the lowest C. The indicator will go out and the SB01 has retruend to the normal condition (the key of C.)
 
 *Tip:* You can freely change transposition while the Arpeggiator or Sequencer are playing.
+
 :::
-#### Transpose LATCH
+
+### Transpose LATCH{.unlisted}
 
 Press `SHIFT` + `TRANSPOSE` to activate the transpose `LATCH` function. This mode allows the function to latch ON without needing to hold the button down while pressing a new key, allowing a single hand to dynamically transpose a running arpeggiator or sequence.
 
