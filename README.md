@@ -7,6 +7,34 @@ This repository contains the sorce code for the Superlative user manuals website
 ## Dev Requirements
 
 - Pandoc
+- entr
+- browser-sync (node package)
+
+
+## Install Dev Requirements
+
+On MacOS:
+
+```bash
+brew install pandoc entr node pnpm
+pnpm install -g browser-sync
+```
+
+On Ubuntu/Debian:
+
+```bash
+sudo apt-get install pandoc entr nodejs pnpm
+sudo pnpm install -g browser-sync
+```
+
+
+## Run local server
+
+```bash
+make dev
+```
+
+This will open your browser and automatically reload the page on file changes.
 
 
 ## Build
@@ -14,15 +42,6 @@ This repository contains the sorce code for the Superlative user manuals website
 ```bash
 make
 ```
-
-
-## Run locally
-
-```bash
-python3 -m http.server 8000
-```
-
-Open your browser and go to `http://localhost:8000/`
 
 
 ## Deployment
