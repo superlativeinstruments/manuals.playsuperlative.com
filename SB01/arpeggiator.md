@@ -15,7 +15,12 @@ To enable the Arpeggiator, press any of the three Arpeggiator mode buttons:
 - `DOWN`: plays the arpeggiated notes from highest to lowest
 - `U+D`: plays the arpeggiated notes from lowest to highest, and then back down to lowest
 - `UP`: plays the arpeggiated notes from lowest to highest
+- `DOWN` + `U+D`: plays the arpeggiated notes in caterpillar down mode ✳
+- `U+D` + `UP`: plays the arpeggiated notes in caterpillar up mode ✳
+- `UP` + `DOWN`: plays the arpeggiated notes in edge mode ✳
 - `DOWN` + `U+D` + `UP`: plays the arpeggiated notes in random order
+
+*✳ Available in firmware `Oct 5 2025 17:19:32` and later. You can check what firmware you are on in the [control app](https://control.playsuperlative.com){target="_blank"}*
 
 :::
 
