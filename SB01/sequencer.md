@@ -46,7 +46,7 @@ Both the `INT` and `EXT` tracks can have independent sequencer directions.
 
 Sequence directions are not retained when storing a sequence.
 
-*✳ Available in firmware `Oct 5 2025 17:19:32` and later. You can check what firmware you are on in the [control app](https://control.playsuperlative.com){target="_blank"}*
+*✳ Available in beta firmware `Oct 5 2025 17:19:32` and later. You can check what firmware you are on in the [control app](https://control.playsuperlative.com){target="_blank"}*
 :::
 
 </article>
