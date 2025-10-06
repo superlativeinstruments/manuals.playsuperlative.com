@@ -212,7 +212,7 @@ header a:hover {
 }
 
 .body a:not([href^="#"])::after {
-	content: " ↗";
+	content: "\00a0↗";
 }
 
 .body a:hover {

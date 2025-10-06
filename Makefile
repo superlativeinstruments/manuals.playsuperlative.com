@@ -25,10 +25,12 @@ SB01:
 
 all: SB01
 
-.PHONY: serve
-serve:
-	python3 -m http.server
-
 .PHONY: stage
 stage:
 	surge . manuals-playsuperlative-stage.surge.sh
+
+.PHONY: dev
+dev:
+	@trap 'kill 0' EXIT; \
+	browser-sync start --server --files "**/*.html" & \
+	find . -name '*.md' | entr make

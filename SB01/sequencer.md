@@ -35,6 +35,9 @@ To change the sequencer playback direction, hold `SHIFT` and press any of the th
 - `DOWN`: plays the sequence notes from last note to first
 - `U+D`: reverses play direction after reaching the last note
 - `UP`: plays the sequence from first note to last
+- `DOWN` + `U+D`: plays the sequence in caterpillar down mode ✳
+- `U+D` + `UP`: plays the sequence in caterpillar up mode ✳
+- `UP` + `DOWN`: plays the sequence in edge mode ✳
 - `DOWN` + `U+D` + `UP`: plays the sequence in random order
 
 **Tip:** You can switch directions while the sequencer is playing.
@@ -42,6 +45,8 @@ To change the sequencer playback direction, hold `SHIFT` and press any of the th
 Both the `INT` and `EXT` tracks can have independent sequencer directions.
 
 Sequence directions are not retained when storing a sequence.
+
+*✳ Available in beta firmware `Oct 5 2025 17:19:32` and later. You can check what firmware you are on in the [control app](https://control.playsuperlative.com){target="_blank"}*
 :::
 
 </article>
