@@ -247,11 +247,12 @@ the VCO section.</p>
 <p>The <code>SAW</code> slider controls the amount of sawtooth wave that
 is mixed in.</p>
 <p>The <code>SUB OSC</code> slider controls the amount of sub-oscillator
-that is mixed in. The sub-oscillator is a waveform that is divided in
-half from the main oscillator and will thus follow the pitch. Using the
-<code>SUB OSC</code> switch, the sub oscillator can be set to:</p>
+that is mixed in. The sub-oscillator is divided down from the oscillator
+and will thus be exactly one or two octaves lower than the
+<code>VCO</code> pitch. Using the ’SUB OSC switch, the output can be set
+to:</p>
 <ul>
-<li>A square wave one octave below the main oscillator</li>
+<li>A square wave one octave below</li>
 <li>A square wave two octaves below</li>
 <li>A 25% duty cycle pulse wave two octaves below</li>
 </ul>
@@ -281,19 +282,20 @@ from a pleasant squelchy sound, to harsh and shrill tones.</p>
 <p>The <code>ENV</code> slider controls the amount of control that the
 envelope generator has on the filter cutoff position.</p>
 <p>The <code>MOD</code> slider controls the amount of control that the
-LFO has on the filter cutoff position.</p>
+<code>LFO</code> has on the filter cutoff position.</p>
 <p>The <code>KYBD</code> slider will control the amount of keyboard CV
 that is applied to the filter cutoff based on the note that is played.
 This can be useful for creating a sound that is darker in the lower
 notes, but gets brighter as higher notes are played.</p>
 <h4 id="self-oscillation">Self-Oscillation</h4>
-<p>With the resonance control set to maximum, the filter will feedback
-into self-oscillation. This type of oscillation results in a pure sine
-wave output with no harmonics.</p>
-<p>To enable self-oscillation, set <code>FREQ</code> to about half, and
-set <code>RES</code> and <code>KYBD</code> to the maximum. The filter
-output will track the note played to within 1%. Use the
-<code>FREQ</code> slider to adjust note tuning.</p>
+<p>With the resonance control set to maximum, the resonant peak of
+filter will feed back into itself to the point of self-oscillation. This
+type of oscillation results in a pure sine wave with no harmonics.</p>
+<p>To explore the filter in self-oscillation, set <code>FREQ</code> to
+about half, and set <code>RES</code> and <code>KYBD</code> to the
+maximum. The filter output will track the note played to within 1%. Use
+the <code>FREQ</code> slider to adjust note tuning or turn down the
+other tone sources in the <code>SOURCE MIXER</code> to taste.</p>
 </article>
 <hr />
 <h2 id="voltage-controlled-amplifier-vca">Voltage Controlled Amplifier
@@ -305,13 +307,13 @@ output will track the note played to within 1%. Use the
 <figcaption aria-hidden="true">FIGURE 1.9</figcaption>
 </figure>
 </div>
-<p>The voltage controlled amplifier (VCA) section controls the
-amplitude, or volume of a note over time as it is played.</p>
-<p>When the VCA is set to <code>GATE</code> mode, the volume of the note
-will be at the maximum as soon as a note is played, and will stop as
-soon as the note is released.</p>
-<p>When the VCA is set to <code>ENV</code> mode, the volume of the note
-will follow the shape of the envelope section.</p>
+<p>The voltage controlled amplifier (<code>VCA</code>) section controls
+the amplitude, or volume of a note over time as it is played.</p>
+<p>When the <code>VCA</code> is set to <code>GATE</code> mode, the
+volume of the note will be at the maximum as soon as a note is played,
+and will stop as soon as the note is released.</p>
+<p>When the <code>VCA</code> is set to <code>ENV</code> mode, the volume
+of the note will follow the shape of the envelope section.</p>
 </article>
 <hr />
 <h2 id="envelope-generator-env">Envelope Generator (ENV)</h2>
@@ -519,41 +521,45 @@ arpeggiator or sequence.</p>
 <article>
 <p>The Arpeggiator will automatically play any held notes as a
 progressive arpeggio.</p>
+<p>Use the <code>HOLD</code> button to latch notes into the Arpeggiator
+and free hands for adjusting the sound.</p>
+<p>Without using the <code>HOLD</code> function , any new notes played
+into the Arpeggiator will reset the <code>LFO/CLK RATE</code> on the
+first key press.</p>
 <p>The speed of the Arpeggiator is controlled by the speed of the
-LFO/CLK RATE. If the SB01 is configured to accept an external MIDI
-clock, the speed of the Arpeggiator will instend be controlled by the
-external MIDI clock.</p>
+<code>LFO/CLK RATE</code>. If the SB01 is configured to accept an
+external MIDI clock, the rate of the Arpeggiator will follow.</p>
 <section id="arpeggiator-modes" class="prevent-break">
 <h3>Arpeggiator Modes</h3>
-<p>To enable the Arpeggiator, press any of the three Arpeggiator mode
-buttons:</p>
-<ul>
-<li><code>DOWN</code>: plays the arpeggiated notes from highest to
-lowest</li>
-<li><code>U+D</code>: plays the arpeggiated notes from lowest to
-highest, and then back down to lowest</li>
+<p>To enable the Arpeggiator, press or combine any of the three
+Arpeggiator mode buttons:</p>
+<ol type="1">
 <li><code>UP</code>: plays the arpeggiated notes from lowest to
 highest</li>
-<li><code>DOWN</code> + <code>U+D</code>: plays the arpeggiated notes in
-caterpillar down mode ✳</li>
-<li><code>U+D</code> + <code>UP</code>: plays the arpeggiated notes in
-caterpillar up mode ✳</li>
-<li><code>UP</code> + <code>DOWN</code>: plays the arpeggiated notes in
-edge mode ✳</li>
+<li><code>U+D</code>: plays the arpeggiated notes from lowest to highest
+then reverses</li>
+<li><code>DOWN</code>: plays the arpeggiated notes from highest to
+lowest</li>
+<li><code>U+D</code> + <code>UP</code>: caterpillar up mode- the pattern
+will move two steps forward and one step backward</li>
+<li><code>UP</code> + <code>DOWN</code>: corner mode- the pattern will
+repeat the first and last steps before changing direction</li>
+<li><code>DOWN</code> + <code>U+D</code>: caterpillar down mode- the
+pattern will move two steps backward and one step forward</li>
 <li><code>DOWN</code> + <code>U+D</code> + <code>UP</code>: plays the
 arpeggiated notes in random order</li>
-</ul>
+</ol>
 <p><em>✳ Available in beta firmware <code>Oct 5 2025 17:19:32</code> and
 later. You can check what firmware you are on in the <a
 href="https://control.playsuperlative.com" target="_blank">control
 app</a></em></p>
 </section>
-<p>To disable the Arpeggiator, press the currently active mode
-again.</p>
 <p><em>Tip:</em> You can switch modes while the Arpeggiator is
 playing.</p>
-<p>Use the <code>HOLD</code> button to latch notes into the Arpeggiator
-and free hands for adjusting the sound.</p>
+<p>To disable the Arpeggiator, press the currently active mode
+again.</p>
+<p>The <code>TRANSPOSE</code> function and transpose <code>LATCH</code>
+feature are both available to use with the arpeggiator.</p>
 </article>
 <hr />
 <h1 id="sequencer">Sequencer</h1>
@@ -588,27 +594,29 @@ the <code>LEGATO</code> button to tie notes together.</li>
 sequence will loop continuously until stopped.</li>
 <li><strong>Stop:</strong> Press the <code>PLAY</code> button
 again.</li>
+<li><strong>Reset Function:</strong> Hold <code>SHIFT</code> and press
+the <code>RESET</code> button to reset a running sequence to the first
+step.</li>
 </ul>
 </section>
 <section id="sequencer-play-directions" class="prevent-break">
 <h3>Sequencer Play Directions</h3>
 <p>To change the sequencer playback direction, hold <code>SHIFT</code>
-and press any of the three Arpeggiator mode buttons:</p>
-<ul>
-<li><code>DOWN</code>: plays the sequence notes from last note to
-first</li>
-<li><code>U+D</code>: reverses play direction after reaching the last
-note</li>
+and press or combine any of the three Arpeggiator mode buttons:</p>
+<ol type="1">
 <li><code>UP</code>: plays the sequence from first note to last</li>
-<li><code>DOWN</code> + <code>U+D</code>: plays the sequence in
-caterpillar down mode ✳</li>
-<li><code>U+D</code> + <code>UP</code>: plays the sequence in
-caterpillar up mode ✳</li>
-<li><code>UP</code> + <code>DOWN</code>: plays the sequence in edge mode
-✳</li>
+<li><code>U+D</code>: play direction reverses after reaching the last
+note</li>
+<li><code>DOWN</code>: plays the sequence from last note to first</li>
+<li><code>U+D</code> + <code>UP</code>: caterpillar up mode- the
+sequence will move two steps forward and one step backward ✳</li>
+<li><code>UP</code> + <code>DOWN</code>: corner mode- the sequence will
+repeat the first and last steps before changing direction ✳</li>
+<li><code>DOWN</code> + <code>U+D</code>: caterpillar down mode- the
+sequence will move two steps backward and one step forward ✳</li>
 <li><code>DOWN</code> + <code>U+D</code> + <code>UP</code>: plays the
 sequence in random order</li>
-</ul>
+</ol>
 <p><strong>Tip:</strong> You can switch directions while the sequencer
 is playing.</p>
 <p>Both the <code>INT</code> and <code>EXT</code> tracks can have
@@ -771,6 +779,10 @@ clock the sequencer and arpeggiator from this clock source, ignoring the
 <code>LFO/CLK</code> rate.</p>
 <p>The <code>CLOCK SUBDIVISION</code> slider divides the incoming MIDI
 clock and sets the speed of the arpeggiator and sequencer.</p>
+<h4 id="resetting-defaults">Resetting Defaults</h4>
+<p>User configuration can now be reset to factory defaults by holding
+both <code>MEMORY</code> buttons (<code>JUMP</code> +
+<code>CHAIN</code>) while powering on the device.</p>
 <p><strong>Tip:</strong> Use the sun/moon icon at the top right of the
 app to switch between <span class="light-switch">light</span> and <span
 class="dark-switch">dark</span> mode.</p>

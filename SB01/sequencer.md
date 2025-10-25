@@ -25,20 +25,21 @@ The SB01 features a digital sequencer capable of storing and playing up to 256 s
 
 * **Play:** Press the `PLAY` button. The sequence will loop continuously until stopped.
 * **Stop:** Press the `PLAY` button again.
+* **Reset Function:** Hold `SHIFT` and press the `RESET` button to reset a running sequence to the first step.
 :::
 
 ::: {.prevent-break}
 ### Sequencer Play Directions
 
-To change the sequencer playback direction, hold `SHIFT` and press any of the three Arpeggiator mode buttons:
+To change the sequencer playback direction, hold `SHIFT` and press or combine any of the three Arpeggiator mode buttons:
 
-- `DOWN`: plays the sequence notes from last note to first
-- `U+D`: reverses play direction after reaching the last note
-- `UP`: plays the sequence from first note to last
-- `DOWN` + `U+D`: plays the sequence in caterpillar down mode ✳
-- `U+D` + `UP`: plays the sequence in caterpillar up mode ✳
-- `UP` + `DOWN`: plays the sequence in edge mode ✳
-- `DOWN` + `U+D` + `UP`: plays the sequence in random order
+1. `UP`: plays the sequence from first note to last
+2. `U+D`: play direction reverses after reaching the last note
+3. `DOWN`: plays the sequence from last note to first
+4. `U+D` + `UP`: caterpillar up mode- the sequence will move two steps forward and one step backward ✳
+5. `UP` + `DOWN`: corner mode- the sequence will repeat the first and last steps before changing direction ✳
+6. `DOWN` + `U+D`: caterpillar down mode- the sequence will move two steps backward and one step forward ✳
+7. `DOWN` + `U+D` + `UP`: plays the sequence in random order
 
 **Tip:** You can switch directions while the sequencer is playing.
 

@@ -12,9 +12,9 @@ The `PULSE` slider controls the amount of pulse waveform that is mixed in. The p
 
 The `SAW` slider controls the amount of sawtooth wave that is mixed in.
 
-The `SUB OSC` slider controls the amount of sub-oscillator that is mixed in. The sub-oscillator is a waveform that is divided in half from the main oscillator and will thus follow the pitch. Using the `SUB OSC` switch, the sub oscillator can be set to:
+The `SUB OSC` slider controls the amount of sub-oscillator that is mixed in. The sub-oscillator is divided down from the oscillator and will thus be exactly one or two octaves lower than the `VCO` pitch. Using the 'SUB OSC switch, the output can be set to:
 
-- A square wave one octave below the main oscillator
+- A square wave one octave below
 - A square wave two octaves below
 - A 25% duty cycle pulse wave two octaves below
 

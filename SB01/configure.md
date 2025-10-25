@@ -27,6 +27,10 @@ When enabled, the synth will listen to incoming MIDI clock messages and clock th
 
 The `CLOCK SUBDIVISION` slider divides the incoming MIDI clock and sets the speed of the arpeggiator and sequencer.
 
+#### Resetting Defaults
+
+ User configuration can now be reset to factory defaults by holding both `MEMORY` buttons (`JUMP` + `CHAIN`) while powering on the device.
+
 **Tip:** Use the sun/moon icon at the top right of the app to switch between [light]{.light-switch} and [dark]{.dark-switch} mode.
 
 </article>

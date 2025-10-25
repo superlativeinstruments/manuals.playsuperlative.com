@@ -14,15 +14,15 @@ The `RES` slider controls the amount of filter feedback (sometimes called resona
 
 The `ENV` slider controls the amount of control that the envelope generator has on the filter cutoff position.
 
-The `MOD` slider controls the amount of control that the LFO has on the filter cutoff position.
+The `MOD` slider controls the amount of control that the `LFO` has on the filter cutoff position.
 
 The `KYBD` slider will control the amount of keyboard CV that is applied to the filter cutoff based on the note that is played. This can be useful for creating a sound that is darker in the lower notes, but gets brighter as higher notes are played.
 
 #### Self-Oscillation
 
-With the resonance control set to maximum, the filter will feedback into self-oscillation. This type of oscillation results in a pure sine wave output with no harmonics.
+With the resonance control set to maximum, the resonant peak of filter will feed back into itself to the point of self-oscillation. This type of oscillation results in a pure sine wave with no harmonics.
 
-To enable self-oscillation, set `FREQ` to about half, and set `RES` and `KYBD` to the maximum. The filter output will track the note played to within 1%. Use the `FREQ` slider to adjust note tuning.
+To explore the filter in self-oscillation, set `FREQ` to about half, and set `RES` and `KYBD` to the maximum. The filter output will track the note played to within 1%. Use the `FREQ` slider to adjust note tuning or turn down the other tone sources in the `SOURCE MIXER` to taste.
 
 </article>
 
