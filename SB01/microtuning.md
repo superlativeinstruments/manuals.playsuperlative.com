@@ -4,11 +4,9 @@
 
 Custom tuning tables for the SB01 can be configured through a [WebUSB enabled browser](#browser-chart).
 
-Tuning tables are edited in the `CONFIGURATION TOOL` app.
+Tuning tables are edited in the `CONFIGURATION TOOL` app. [FIGURE 2.2](#figure-2.2).
 
-When the device is connected, the app will look like [FIGURE x.x](#figure-2.1).
-
-![FIGURE x.x](assets/control-light.png){#figure-2.1}
+![FIGURE 2.2](assets/control-tuning-table-light.png){#figure-2.2}
 
 An adjustable tuning offset can be applied to each key on the SB01 in cents (-99 to +99). You can click and drag on a key to adjust its offset, or enter a value directly in the input box. After entry, the offset will be applied to the connected synth immediately.
 

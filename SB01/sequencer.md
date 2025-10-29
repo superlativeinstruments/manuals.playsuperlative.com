@@ -36,9 +36,9 @@ To change the sequencer playback direction, hold `SHIFT` and press or combine an
 1. `UP`: plays the sequence from first note to last
 2. `U+D`: play direction reverses after reaching the last note
 3. `DOWN`: plays the sequence from last note to first
-4. `U+D` + `UP`: caterpillar up mode- the sequence will move two steps forward and one step backward ✳
-5. `UP` + `DOWN`: corner mode- the sequence will repeat the first and last steps before changing direction ✳
-6. `DOWN` + `U+D`: caterpillar down mode- the sequence will move two steps backward and one step forward ✳
+4. `U+D` + `UP`: caterpillar up mode — the sequence will move two steps forward and one step backward ✳
+5. `UP` + `DOWN`: corner mode — the sequence will repeat the first and last steps before changing direction ✳
+6. `DOWN` + `U+D`: caterpillar down mode — the sequence will move two steps backward and one step forward ✳
 7. `DOWN` + `U+D` + `UP`: plays the sequence in random order
 
 **Tip:** You can switch directions while the sequencer is playing.

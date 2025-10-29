@@ -93,7 +93,7 @@ id="toc-internal-external-channel">Internal / External Channel</a>
 Channel</a></li>
 <li><a href="#external-channel" id="toc-external-channel">External
 Channel</a></li>
-<li><a href="#both-mode" id="toc-both-mode">BOTH mode</a></li>
+<li><a href="#both-mode" id="toc-both-mode">BOTH Mode</a></li>
 </ul></li>
 <li><a href="#power" id="toc-power">Power</a></li>
 <li><a href="#configuration-tool"
@@ -573,11 +573,11 @@ highest</li>
 then reverses</li>
 <li><code>DOWN</code>: plays the arpeggiated notes from highest to
 lowest</li>
-<li><code>U+D</code> + <code>UP</code>: caterpillar up mode- the pattern
-will move two steps forward and one step backward</li>
-<li><code>UP</code> + <code>DOWN</code>: corner mode- the pattern will
+<li><code>U+D</code> + <code>UP</code>: caterpillar up mode — the
+pattern will move two steps forward and one step backward</li>
+<li><code>UP</code> + <code>DOWN</code>: corner mode — the pattern will
 repeat the first and last steps before changing direction</li>
-<li><code>DOWN</code> + <code>U+D</code>: caterpillar down mode- the
+<li><code>DOWN</code> + <code>U+D</code>: caterpillar down mode — the
 pattern will move two steps backward and one step forward</li>
 <li><code>DOWN</code> + <code>U+D</code> + <code>UP</code>: plays the
 arpeggiated notes in random order</li>
@@ -641,11 +641,11 @@ and press or combine any of the three Arpeggiator mode buttons:</p>
 <li><code>U+D</code>: play direction reverses after reaching the last
 note</li>
 <li><code>DOWN</code>: plays the sequence from last note to first</li>
-<li><code>U+D</code> + <code>UP</code>: caterpillar up mode- the
+<li><code>U+D</code> + <code>UP</code>: caterpillar up mode — the
 sequence will move two steps forward and one step backward ✳</li>
-<li><code>UP</code> + <code>DOWN</code>: corner mode- the sequence will
+<li><code>UP</code> + <code>DOWN</code>: corner mode — the sequence will
 repeat the first and last steps before changing direction ✳</li>
-<li><code>DOWN</code> + <code>U+D</code>: caterpillar down mode- the
+<li><code>DOWN</code> + <code>U+D</code>: caterpillar down mode — the
 sequence will move two steps backward and one step forward ✳</li>
 <li><code>DOWN</code> + <code>U+D</code> + <code>UP</code>: plays the
 sequence in random order</li>
@@ -737,7 +737,7 @@ internal synth “engine” of the SB01.</p>
 of the internal synth, allowing a second keyboard, arpeggiator, and
 sequencer to freely control an external device that accepts CV, MIDI, or
 USB MIDI.</p>
-<h3 id="both-mode">BOTH mode</h3>
+<h3 id="both-mode">BOTH Mode</h3>
 <p>Hold the <code>INTERNAL</code> and <code>EXTERNAL</code> buttons
 together to enter <code>BOTH</code> mode. While both channel LED’s are
 lit, all button actions will now apply to both channels.</p>
@@ -762,14 +762,14 @@ knob will begin blinking at the rate of the <code>LFO</code>. If
 depleted, the LED will flash but the synth will not play until charged
 again.</p>
 </div>
-<section id="checking-the-battery-level" class="unlisted prevent-break">
-<h3 class="unlisted">Checking the battery level</h3>
+<section id="checking-battery-level" class="unlisted prevent-break">
+<h3 class="unlisted">Checking Battery Level</h3>
 <p>To check the battery level, hold <code>SHIFT</code> while pressing
 the <code>BATT</code> button. The approximate battery level will be
 indicated by the seven LEDs in the sequencer section.</p>
 </section>
 <section id="powering-external-gear" class="unlisted prevent-break">
-<h3 class="unlisted">Powering external gear</h3>
+<h3 class="unlisted">Powering External Gear</h3>
 <p>The SB01 can also be used as a power source for external gear using
 it’s built-in battery. Simply connect a device to the USB port on the
 back of the synth while power is active. You can even charge your phone
@@ -792,17 +792,14 @@ href="#figure-2.1">FIGURE 2.1</a>.</p>
 <img src="assets/control-light.png" alt="FIGURE 2.1" />
 <figcaption aria-hidden="true">FIGURE 2.1</figcaption>
 </figure>
-<h4 id="enabling-midi-for-internalexternal-machines">Enabling MIDI for
-internal/external machines</h4>
-<p>Use the switch matrix at the top of the controls app to enable or
-disable TRS and USB MIDI for the internal and external engines
-(channels).</p>
-<h4 id="setting-midi-channels">Setting MIDI channels</h4>
+<h4 id="setting-midi-channels">Setting MIDI Channels</h4>
 <p>Use the <code>MIDI CHANNEL IN</code> and
 <code>MIDI CHANNEL OUT</code> selectors to set which channels the synth
-will listen to and transmit MIDI information on.</p>
-<h4 id="enabling-midi-clock-midi-sync">Enabling MIDI clock (MIDI
-sync)</h4>
+will listen to and transmit MIDI information on. There are separate MIDI
+channel settings for the <code>INTERNAL</code> and <code>EXTERNAL</code>
+channels.</p>
+<h4 id="enabling-midi-clock-midi-sync">Enabling MIDI Clock (MIDI
+Sync)</h4>
 <p>Use the <code>MIDI CLOCK TRS IN</code> switch to enable or disable
 MIDI clock sync on the TRS MIDI input.<br />
 Use the <code>MIDI CLOCK USB IN</code> switch to enable or disable MIDI
@@ -812,10 +809,14 @@ clock the sequencer and arpeggiator from this clock source, ignoring the
 <code>LFO/CLK</code> rate.</p>
 <p>The <code>CLOCK SUBDIVISION</code> slider divides the incoming MIDI
 clock and sets the speed of the arpeggiator and sequencer.</p>
-<h4 id="resetting-defaults">Resetting Defaults</h4>
-<p>User configuration can now be reset to factory defaults by holding
-both <code>MEMORY</code> buttons (<code>JUMP</code> +
-<code>CHAIN</code>) while powering on the device.</p>
+<h4 id="range">32’ Range</h4>
+<p>When enabled, the <code>RANGE</code> toggle will span from 32’ to 4’
+instead of the default 16’ to 2’ — letting you access the lowest
+possible octave the VCO can produce.</p>
+<h4 id="reset-to-factory-defaults">Reset to Factory Defaults</h4>
+<p>User configuration can be reset to factory defaults by holding both
+<code>MEMORY</code> buttons (<code>JUMP</code> + <code>CHAIN</code>)
+while powering on the device.</p>
 <p><strong>Tip:</strong> Use the sun/moon icon at the top right of the
 app to switch between <span class="light-switch">light</span> and <span
 class="dark-switch">dark</span> mode.</p>
@@ -825,13 +826,11 @@ class="dark-switch">dark</span> mode.</p>
 <article>
 <p>Custom tuning tables for the SB01 can be configured through a <a
 href="#browser-chart">WebUSB enabled browser</a>.</p>
-<p>Tuning tables are edited in the <code>CONFIGURATION TOOL</code>
-app.</p>
-<p>When the device is connected, the app will look like <a
-href="#figure-2.1">FIGURE x.x</a>.</p>
-<figure id="figure-2.1">
-<img src="assets/control-light.png" alt="FIGURE x.x" />
-<figcaption aria-hidden="true">FIGURE x.x</figcaption>
+<p>Tuning tables are edited in the <code>CONFIGURATION TOOL</code> app.
+<a href="#figure-2.2">FIGURE 2.2</a>.</p>
+<figure id="figure-2.2">
+<img src="assets/control-tuning-table-light.png" alt="FIGURE 2.2" />
+<figcaption aria-hidden="true">FIGURE 2.2</figcaption>
 </figure>
 <p>An adjustable tuning offset can be applied to each key on the SB01 in
 cents (-99 to +99). You can click and drag on a key to adjust its

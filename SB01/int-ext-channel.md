@@ -14,7 +14,7 @@ The `INTERNAL` track will always correspond to the internal synth "engine" of th
 
 The `EXTERNAL` track offers another control layer on top of the internal synth, allowing a second keyboard, arpeggiator, and sequencer to freely control an external device that accepts CV, MIDI, or USB MIDI. 
 
-### BOTH mode
+### BOTH Mode
 
 Hold the `INTERNAL` and `EXTERNAL` buttons together to enter `BOTH` mode. While both channel LED's are lit, all button actions will now apply to both channels. 
 
