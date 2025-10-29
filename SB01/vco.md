@@ -6,17 +6,23 @@
 ![FIGURE 1.4](assets/sb01-vco-bw.svg)
 :::
 
-The voltage controlled oscillator (`VCO`) is where the multiple tone sources of the SB01 are created.
+The voltage controlled oscillator (`VCO`) is where the multiple oscillator waveforms, or tone sources of the SB01 are created.
 
-The `MOD` control adjusts the amount that the `LFO` will change the pitch of the oscillator.
+The sawtooth contains a fundamental sine wave and its integral harmonic sine waves at a fixed ratio of 1/*n*. This wave makes a good starting point for brass, string, and guitar tones.
+
+The square wave contains the same fundamental sine wave and harmonics as the sawtooth, except there are no even numbered harmonics. This wave has a hollow sound that is suitable for woodwinds.
+
+
+The `MOD` control adjusts the amount that the `LFO` will modulate the pitch of the oscillator.
 
 The `RANGE` knob controls the pitch of the oscillator in one octave steps from 16' to 2'. When this knob is set to 8' and the `TRANSPOSE` is set to M, the lowest C note maps to the middle C of a piano.
+
+**Tip:** In the `CONFIGURATION TOOL`, there is an option to toggle the `RANGE` to a `32'` setting for access to even lower pitches.
 
 ::: {.prevent-break}
 #### Pulse Width
 
-Pulse width modulation allows control over the duty cycle of the square wave, which is the proportion of time that a pulse waveform is high or low.  
-For example, a square wave has equal parts high and low, like this:
+Pulse width modulation allows control over the duty cycle of the square wave, which is the proportion of time that a pulse waveform is high or low. For example, a square wave has equal parts high and low, like this:
 
 <div class="w2/3">
 

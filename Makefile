@@ -21,6 +21,7 @@ SB01:
 		SB01/configure.md \
 		SB01/microtuning.md \
 		SB01/firmware-update.md \
+		SB01/midi.md \
 		SB01/linux.md \
 		SB01/support.md
 

@@ -58,6 +58,7 @@ id="toc-envelope-generator-env">Envelope Generator (ENV)</a></li>
 <li><a href="#keyboard" id="toc-keyboard">Keyboard</a>
 <ul>
 <li><a href="#hold" id="toc-hold">Hold</a></li>
+<li><a href="#chord-mode" id="toc-chord-mode">Chord Mode</a></li>
 <li><a href="#transpose" id="toc-transpose">Transpose</a></li>
 </ul></li>
 <li><a href="#arpeggiator" id="toc-arpeggiator">Arpeggiator</a>
@@ -97,8 +98,12 @@ Channel</a></li>
 <li><a href="#power" id="toc-power">Power</a></li>
 <li><a href="#configuration-tool"
 id="toc-configuration-tool">Configuration Tool</a></li>
+<li><a href="#microtuning-tool" id="toc-microtuning-tool">Microtuning
+Tool</a></li>
 <li><a href="#firmware-update" id="toc-firmware-update">Firmware
 Update</a></li>
+<li><a href="#midi-implementation-chart"
+id="toc-midi-implementation-chart">MIDI Implementation Chart</a></li>
 </ul>
 		  </section>
 
@@ -184,19 +189,29 @@ engine (+14V).</p>
 </figure>
 </div>
 <p>The voltage controlled oscillator (<code>VCO</code>) is where the
-multiple tone sources of the SB01 are created.</p>
+multiple oscillator waveforms, or tone sources of the SB01 are
+created.</p>
+<p>The sawtooth contains a fundamental sine wave and its integral
+harmonic sine waves at a fixed ratio of 1/<em>n</em>. This wave makes a
+good starting point for brass, string, and guitar tones.</p>
+<p>The square wave contains the same fundamental sine wave and harmonics
+as the sawtooth, except there are no even numbered harmonics. This wave
+has a hollow sound that is suitable for woodwinds.</p>
 <p>The <code>MOD</code> control adjusts the amount that the
-<code>LFO</code> will change the pitch of the oscillator.</p>
+<code>LFO</code> will modulate the pitch of the oscillator.</p>
 <p>The <code>RANGE</code> knob controls the pitch of the oscillator in
 one octave steps from 16’ to 2’. When this knob is set to 8’ and the
 <code>TRANSPOSE</code> is set to M, the lowest C note maps to the middle
 C of a piano.</p>
+<p><strong>Tip:</strong> In the <code>CONFIGURATION TOOL</code>, there
+is an option to toggle the <code>RANGE</code> to a <code>32'</code>
+setting for access to even lower pitches.</p>
 <section id="pulse-width" class="prevent-break">
 <h4>Pulse Width</h4>
 <p>Pulse width modulation allows control over the duty cycle of the
 square wave, which is the proportion of time that a pulse waveform is
-high or low.<br />
-For example, a square wave has equal parts high and low, like this:</p>
+high or low. For example, a square wave has equal parts high and low,
+like this:</p>
 <div class="w2/3">
 <figure>
 <img src="assets/pulse-width-1.svg" alt="FIGURE 1.5" />
@@ -391,13 +406,17 @@ including pitch, pulse width, and filter cutoff.</p>
 <code>LFO</code>. The rate of cycling controls the speed of the
 arpeggiator and sequencer unless they are driven by an external clock
 source using the <code>TRIG</code> input.</p>
+<p>Similar to bypassing the internal clock by using the
+<code>TRIG</code> input, enabling <code>MIDI</code> clock will decouple
+the <code>LFO</code> rate and allow it to free-run for modulation
+purposes.</p>
 <p>The <code>WAVEFORM</code> switch selects the ouput shape of the
 <code>LFO</code>. Triangle and square are the output waveforms from the
 <code>LFO</code>, while the <code>RANDOM</code> output waveform is
 generated digitally. Each cycle of the <code>LFO</code> will produce a
-new random modulation level that is held until the next clock cycle. The
-<code>NOISE</code> waveform is the internal white noise source and is
-not affected by the rate control.</p>
+new random modulation level that is held until the next clock cycle.</p>
+<p>The <code>NOISE</code> waveform is the internal white noise source
+and is not affected by the rate control.</p>
 </article>
 <hr />
 <h2 id="portamento">Portamento</h2>
@@ -462,10 +481,10 @@ joystick.</p>
 </section>
 <section id="vibrato-latch" class="prevent-break">
 <h4>Vibrato Latch</h4>
-<p>Pressing the joystick will momentarily toggle the <code>LFO</code>
-vibrato modulation on. Holding <code>SHIFT</code> while pressing will
-latch the vibrato ON and OFF, having the same effect as holding the
-joystick forward.</p>
+<p>Clicking the joystick will momentarily toggle the <code>LFO</code>
+vibrato modulation on. Holding <code>SHIFT</code> while clicking will
+latch the vibrato on and off, having the same effect as holding the
+joystick forward for constant vibrato effect.</p>
 </section>
 <section id="mod-cv" class="prevent-break">
 <h4>Mod CV</h4>
@@ -473,6 +492,10 @@ joystick forward.</p>
 an external control voltage. Signal applied to the <code>MOD CV</code>
 input is equivalent to moving the bender joystick to the right.</p>
 </section>
+<p><em>Tip:</em> Using a cable, you can route the <code>CV</code> Output
+from the <code>EXTERNAL</code> Channel into the <code>MOD CV</code>
+Input to modulate and sequence the filter cutoff or pitch transposition
+from a sequence track.</p>
 </article>
 <hr />
 <h1 id="keyboard">Keyboard</h1>
@@ -489,6 +512,16 @@ maps to the middle C of a piano.</p>
 sustain every note. The <code>PEDAL</code> input will also activate the
 <code>HOLD</code> function when pressed, similar to the damper pedal of
 a piano.</p>
+<h3 id="chord-mode">Chord Mode</h3>
+<p><code>CHORD</code> Mode is a keyboard feature available on the
+<code>EXTERNAL</code> Channel while using MIDI. This mode allows a held
+programmed interval or chord to played back by a single keypress.</p>
+<p>Press <code>SHIFT</code> + <code>HOLD</code> to activate the
+<code>CHORD</code> function. If the chord requires more than one hand,
+use the <code>HOLD</code> function to play and hold down the individual
+notes, then activate the <code>CHORD</code> function. The lowest note of
+the saved chord will now trigger and transpose the entire interval
+across the keyboard.</p>
 <section id="transpose" class="prevent-break">
 <h3>Transpose</h3>
 <p>To enable the Transpose function, hold the <code>TRANSPOSE</code>
@@ -788,6 +821,37 @@ app to switch between <span class="light-switch">light</span> and <span
 class="dark-switch">dark</span> mode.</p>
 </article>
 <hr />
+<h1 id="microtuning-tool">Microtuning Tool</h1>
+<article>
+<p>Custom tuning tables for the SB01 can be configured through a <a
+href="#browser-chart">WebUSB enabled browser</a>.</p>
+<p>Tuning tables are edited in the <code>CONFIGURATION TOOL</code>
+app.</p>
+<p>When the device is connected, the app will look like <a
+href="#figure-2.1">FIGURE x.x</a>.</p>
+<figure id="figure-2.1">
+<img src="assets/control-light.png" alt="FIGURE x.x" />
+<figcaption aria-hidden="true">FIGURE x.x</figcaption>
+</figure>
+<p>An adjustable tuning offset can be applied to each key on the SB01 in
+cents (-99 to +99). You can click and drag on a key to adjust its
+offset, or enter a value directly in the input box. After entry, the
+offset will be applied to the connected synth immediately.</p>
+<p>Upon saving, the tuning table will be stored in the user tuning table
+slot.</p>
+<h4 id="setting-active-table">Setting Active Table</h4>
+<p>If the first key on the keyboard is held at startup the custom tuning
+table will be loaded. If no key is held at startup, the default tuning
+table will be loaded.</p>
+<h4 id="load-custom-tuning-tables">Load Custom Tuning Tables</h4>
+<p>Import a .tun file to load an existing tuning table directly. A .tun
+file will let you go beyond +-99 cents. Press the LOAD button and
+navigate to a .tun file, and the table will be applied immediately.</p>
+<h4 id="preset-tuning-tables">Preset Tuning Tables</h4>
+<p>For microtonal exploration, several presets options are
+available.</p>
+</article>
+<hr />
 <h1 id="firmware-update">Firmware Update</h1>
 <article>
 <p>To enter firmware update mode, perform the following:</p>
@@ -854,6 +918,93 @@ again.</p>
 access to the USB device. Refer to <a
 href="#linux-webusb-compatibility">this guide</a> for more
 information.</em></p>
+</article>
+<hr />
+<h1 id="midi-implementation-chart">MIDI Implementation Chart</h1>
+<p><em>Applies to both TRS MIDI and USB MIDI</em></p>
+<h4 id="basic-information">Basic Information</h4>
+<table>
+<colgroup>
+<col style="width: 48%" />
+<col style="width: 28%" />
+<col style="width: 24%" />
+</colgroup>
+<thead>
+<tr>
+<th>Function</th>
+<th>Transmitted</th>
+<th>Recognized</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>MIDI channels</td>
+<td>1 to 16</td>
+<td>1 to 16</td>
+</tr>
+<tr>
+<td>Note numbers (A4 = 440 Hz)</td>
+<td>F2 (41) to C7 (96)</td>
+<td>F2 (41) to C7 (96)</td>
+</tr>
+<tr>
+<td>Pitch Bend</td>
+<td>No</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Mod Wheel</td>
+<td>No</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Sustain Pedal (CC# 64)</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+</tbody>
+</table>
+<h4 id="timing-and-synchronization">Timing and Synchronization</h4>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Transmitted</th>
+<th>Recognized</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>MIDI Clock</td>
+<td>No</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Song Select</td>
+<td>No</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Start</td>
+<td>No</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Continue</td>
+<td>No</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Stop</td>
+<td>No</td>
+<td>Yes</td>
+</tr>
+</tbody>
+</table>
+<h4 id="midi-mod-wheel">MIDI Mod Wheel</h4>
+<p>Incoming mod wheel messages to the <code>INTERNAL</code> channel will
+control the same CV as the MOD CV input. This can be used to control the
+filter or oscillator.</p>
 </article>
 <hr />
 <h2 class="unlisted" id="linux-webusb-compatibility">Linux WebUSB

@@ -4,27 +4,27 @@
 
 Custom tuning tables for the SB01 can be configured through a [WebUSB enabled browser](#browser-chart).
 
-The custom tuning table can be edited in the control app.
+Tuning tables are edited in the `CONFIGURATION TOOL` app.
 
-When the device is connected, the app will look like [FIGURE 2.1](#figure-2.1).
+When the device is connected, the app will look like [FIGURE x.x](#figure-2.1).
 
-![FIGURE 2.1](assets/control-light.png){#figure-2.1}
+![FIGURE x.x](assets/control-light.png){#figure-2.1}
 
-A unique tuning offset can be entered for each key on the SB01. After entry, the offset will be applied to the connected SB01 immediately.
+An adjustable tuning offset can be applied to each key on the SB01 in cents (-99 to +99). You can click and drag on a key to adjust its offset, or enter a value directly in the input box. After entry, the offset will be applied to the connected synth immediately.
+
+Upon saving, the tuning table will be stored in the user tuning table slot.
 
 #### Setting Active Table
 
-If the first key on the keyboard is held at startup the custom tuning table will be loaded. If no key is held at startup the default tuning table will be loaded.
+If the first key on the keyboard is held at startup the custom tuning table will be loaded. If no key is held at startup, the default tuning table will be loaded.
 
 #### Load Custom Tuning Tables
 
- Loading of .tun tuning table files directly in the control app is supported. Press the LOAD button and navigate to your . The table will be applied to the connected SB01 immediately.
+ Import a .tun file to load an existing tuning table directly. A .tun file will let you go beyond +-99 cents. Press the LOAD button and navigate to a .tun file, and the table will be applied immediately.
 
-#### Resetting Defaults
+#### Preset Tuning Tables
 
- User configuration can now be reset to factory defaults by holding both `MEMORY` buttons (`JUMP` + `CHAIN`) while powering on the device.
-
-**Tip:** Use the sun/moon icon at the top right of the app to switch between [light]{.light-switch} and [dark]{.dark-switch} mode.
+ For microtonal exploration, several presets options are available.
 
 </article>
 

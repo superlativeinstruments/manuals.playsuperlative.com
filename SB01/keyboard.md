@@ -12,6 +12,12 @@ Any key played can be held on after release by using the `HOLD` button (indicato
 
 When applied during a sequence, the `HOLD` function will sustain every note. The `PEDAL` input will also activate the `HOLD` function when pressed, similar to the damper pedal of a piano.
 
+### Chord Mode
+
+`CHORD` Mode is a keyboard feature available on the `EXTERNAL` Channel while using MIDI. This mode allows a held programmed interval or chord to played back by a single keypress.
+
+Press `SHIFT` + `HOLD` to activate the `CHORD` function. If the chord requires more than one hand, use the `HOLD` function to play and hold down the individual notes, then activate the `CHORD` function. The lowest note of the saved chord will now trigger and transpose the entire interval across the keyboard.
+
 ::: {.prevent-break}
 
 ### Transpose
