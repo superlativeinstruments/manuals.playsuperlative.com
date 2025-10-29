@@ -25,7 +25,7 @@ Pushing the joystick forward increases the amount of `LFO` modulation (Sine wave
 ::: {.prevent-break}
 #### Vibrato Latch
 
-Pressing the joystick will momentarily toggle the `LFO`  vibrato modulation on. Holding `SHIFT` while pressing will latch the vibrato ON and OFF, having the same effect as holding the joystick forward.
+Clicking the joystick will momentarily toggle the `LFO`  vibrato modulation on. Holding `SHIFT` while clicking will latch the vibrato on and off, having the same effect as holding the joystick forward for constant vibrato effect.
 :::
 
 ::: {.prevent-break}
@@ -33,6 +33,9 @@ Pressing the joystick will momentarily toggle the `LFO`  vibrato modulation on. 
 
 The `MOD CV` input can be used to control the bender using an external control voltage. Signal applied to the `MOD CV` input is equivalent to moving the bender joystick to the right.
 :::
+
+*Tip:* Using a cable, you can route the `CV` Output from the `EXTERNAL` Channel into the `MOD CV` Input to modulate and sequence the filter cutoff or pitch transposition from a sequence track.
+
 
 </article>
 

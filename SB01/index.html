@@ -58,6 +58,7 @@ id="toc-envelope-generator-env">Envelope Generator (ENV)</a></li>
 <li><a href="#keyboard" id="toc-keyboard">Keyboard</a>
 <ul>
 <li><a href="#hold" id="toc-hold">Hold</a></li>
+<li><a href="#chord-mode" id="toc-chord-mode">Chord Mode</a></li>
 <li><a href="#transpose" id="toc-transpose">Transpose</a></li>
 </ul></li>
 <li><a href="#arpeggiator" id="toc-arpeggiator">Arpeggiator</a>
@@ -92,13 +93,17 @@ id="toc-internal-external-channel">Internal / External Channel</a>
 Channel</a></li>
 <li><a href="#external-channel" id="toc-external-channel">External
 Channel</a></li>
-<li><a href="#both-mode" id="toc-both-mode">BOTH mode</a></li>
+<li><a href="#both-mode" id="toc-both-mode">BOTH Mode</a></li>
 </ul></li>
 <li><a href="#power" id="toc-power">Power</a></li>
 <li><a href="#configuration-tool"
 id="toc-configuration-tool">Configuration Tool</a></li>
+<li><a href="#microtuning-tool" id="toc-microtuning-tool">Microtuning
+Tool</a></li>
 <li><a href="#firmware-update" id="toc-firmware-update">Firmware
 Update</a></li>
+<li><a href="#midi-implementation-chart"
+id="toc-midi-implementation-chart">MIDI Implementation Chart</a></li>
 </ul>
 		  </section>
 
@@ -184,19 +189,29 @@ engine (+14V).</p>
 </figure>
 </div>
 <p>The voltage controlled oscillator (<code>VCO</code>) is where the
-multiple tone sources of the SB01 are created.</p>
+multiple oscillator waveforms, or tone sources of the SB01 are
+created.</p>
+<p>The sawtooth contains a fundamental sine wave and its integral
+harmonic sine waves at a fixed ratio of 1/<em>n</em>. This wave makes a
+good starting point for brass, string, and guitar tones.</p>
+<p>The square wave contains the same fundamental sine wave and harmonics
+as the sawtooth, except there are no even numbered harmonics. This wave
+has a hollow sound that is suitable for woodwinds.</p>
 <p>The <code>MOD</code> control adjusts the amount that the
-<code>LFO</code> will change the pitch of the oscillator.</p>
+<code>LFO</code> will modulate the pitch of the oscillator.</p>
 <p>The <code>RANGE</code> knob controls the pitch of the oscillator in
 one octave steps from 16’ to 2’. When this knob is set to 8’ and the
 <code>TRANSPOSE</code> is set to M, the lowest C note maps to the middle
 C of a piano.</p>
+<p><strong>Tip:</strong> In the <code>CONFIGURATION TOOL</code>, there
+is an option to toggle the <code>RANGE</code> to a <code>32'</code>
+setting for access to even lower pitches.</p>
 <section id="pulse-width" class="prevent-break">
 <h4>Pulse Width</h4>
 <p>Pulse width modulation allows control over the duty cycle of the
 square wave, which is the proportion of time that a pulse waveform is
-high or low.<br />
-For example, a square wave has equal parts high and low, like this:</p>
+high or low. For example, a square wave has equal parts high and low,
+like this:</p>
 <div class="w2/3">
 <figure>
 <img src="assets/pulse-width-1.svg" alt="FIGURE 1.5" />
@@ -247,11 +262,12 @@ the VCO section.</p>
 <p>The <code>SAW</code> slider controls the amount of sawtooth wave that
 is mixed in.</p>
 <p>The <code>SUB OSC</code> slider controls the amount of sub-oscillator
-that is mixed in. The sub-oscillator is a waveform that is divided in
-half from the main oscillator and will thus follow the pitch. Using the
-<code>SUB OSC</code> switch, the sub oscillator can be set to:</p>
+that is mixed in. The sub-oscillator is divided down from the oscillator
+and will thus be exactly one or two octaves lower than the
+<code>VCO</code> pitch. Using the ’SUB OSC switch, the output can be set
+to:</p>
 <ul>
-<li>A square wave one octave below the main oscillator</li>
+<li>A square wave one octave below</li>
 <li>A square wave two octaves below</li>
 <li>A 25% duty cycle pulse wave two octaves below</li>
 </ul>
@@ -281,19 +297,20 @@ from a pleasant squelchy sound, to harsh and shrill tones.</p>
 <p>The <code>ENV</code> slider controls the amount of control that the
 envelope generator has on the filter cutoff position.</p>
 <p>The <code>MOD</code> slider controls the amount of control that the
-LFO has on the filter cutoff position.</p>
+<code>LFO</code> has on the filter cutoff position.</p>
 <p>The <code>KYBD</code> slider will control the amount of keyboard CV
 that is applied to the filter cutoff based on the note that is played.
 This can be useful for creating a sound that is darker in the lower
 notes, but gets brighter as higher notes are played.</p>
 <h4 id="self-oscillation">Self-Oscillation</h4>
-<p>With the resonance control set to maximum, the filter will feedback
-into self-oscillation. This type of oscillation results in a pure sine
-wave output with no harmonics.</p>
-<p>To enable self-oscillation, set <code>FREQ</code> to about half, and
-set <code>RES</code> and <code>KYBD</code> to the maximum. The filter
-output will track the note played to within 1%. Use the
-<code>FREQ</code> slider to adjust note tuning.</p>
+<p>With the resonance control set to maximum, the resonant peak of
+filter will feed back into itself to the point of self-oscillation. This
+type of oscillation results in a pure sine wave with no harmonics.</p>
+<p>To explore the filter in self-oscillation, set <code>FREQ</code> to
+about half, and set <code>RES</code> and <code>KYBD</code> to the
+maximum. The filter output will track the note played to within 1%. Use
+the <code>FREQ</code> slider to adjust note tuning or turn down the
+other tone sources in the <code>SOURCE MIXER</code> to taste.</p>
 </article>
 <hr />
 <h2 id="voltage-controlled-amplifier-vca">Voltage Controlled Amplifier
@@ -305,13 +322,13 @@ output will track the note played to within 1%. Use the
 <figcaption aria-hidden="true">FIGURE 1.9</figcaption>
 </figure>
 </div>
-<p>The voltage controlled amplifier (VCA) section controls the
-amplitude, or volume of a note over time as it is played.</p>
-<p>When the VCA is set to <code>GATE</code> mode, the volume of the note
-will be at the maximum as soon as a note is played, and will stop as
-soon as the note is released.</p>
-<p>When the VCA is set to <code>ENV</code> mode, the volume of the note
-will follow the shape of the envelope section.</p>
+<p>The voltage controlled amplifier (<code>VCA</code>) section controls
+the amplitude, or volume of a note over time as it is played.</p>
+<p>When the <code>VCA</code> is set to <code>GATE</code> mode, the
+volume of the note will be at the maximum as soon as a note is played,
+and will stop as soon as the note is released.</p>
+<p>When the <code>VCA</code> is set to <code>ENV</code> mode, the volume
+of the note will follow the shape of the envelope section.</p>
 </article>
 <hr />
 <h2 id="envelope-generator-env">Envelope Generator (ENV)</h2>
@@ -389,13 +406,17 @@ including pitch, pulse width, and filter cutoff.</p>
 <code>LFO</code>. The rate of cycling controls the speed of the
 arpeggiator and sequencer unless they are driven by an external clock
 source using the <code>TRIG</code> input.</p>
+<p>Similar to bypassing the internal clock by using the
+<code>TRIG</code> input, enabling <code>MIDI</code> clock will decouple
+the <code>LFO</code> rate and allow it to free-run for modulation
+purposes.</p>
 <p>The <code>WAVEFORM</code> switch selects the ouput shape of the
 <code>LFO</code>. Triangle and square are the output waveforms from the
 <code>LFO</code>, while the <code>RANDOM</code> output waveform is
 generated digitally. Each cycle of the <code>LFO</code> will produce a
-new random modulation level that is held until the next clock cycle. The
-<code>NOISE</code> waveform is the internal white noise source and is
-not affected by the rate control.</p>
+new random modulation level that is held until the next clock cycle.</p>
+<p>The <code>NOISE</code> waveform is the internal white noise source
+and is not affected by the rate control.</p>
 </article>
 <hr />
 <h2 id="portamento">Portamento</h2>
@@ -460,10 +481,10 @@ joystick.</p>
 </section>
 <section id="vibrato-latch" class="prevent-break">
 <h4>Vibrato Latch</h4>
-<p>Pressing the joystick will momentarily toggle the <code>LFO</code>
-vibrato modulation on. Holding <code>SHIFT</code> while pressing will
-latch the vibrato ON and OFF, having the same effect as holding the
-joystick forward.</p>
+<p>Clicking the joystick will momentarily toggle the <code>LFO</code>
+vibrato modulation on. Holding <code>SHIFT</code> while clicking will
+latch the vibrato on and off, having the same effect as holding the
+joystick forward for constant vibrato effect.</p>
 </section>
 <section id="mod-cv" class="prevent-break">
 <h4>Mod CV</h4>
@@ -471,6 +492,10 @@ joystick forward.</p>
 an external control voltage. Signal applied to the <code>MOD CV</code>
 input is equivalent to moving the bender joystick to the right.</p>
 </section>
+<p><em>Tip:</em> Using a cable, you can route the <code>CV</code> Output
+from the <code>EXTERNAL</code> Channel into the <code>MOD CV</code>
+Input to modulate and sequence the filter cutoff or pitch transposition
+from a sequence track.</p>
 </article>
 <hr />
 <h1 id="keyboard">Keyboard</h1>
@@ -487,6 +512,16 @@ maps to the middle C of a piano.</p>
 sustain every note. The <code>PEDAL</code> input will also activate the
 <code>HOLD</code> function when pressed, similar to the damper pedal of
 a piano.</p>
+<h3 id="chord-mode">Chord Mode</h3>
+<p><code>CHORD</code> Mode is a keyboard feature available on the
+<code>EXTERNAL</code> Channel while using MIDI. This mode allows a held
+programmed interval or chord to played back by a single keypress.</p>
+<p>Press <code>SHIFT</code> + <code>HOLD</code> to activate the
+<code>CHORD</code> function. If the chord requires more than one hand,
+use the <code>HOLD</code> function to play and hold down the individual
+notes, then activate the <code>CHORD</code> function. The lowest note of
+the saved chord will now trigger and transpose the entire interval
+across the keyboard.</p>
 <section id="transpose" class="prevent-break">
 <h3>Transpose</h3>
 <p>To enable the Transpose function, hold the <code>TRANSPOSE</code>
@@ -519,41 +554,45 @@ arpeggiator or sequence.</p>
 <article>
 <p>The Arpeggiator will automatically play any held notes as a
 progressive arpeggio.</p>
+<p>Use the <code>HOLD</code> button to latch notes into the Arpeggiator
+and free hands for adjusting the sound.</p>
+<p>Without using the <code>HOLD</code> function , any new notes played
+into the Arpeggiator will reset the <code>LFO/CLK RATE</code> on the
+first key press.</p>
 <p>The speed of the Arpeggiator is controlled by the speed of the
-LFO/CLK RATE. If the SB01 is configured to accept an external MIDI
-clock, the speed of the Arpeggiator will instend be controlled by the
-external MIDI clock.</p>
+<code>LFO/CLK RATE</code>. If the SB01 is configured to accept an
+external MIDI clock, the rate of the Arpeggiator will follow.</p>
 <section id="arpeggiator-modes" class="prevent-break">
 <h3>Arpeggiator Modes</h3>
-<p>To enable the Arpeggiator, press any of the three Arpeggiator mode
-buttons:</p>
-<ul>
-<li><code>DOWN</code>: plays the arpeggiated notes from highest to
-lowest</li>
-<li><code>U+D</code>: plays the arpeggiated notes from lowest to
-highest, and then back down to lowest</li>
+<p>To enable the Arpeggiator, press or combine any of the three
+Arpeggiator mode buttons:</p>
+<ol type="1">
 <li><code>UP</code>: plays the arpeggiated notes from lowest to
 highest</li>
-<li><code>DOWN</code> + <code>U+D</code>: plays the arpeggiated notes in
-caterpillar down mode ✳</li>
-<li><code>U+D</code> + <code>UP</code>: plays the arpeggiated notes in
-caterpillar up mode ✳</li>
-<li><code>UP</code> + <code>DOWN</code>: plays the arpeggiated notes in
-edge mode ✳</li>
+<li><code>U+D</code>: plays the arpeggiated notes from lowest to highest
+then reverses</li>
+<li><code>DOWN</code>: plays the arpeggiated notes from highest to
+lowest</li>
+<li><code>U+D</code> + <code>UP</code>: caterpillar up mode — the
+pattern will move two steps forward and one step backward</li>
+<li><code>UP</code> + <code>DOWN</code>: corner mode — the pattern will
+repeat the first and last steps before changing direction</li>
+<li><code>DOWN</code> + <code>U+D</code>: caterpillar down mode — the
+pattern will move two steps backward and one step forward</li>
 <li><code>DOWN</code> + <code>U+D</code> + <code>UP</code>: plays the
 arpeggiated notes in random order</li>
-</ul>
+</ol>
 <p><em>✳ Available in beta firmware <code>Oct 5 2025 17:19:32</code> and
 later. You can check what firmware you are on in the <a
 href="https://control.playsuperlative.com" target="_blank">control
 app</a></em></p>
 </section>
-<p>To disable the Arpeggiator, press the currently active mode
-again.</p>
 <p><em>Tip:</em> You can switch modes while the Arpeggiator is
 playing.</p>
-<p>Use the <code>HOLD</code> button to latch notes into the Arpeggiator
-and free hands for adjusting the sound.</p>
+<p>To disable the Arpeggiator, press the currently active mode
+again.</p>
+<p>The <code>TRANSPOSE</code> function and transpose <code>LATCH</code>
+feature are both available to use with the arpeggiator.</p>
 </article>
 <hr />
 <h1 id="sequencer">Sequencer</h1>
@@ -588,27 +627,29 @@ the <code>LEGATO</code> button to tie notes together.</li>
 sequence will loop continuously until stopped.</li>
 <li><strong>Stop:</strong> Press the <code>PLAY</code> button
 again.</li>
+<li><strong>Reset Function:</strong> Hold <code>SHIFT</code> and press
+the <code>RESET</code> button to reset a running sequence to the first
+step.</li>
 </ul>
 </section>
 <section id="sequencer-play-directions" class="prevent-break">
 <h3>Sequencer Play Directions</h3>
 <p>To change the sequencer playback direction, hold <code>SHIFT</code>
-and press any of the three Arpeggiator mode buttons:</p>
-<ul>
-<li><code>DOWN</code>: plays the sequence notes from last note to
-first</li>
-<li><code>U+D</code>: reverses play direction after reaching the last
-note</li>
+and press or combine any of the three Arpeggiator mode buttons:</p>
+<ol type="1">
 <li><code>UP</code>: plays the sequence from first note to last</li>
-<li><code>DOWN</code> + <code>U+D</code>: plays the sequence in
-caterpillar down mode ✳</li>
-<li><code>U+D</code> + <code>UP</code>: plays the sequence in
-caterpillar up mode ✳</li>
-<li><code>UP</code> + <code>DOWN</code>: plays the sequence in edge mode
-✳</li>
+<li><code>U+D</code>: play direction reverses after reaching the last
+note</li>
+<li><code>DOWN</code>: plays the sequence from last note to first</li>
+<li><code>U+D</code> + <code>UP</code>: caterpillar up mode — the
+sequence will move two steps forward and one step backward ✳</li>
+<li><code>UP</code> + <code>DOWN</code>: corner mode — the sequence will
+repeat the first and last steps before changing direction ✳</li>
+<li><code>DOWN</code> + <code>U+D</code>: caterpillar down mode — the
+sequence will move two steps backward and one step forward ✳</li>
 <li><code>DOWN</code> + <code>U+D</code> + <code>UP</code>: plays the
 sequence in random order</li>
-</ul>
+</ol>
 <p><strong>Tip:</strong> You can switch directions while the sequencer
 is playing.</p>
 <p>Both the <code>INT</code> and <code>EXT</code> tracks can have
@@ -696,7 +737,7 @@ internal synth “engine” of the SB01.</p>
 of the internal synth, allowing a second keyboard, arpeggiator, and
 sequencer to freely control an external device that accepts CV, MIDI, or
 USB MIDI.</p>
-<h3 id="both-mode">BOTH mode</h3>
+<h3 id="both-mode">BOTH Mode</h3>
 <p>Hold the <code>INTERNAL</code> and <code>EXTERNAL</code> buttons
 together to enter <code>BOTH</code> mode. While both channel LED’s are
 lit, all button actions will now apply to both channels.</p>
@@ -721,14 +762,14 @@ knob will begin blinking at the rate of the <code>LFO</code>. If
 depleted, the LED will flash but the synth will not play until charged
 again.</p>
 </div>
-<section id="checking-the-battery-level" class="unlisted prevent-break">
-<h3 class="unlisted">Checking the battery level</h3>
+<section id="checking-battery-level" class="unlisted prevent-break">
+<h3 class="unlisted">Checking Battery Level</h3>
 <p>To check the battery level, hold <code>SHIFT</code> while pressing
 the <code>BATT</code> button. The approximate battery level will be
 indicated by the seven LEDs in the sequencer section.</p>
 </section>
 <section id="powering-external-gear" class="unlisted prevent-break">
-<h3 class="unlisted">Powering external gear</h3>
+<h3 class="unlisted">Powering External Gear</h3>
 <p>The SB01 can also be used as a power source for external gear using
 it’s built-in battery. Simply connect a device to the USB port on the
 back of the synth while power is active. You can even charge your phone
@@ -751,17 +792,14 @@ href="#figure-2.1">FIGURE 2.1</a>.</p>
 <img src="assets/control-light.png" alt="FIGURE 2.1" />
 <figcaption aria-hidden="true">FIGURE 2.1</figcaption>
 </figure>
-<h4 id="enabling-midi-for-internalexternal-machines">Enabling MIDI for
-internal/external machines</h4>
-<p>Use the switch matrix at the top of the controls app to enable or
-disable TRS and USB MIDI for the internal and external engines
-(channels).</p>
-<h4 id="setting-midi-channels">Setting MIDI channels</h4>
+<h4 id="setting-midi-channels">Setting MIDI Channels</h4>
 <p>Use the <code>MIDI CHANNEL IN</code> and
 <code>MIDI CHANNEL OUT</code> selectors to set which channels the synth
-will listen to and transmit MIDI information on.</p>
-<h4 id="enabling-midi-clock-midi-sync">Enabling MIDI clock (MIDI
-sync)</h4>
+will listen to and transmit MIDI information on. There are separate MIDI
+channel settings for the <code>INTERNAL</code> and <code>EXTERNAL</code>
+channels.</p>
+<h4 id="enabling-midi-clock-midi-sync">Enabling MIDI Clock (MIDI
+Sync)</h4>
 <p>Use the <code>MIDI CLOCK TRS IN</code> switch to enable or disable
 MIDI clock sync on the TRS MIDI input.<br />
 Use the <code>MIDI CLOCK USB IN</code> switch to enable or disable MIDI
@@ -771,9 +809,46 @@ clock the sequencer and arpeggiator from this clock source, ignoring the
 <code>LFO/CLK</code> rate.</p>
 <p>The <code>CLOCK SUBDIVISION</code> slider divides the incoming MIDI
 clock and sets the speed of the arpeggiator and sequencer.</p>
+<h4 id="range">32’ Range</h4>
+<p>When enabled, the <code>RANGE</code> toggle will span from 32’ to 4’
+instead of the default 16’ to 2’ — letting you access the lowest
+possible octave the VCO can produce.</p>
+<h4 id="reset-to-factory-defaults">Reset to Factory Defaults</h4>
+<p>User configuration can be reset to factory defaults by holding both
+<code>MEMORY</code> buttons (<code>JUMP</code> + <code>CHAIN</code>)
+while powering on the device.</p>
 <p><strong>Tip:</strong> Use the sun/moon icon at the top right of the
 app to switch between <span class="light-switch">light</span> and <span
 class="dark-switch">dark</span> mode.</p>
+</article>
+<hr />
+<h1 id="microtuning-tool">Microtuning Tool</h1>
+<article>
+<p>Custom tuning tables for the SB01 can be configured through a <a
+href="#browser-chart">WebUSB enabled browser</a>.</p>
+<p>Tuning tables are edited in the <code>CONFIGURATION TOOL</code> app.
+<a href="#figure-2.2">FIGURE 2.2</a>.</p>
+<figure id="figure-2.2">
+<img src="assets/control-tuning-table-light.png" alt="FIGURE 2.2" />
+<figcaption aria-hidden="true">FIGURE 2.2</figcaption>
+</figure>
+<p>An adjustable tuning offset can be applied to each key on the SB01 in
+cents (-99 to +99). You can click and drag on a key to adjust its
+offset, or enter a value directly in the input box. After entry, the
+offset will be applied to the connected synth immediately.</p>
+<p>Upon saving, the tuning table will be stored in the user tuning table
+slot.</p>
+<h4 id="setting-active-table">Setting Active Table</h4>
+<p>If the first key on the keyboard is held at startup the custom tuning
+table will be loaded. If no key is held at startup, the default tuning
+table will be loaded.</p>
+<h4 id="load-custom-tuning-tables">Load Custom Tuning Tables</h4>
+<p>Import a .tun file to load an existing tuning table directly. A .tun
+file will let you go beyond +-99 cents. Press the LOAD button and
+navigate to a .tun file, and the table will be applied immediately.</p>
+<h4 id="preset-tuning-tables">Preset Tuning Tables</h4>
+<p>For microtonal exploration, several presets options are
+available.</p>
 </article>
 <hr />
 <h1 id="firmware-update">Firmware Update</h1>
@@ -842,6 +917,93 @@ again.</p>
 access to the USB device. Refer to <a
 href="#linux-webusb-compatibility">this guide</a> for more
 information.</em></p>
+</article>
+<hr />
+<h1 id="midi-implementation-chart">MIDI Implementation Chart</h1>
+<p><em>Applies to both TRS MIDI and USB MIDI</em></p>
+<h4 id="basic-information">Basic Information</h4>
+<table>
+<colgroup>
+<col style="width: 48%" />
+<col style="width: 28%" />
+<col style="width: 24%" />
+</colgroup>
+<thead>
+<tr>
+<th>Function</th>
+<th>Transmitted</th>
+<th>Recognized</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>MIDI channels</td>
+<td>1 to 16</td>
+<td>1 to 16</td>
+</tr>
+<tr>
+<td>Note numbers (A4 = 440 Hz)</td>
+<td>F2 (41) to C7 (96)</td>
+<td>F2 (41) to C7 (96)</td>
+</tr>
+<tr>
+<td>Pitch Bend</td>
+<td>No</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Mod Wheel</td>
+<td>No</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Sustain Pedal (CC# 64)</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+</tbody>
+</table>
+<h4 id="timing-and-synchronization">Timing and Synchronization</h4>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Transmitted</th>
+<th>Recognized</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>MIDI Clock</td>
+<td>No</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Song Select</td>
+<td>No</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Start</td>
+<td>No</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Continue</td>
+<td>No</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Stop</td>
+<td>No</td>
+<td>Yes</td>
+</tr>
+</tbody>
+</table>
+<h4 id="midi-mod-wheel">MIDI Mod Wheel</h4>
+<p>Incoming mod wheel messages to the <code>INTERNAL</code> channel will
+control the same CV as the MOD CV input. This can be used to control the
+filter or oscillator.</p>
 </article>
 <hr />
 <h2 class="unlisted" id="linux-webusb-compatibility">Linux WebUSB
