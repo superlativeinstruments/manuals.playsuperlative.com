@@ -8,18 +8,23 @@ Each channel button represents the active control window, which shows the curren
 
 ### Internal Channel
 
-The `INTERNAL` track will always correspond to the internal synth "engine" of the SB01. 
+The `INTERNAL` track will always correspond to and control the internal synth "engine" of the SB01. It can also be configured to send `MIDI` data out.
 
 ### External Channel
 
-The `EXTERNAL` track offers another control layer on top of the internal synth, allowing a second keyboard, arpeggiator, and sequencer to freely control an external device that accepts CV, MIDI, or USB MIDI. 
+The `EXTERNAL` track offers another control layer on top of the internal synth, allowing a second keyboard, arpeggiator, and sequencer to independently control an external device that accepts `CV / GATE` or `TRS / USB MIDI`.
+
 
 ### BOTH Mode
 
-Hold the `INTERNAL` and `EXTERNAL` buttons together to enter `BOTH` mode. While both channel LED's are lit, all button actions will now apply to both channels. 
+Press the `INTERNAL` and `EXTERNAL` buttons together to enter `BOTH` mode. While both channel LED's are lit, all button actions will now apply to both channels. 
 
-When a function is active in both tracks, the button will toggle between `INT` and `EXT` channel colors to reflect this.
-Exit BOTH mode by pressing INT or EXT to enter an individual channel’s control.
+Similarly, all keyboard inputs will apply to both channels even if they are in different modes. For example, different arpeggiator mode settings at the same time in each channel will respond differently to the same chord input from the keyboard.
+
+When a function is active in both channels, the button will toggle between `INT` and `EXT` channel colors to reflect this.
+Exit `BOTH` mode by pressing `INT` or `EXT` to enter an individual channel's control.
+
+**Tip:** While using `BOTH` mode to control both channels simultaneously, the interface will follow a paradigm to prioritize action towards unifying channel states. For example, if one channel is in `PLAY` and another is stopped, pressing the `PLAY` button in `BOTH` mode will cause the stopped channel to start playing so they are now both in `PLAY`. Another press will stop both channels.
 
 </article>
 

@@ -16,7 +16,7 @@ Each key on the keyboard represents a save location, of which there are 32 total
 :::
 
 ::: {.prevent-break}
-### Select Active Bank
+### Selecting Active Bank
 
 * Hold the `BANK SELECT` button and press `WRITE A` or `WRITE B` to select bank A or B for sequence recall.
 :::

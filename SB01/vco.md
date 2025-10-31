@@ -6,12 +6,7 @@
 ![FIGURE 1.4](assets/sb01-vco-bw.svg)
 :::
 
-The voltage controlled oscillator (`VCO`) is where the multiple oscillator waveforms, or tone sources of the SB01 are created.
-
-The sawtooth contains a fundamental sine wave and its integral harmonic sine waves at a fixed ratio of 1/*n*. This wave makes a good starting point for brass, string, and guitar tones.
-
-The square wave contains the same fundamental sine wave and harmonics as the sawtooth, except there are no even numbered harmonics. This wave has a hollow sound that is suitable for woodwinds.
-
+The voltage controlled oscillator (`VCO`) is where the multiple oscillator waveforms or tone sources of the SB01 are created.
 
 The `MOD` control adjusts the amount that the `LFO` will modulate the pitch of the oscillator.
 
@@ -20,9 +15,15 @@ The `RANGE` knob controls the pitch of the oscillator in one octave steps from 1
 **Tip:** In the `CONFIGURATION TOOL`, there is an option to toggle the `RANGE` to a `32'` setting for access to even lower pitches.
 
 ::: {.prevent-break}
+
+
+The `SAW` wave contains a fundamental sine wave and its integral harmonic sine waves at a fixed ratio of 1/*n*. This wave makes a good starting point for brass, string, and guitar tones.
+
+The `PULSE` wave contains the same fundamental sine wave and harmonics as the sawtooth, except there are no even-numbered harmonics. This wave has a hollow sound that is suitable for woodwinds.
+
 #### Pulse Width
 
-Pulse width modulation allows control over the duty cycle of the square wave, which is the proportion of time that a pulse waveform is high or low. For example, a square wave has equal parts high and low, like this:
+`PULSE WIDTH` modulation allows control over the duty cycle of the square wave, which is the proportion of time that a pulse waveform is high or low. For example, a square wave has equal parts high and low, like this:
 
 <div class="w2/3">
 
@@ -41,13 +42,13 @@ While a wave with a narrower pulse width may look like this:
 
 Both of these examples have the same frequency, but the harmonic content of the pulse wave will vary in proportion to the width of the pulses.
 
-The `PULSE WIDTH` switch controls the mode that the pulse width modulation will operate in.
+The `PULSE WIDTH` switch controls the mode that the modulation will operate in:
 
-- In `MANUAL` setting, the `PULSE WIDTH` slider will manually control the pulse width of the square wave from 50% to 5%.
+- In `LFO` setting, the triangle wave `LFO` controls pulse width and the `PULSE WIDTH` slider controls the depth of modulation applied.
 
-- In `LFO` setting, the triangle wave `LFO` will control the pulse width of the oscillator, and the `PULSE WIDTH` slider will control the amount of modulation that is applied.
+- In `MANUAL` setting, the `PULSE WIDTH` slider manually controls the pulse width of the square wave from 50% to 5%.
 
-- In `ENV` setting, the envelope shape will control the pulse width of the oscillator, and the `PULSE WIDTH` slider will control the amount of modulation that is applied.
+- In `ENV` setting, the envelope shape controls pulse width and the `PULSE WIDTH` slider controls the depth of modulation applied.
 
 </article>
 

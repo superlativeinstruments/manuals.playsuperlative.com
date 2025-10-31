@@ -2,13 +2,13 @@
 
 <article>
 
-The SB01 features a digital sequencer capable of storing and playing up to 256 steps.
+The SB01 features a digital sequencer capable of storing and playing up to 256 steps in different creative patterns.
 
 ::: {.prevent-break}
 ### Tempo Control{.unlisted}
-* Adjust the tempo using the LFO/CLK RATE knob.
-* Connect an external clock signal to the TRIG input.
-* Synchronize with an external MIDI clock.
+* Adjust the tempo using the `LFO/CLK RATE` knob.
+* Connect an external clock signal to the `TRIG` input.
+* Synchronize with an external `MIDI` clock.
 :::
 
 ::: {.prevent-break}
@@ -17,7 +17,7 @@ The SB01 features a digital sequencer capable of storing and playing up to 256 s
 * **Start Recording:** Press the `LOAD` button and enter notes from the keyboard.
 * **Stop Recording:** Press the `LOAD` button again.
 * **Add Rests:** While recording, press the `REST` button to add an empty step.
-* **Add Legato/Slides:** While recording, press and hold the `LEGATO` button to tie notes together.
+* **Add Legato/Slides:** While recording, press and hold the `LEGATO` button while entering notes to tie them together.
 :::
 
 ::: {.prevent-break}
@@ -29,7 +29,7 @@ The SB01 features a digital sequencer capable of storing and playing up to 256 s
 :::
 
 ::: {.prevent-break}
-### Sequencer Play Directions
+### Sequence Play Directions
 
 To change the sequencer playback direction, hold `SHIFT` and press or combine any of the three Arpeggiator mode buttons:
 
