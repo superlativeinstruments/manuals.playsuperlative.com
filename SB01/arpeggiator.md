@@ -24,7 +24,6 @@ To enable the Arpeggiator, press or combine any of the three Arpeggiator mode bu
 6. `DOWN` + `U+D`: caterpillar down mode — the pattern will move two steps backward and one step forward
 7. `DOWN` + `U+D` + `UP`: plays the arpeggiated notes in random order
 
-*✳ Available in beta firmware `Oct 5 2025 17:19:32` and later. You can check what firmware you are on in the [control app](https://control.playsuperlative.com){target="_blank"}*
 
 :::
 

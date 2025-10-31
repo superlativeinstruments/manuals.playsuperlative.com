@@ -25,7 +25,7 @@ The `CLOCK SUBDIVISION` slider divides the incoming MIDI clock and sets the spee
 
 #### 32' Range
 
-When enabled, the `RANGE` toggle will span from 32' to 4' instead of the default 16' to 2' — letting you access the lowest possible octave the VCO can produce.
+When enabled, the `RANGE` toggle will span from 32' to 4' instead of the default 16' to 2' — letting you access the lowest possible octave the `VCO` can produce.
 
 #### Reset to Factory Defaults
 

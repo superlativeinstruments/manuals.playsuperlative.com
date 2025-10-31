@@ -34,8 +34,8 @@
 
   	  	  <section class="toc">
 <ul>
-<li><a href="#rear-panel-connections"
-id="toc-rear-panel-connections">Rear panel connections</a></li>
+<li><a href="#connection-jacks" id="toc-connection-jacks">Connection
+Jacks</a></li>
 <li><a href="#controls" id="toc-controls">Controls</a>
 <ul>
 <li><a href="#voltage-controlled-oscillator-vco"
@@ -72,8 +72,8 @@ Modes</a></li>
 Loading</a></li>
 <li><a href="#sequence-playback" id="toc-sequence-playback">Sequence
 Playback</a></li>
-<li><a href="#sequencer-play-directions"
-id="toc-sequencer-play-directions">Sequencer Play Directions</a></li>
+<li><a href="#sequence-play-directions"
+id="toc-sequence-play-directions">Sequence Play Directions</a></li>
 </ul></li>
 <li><a href="#storing-and-recalling-sequences"
 id="toc-storing-and-recalling-sequences">Storing and Recalling
@@ -81,8 +81,8 @@ Sequences</a>
 <ul>
 <li><a href="#saving-a-sequence" id="toc-saving-a-sequence">Saving a
 Sequence</a></li>
-<li><a href="#select-active-bank" id="toc-select-active-bank">Select
-Active Bank</a></li>
+<li><a href="#selecting-active-bank"
+id="toc-selecting-active-bank">Selecting Active Bank</a></li>
 <li><a href="#recalling-sequences"
 id="toc-recalling-sequences">Recalling Sequences</a></li>
 </ul></li>
@@ -100,38 +100,103 @@ Channel</a></li>
 id="toc-configuration-tool">Configuration Tool</a></li>
 <li><a href="#microtuning-tool" id="toc-microtuning-tool">Microtuning
 Tool</a></li>
-<li><a href="#firmware-update" id="toc-firmware-update">Firmware
-Update</a></li>
 <li><a href="#midi-implementation-chart"
 id="toc-midi-implementation-chart">MIDI Implementation Chart</a></li>
+<li><a href="#firmware-update" id="toc-firmware-update">Firmware
+Update</a></li>
 </ul>
 		  </section>
 
 
 		  <section class="body">
 <hr />
-<h2 id="rear-panel-connections">Rear panel connections</h2>
+<h2 id="connection-jacks">Connection Jacks</h2>
 <figure>
 <img src="assets/sb01-back-bottom-aligned-bw.svg" alt="FIGURE 1.1" />
 <figcaption aria-hidden="true">FIGURE 1.1</figcaption>
 </figure>
+<table>
+<colgroup>
+<col style="width: 24%" />
+<col style="width: 48%" />
+<col style="width: 27%" />
+</colgroup>
+<thead>
+<tr>
+<th>Connection</th>
+<th>Description</th>
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>USB</code></td>
+<td>USB-C for charging and data</td>
+<td>5 V / 1.5 A</td>
+</tr>
+<tr>
+<td><code>MIDI IN</code></td>
+<td>TRS <code>MIDI</code> input</td>
+<td>3.5mm Type-A</td>
+</tr>
+<tr>
+<td><code>MIDI OUT</code></td>
+<td>TRS <code>MIDI</code> output</td>
+<td>3.5mm Type-A</td>
+</tr>
+<tr>
+<td><code>PEDAL</code></td>
+<td>Sustain pedal input</td>
+<td>Normally open</td>
+</tr>
+<tr>
+<td><code>MOD CV</code></td>
+<td>CV input to <code>VCO/VCF</code> modulation</td>
+<td>0 ~ 5 V</td>
+</tr>
+<tr>
+<td><code>TRIG IN</code></td>
+<td>Trigger input</td>
+<td>+2.5 V Min.</td>
+</tr>
+<tr>
+<td><code>TRIG OUT</code></td>
+<td>Trigger output</td>
+<td>14 V</td>
+</tr>
+<tr>
+<td><code>CV IN</code></td>
+<td>Control voltage input</td>
+<td>1 V/oct, 0 ~ 7 V</td>
+</tr>
+<tr>
+<td><code>GATE IN</code></td>
+<td>Gate input</td>
+<td>+2.5 V Min.</td>
+</tr>
+<tr>
+<td><code>CV OUT</code></td>
+<td>CV output from <code>EXTERNAL</code> channel</td>
+<td>0.415 V ~ 5 V</td>
+</tr>
+<tr>
+<td><code>GATE OUT</code></td>
+<td>Gate output from <code>EXTERNAL</code> channel</td>
+<td>14 V</td>
+</tr>
+<tr>
+<td><code>PHONES</code></td>
+<td>Stereo headphone output</td>
+<td>8 Ω</td>
+</tr>
+<tr>
+<td><code>OUTPUT</code></td>
+<td>Line level audio output</td>
+<td>0 dBm Max.</td>
+</tr>
+</tbody>
+</table>
 <article>
-<p><code>USB</code>: Used for power and data. Connect to a computer for
-USB MIDI, device configuration, and firmware updates.</p>
-<p><code>MIDI IN</code>: TRS Type-A 3.5mm MIDI input.</p>
-<p><code>MIDI OUT</code>: TRS Type-A 3.5mm MIDI output.</p>
-<p><code>PEDAL</code>: Hold/Sustain pedal input.</p>
-<p><code>MOD CV</code>: CV input routable to VCO/VCF (0 to +5V).</p>
-<p><code>TRIG IN</code>: Trigger input (+2.5V or higher).</p>
-<p><code>TRIG OUT</code>: Trigger output (+14V).</p>
-<p><code>CV IN</code>: Control voltage input (1V/octave, 0 to +7V).</p>
-<p><code>GATE IN</code>: Gate input (+2.5V or higher).</p>
-<p><code>CV OUT</code>: Control voltage output from the
-<code>EXTERNAL</code> engine (0 to +5V).</p>
-<p><code>GATE OUT</code>: Gate output from the <code>EXTERNAL</code>
-engine (+14V).</p>
-<p><code>PHONES</code>: Stereo headphone output.</p>
-<p><code>OUTPUT</code>: Line level audio ouput.</p>
 </article>
 <hr />
 <h1 id="controls">Controls</h1>
@@ -189,29 +254,32 @@ engine (+14V).</p>
 </figure>
 </div>
 <p>The voltage controlled oscillator (<code>VCO</code>) is where the
-multiple oscillator waveforms, or tone sources of the SB01 are
+multiple oscillator waveforms or tone sources of the SB01 are
 created.</p>
-<p>The sawtooth contains a fundamental sine wave and its integral
-harmonic sine waves at a fixed ratio of 1/<em>n</em>. This wave makes a
-good starting point for brass, string, and guitar tones.</p>
-<p>The square wave contains the same fundamental sine wave and harmonics
-as the sawtooth, except there are no even numbered harmonics. This wave
-has a hollow sound that is suitable for woodwinds.</p>
-<p>The <code>MOD</code> control adjusts the amount that the
-<code>LFO</code> will modulate the pitch of the oscillator.</p>
-<p>The <code>RANGE</code> knob controls the pitch of the oscillator in
-one octave steps from 16’ to 2’. When this knob is set to 8’ and the
-<code>TRANSPOSE</code> is set to M, the lowest C note maps to the middle
-C of a piano.</p>
+<p>The <code>MOD</code> depth control adjusts the amount that the
+<code>LFO</code> will modulate the pitch of the oscillator, depending on
+the waveform selected in the <code>MODULATOR</code> section.</p>
+<p>The <code>RANGE</code> selector knob controls the pitch of the
+oscillator in one octave steps from 16’ to 2’. When this knob is set to
+8’ and the <code>TRANSPOSE</code> is set to M, the lowest C note maps to
+the middle C of a piano.</p>
 <p><strong>Tip:</strong> In the <code>CONFIGURATION TOOL</code>, there
 is an option to toggle the <code>RANGE</code> to a <code>32'</code>
 setting for access to even lower pitches.</p>
-<section id="pulse-width" class="prevent-break">
-<h4>Pulse Width</h4>
-<p>Pulse width modulation allows control over the duty cycle of the
-square wave, which is the proportion of time that a pulse waveform is
-high or low. For example, a square wave has equal parts high and low,
-like this:</p>
+<div class="prevent-break">
+<h4 id="waveforms">Waveforms</h4>
+<p>The <code>SAW</code> wave contains a fundamental sine wave and its
+integral harmonic sine waves at a fixed ratio of 1/<em>n</em>. This wave
+makes a good starting point for brass, string, and guitar tones.</p>
+<p>The <code>PULSE</code> wave contains the same fundamental sine wave
+and harmonics as the sawtooth, except there are no even-numbered
+harmonics. This wave has a hollow sound that is suitable for
+woodwinds.</p>
+<h4 id="pulse-width">Pulse Width</h4>
+<p><code>PULSE WIDTH</code> modulation allows control over the duty
+cycle of the square wave, which is the proportion of time that a pulse
+waveform is high or low. For example, a square wave has equal parts high
+and low, like this:</p>
 <div class="w2/3">
 <figure>
 <img src="assets/pulse-width-1.svg" alt="FIGURE 1.5" />
@@ -225,23 +293,22 @@ like this:</p>
 <figcaption aria-hidden="true">FIGURE 1.6</figcaption>
 </figure>
 </div>
-</section>
+</div>
 <p>Both of these examples have the same frequency, but the harmonic
 content of the pulse wave will vary in proportion to the width of the
 pulses.</p>
-<p>The <code>PULSE WIDTH</code> switch controls the mode that the pulse
-width modulation will operate in.</p>
+<p>The <code>PULSE WIDTH</code> switch controls the mode that the
+modulation will operate in:</p>
 <ul>
-<li><p>In <code>MANUAL</code> setting, the <code>PULSE WIDTH</code>
-slider will manually control the pulse width of the square wave from 50%
-to 5%.</p></li>
 <li><p>In <code>LFO</code> setting, the triangle wave <code>LFO</code>
-will control the pulse width of the oscillator, and the
-<code>PULSE WIDTH</code> slider will control the amount of modulation
-that is applied.</p></li>
-<li><p>In <code>ENV</code> setting, the envelope shape will control the
-pulse width of the oscillator, and the <code>PULSE WIDTH</code> slider
-will control the amount of modulation that is applied.</p></li>
+controls pulse width and the <code>PULSE WIDTH</code> slider controls
+the depth of modulation applied.</p></li>
+<li><p>In <code>MANUAL</code> setting, the <code>PULSE WIDTH</code>
+slider manually controls the pulse width of the square wave from 50% to
+5%.</p></li>
+<li><p>In <code>ENV</code> setting, the envelope shape controls pulse
+width and the <code>PULSE WIDTH</code> slider controls the depth of
+modulation applied.</p></li>
 </ul>
 </article>
 <hr />
@@ -253,25 +320,26 @@ will control the amount of modulation that is applied.</p></li>
 <figcaption aria-hidden="true">FIGURE 1.7</figcaption>
 </figure>
 </div>
-<p>The Source Mixer section contains controls to mix together the tone
-sources created by the <code>VCO</code> into various timbres, with the
-addition of noise and sub-oscillator waveforms.</p>
-<p>The <code>PULSE</code> slider controls the amount of pulse waveform
+<p>The <code>SOURCE MIXER</code> section contains controls to sum
+together the tone sources created by the <code>VCO</code> into various
+proportions before sending them to the <code>VCF</code>, with the
+addition of white noise and sub-oscillator waveforms.</p>
+<p>The <code>PULSE</code> level controls the amount of pulse waveform
 that is mixed in. The pulse width is configured using the controls in
-the VCO section.</p>
-<p>The <code>SAW</code> slider controls the amount of sawtooth wave that
+the <code>VCO</code> section.</p>
+<p>The <code>SAW</code> level controls the amount of sawtooth wave that
 is mixed in.</p>
-<p>The <code>SUB OSC</code> slider controls the amount of sub-oscillator
+<p>The <code>SUB OSC</code> level controls the amount of sub-oscillator
 that is mixed in. The sub-oscillator is divided down from the oscillator
 and will thus be exactly one or two octaves lower than the
-<code>VCO</code> pitch. Using the ’SUB OSC switch, the output can be set
-to:</p>
+<code>VCO</code> pitch. Using the <code>SUB OSC</code> switch, the
+output can be set to:</p>
 <ul>
 <li>A square wave one octave below</li>
 <li>A square wave two octaves below</li>
 <li>A 25% duty cycle pulse wave two octaves below</li>
 </ul>
-<p>The <code>NOISE</code> slider controls the amount of white noise that
+<p>The <code>NOISE</code> level controls the amount of white noise that
 is mixed in.</p>
 </article>
 <hr />
@@ -284,33 +352,41 @@ is mixed in.</p>
 <figcaption aria-hidden="true">FIGURE 1.8</figcaption>
 </figure>
 </div>
-<p>The voltage controlled filter (VCF) is used to shape the spectral
-properties of the combined sound coming from the Source Mixer section.
-The VCF in the SB01 is a four-pole low-pass filter based on the
-IR3109.</p>
-<p>The <code>FREQ</code> slider controls the cutoff point of the filter.
-This control sets the cutoff point of a low-pass filter that defines the
-brightness of the sound.</p>
+<p>The voltage controlled filter (<code>VCF</code>) is used to shape the
+tone color of the combined sound coming from the
+<code>SOURCE MIXER</code> section by cutting or boosting harmonics in
+the sound. The <code>VCF</code> in the SB01 is a four-pole low-pass
+filter based on the IR3109.</p>
+<p>The <code>FREQ</code> slider controls the cutoff point of the
+low-pass filter to define the brightness of the sound, with the lower
+position cutting frequencies and the highest position letting all
+frequences pass.</p>
 <p>The <code>RES</code> slider controls the amount of filter feedback
-(sometimes called resonance) that is applied. This can create anything
-from a pleasant squelchy sound, to harsh and shrill tones.</p>
-<p>The <code>ENV</code> slider controls the amount of control that the
-envelope generator has on the filter cutoff position.</p>
-<p>The <code>MOD</code> slider controls the amount of control that the
-<code>LFO</code> has on the filter cutoff position.</p>
-<p>The <code>KYBD</code> slider will control the amount of keyboard CV
-that is applied to the filter cutoff based on the note that is played.
-This can be useful for creating a sound that is darker in the lower
-notes, but gets brighter as higher notes are played.</p>
+(sometimes called resonance) that is applied at the cutoff point of the
+filter. This can emphasize certain harmonics and boost frequencies when
+shaping a sound or moving the cutoff.</p>
+<p>The <code>ENV</code> slider controls the amount of depth that the
+output of the envelope generator modulates the filter cutoff position.
+The cutoff frequency will change with each note in the pattern of the
+ADSR pattern previously set, giving articulation to each note’s
+brightness.</p>
+<p>The <code>MOD</code> slider controls the amount of depth that the
+<code>LFO</code> modulates the filter cutoff position. The filter cutoff
+will change depending on the waveform selected in the
+<code>MODULATOR</code> section.</p>
+<p>The <code>KYBD</code> slider controls the amount of keyboard
+<code>CV</code> that is applied to the filter cutoff based on the note
+played. This can be useful for creating sounds that become brighter as
+higher notes are played.</p>
 <h4 id="self-oscillation">Self-Oscillation</h4>
 <p>With the resonance control set to maximum, the resonant peak of
 filter will feed back into itself to the point of self-oscillation. This
 type of oscillation results in a pure sine wave with no harmonics.</p>
 <p>To explore the filter in self-oscillation, set <code>FREQ</code> to
 about half, and set <code>RES</code> and <code>KYBD</code> to the
-maximum. The filter output will track the note played to within 1%. Use
-the <code>FREQ</code> slider to adjust note tuning or turn down the
-other tone sources in the <code>SOURCE MIXER</code> to taste.</p>
+maximum. The filter output will track the keyboard note played to within
+1%. Use the <code>FREQ</code> slider to adjust the offset or turn down
+the other tone sources in the <code>SOURCE MIXER</code> to taste.</p>
 </article>
 <hr />
 <h2 id="voltage-controlled-amplifier-vca">Voltage Controlled Amplifier
@@ -328,7 +404,8 @@ the amplitude, or volume of a note over time as it is played.</p>
 volume of the note will be at the maximum as soon as a note is played,
 and will stop as soon as the note is released.</p>
 <p>When the <code>VCA</code> is set to <code>ENV</code> mode, the volume
-of the note will follow the shape of the envelope section.</p>
+of the note will follow the shape of the envelope generated by the
+settings in the <code>ENV</code> section.</p>
 </article>
 <hr />
 <h2 id="envelope-generator-env">Envelope Generator (ENV)</h2>
@@ -341,7 +418,7 @@ of the note will follow the shape of the envelope section.</p>
 </div>
 <p>The envelope generator is a standard four-stage envelope. It can be
 used to modulate pulse width, filter cutoff, and most commonly- the
-VCA.</p>
+amplitude of sound over time.</p>
 <p>An envelope works in two stages. First, when the envelope is
 triggered (by a keypress or gate), it will increase its voltage to the
 maximum amount in a period of time controlled by the “attack” parameter.
@@ -351,41 +428,43 @@ takes to get to the sustain level after the attack phase is controlled
 by the “decay” parameter. The envelope will stay at the sustain level
 until the note is let go.</p>
 <p>Once the note is released, the envelope will return to zero voltage.
-The amount of time this takes is controlled by the “release”
-parameter.</p>
+The amount of time this takes is controlled by the “release” parameter.
+In summary – attack, decay, and release all control the time constants,
+while sustain controls the level.</p>
 <div class="w2/3">
 <figure>
 <img src="assets/adsr.svg" alt="FIGURE 1.11" />
 <figcaption aria-hidden="true">FIGURE 1.11</figcaption>
 </figure>
 </div>
-<p>The envelope is very powerful for shaping the properties of a sound,
-especially when routed to the filter cutoff. For example, a typical
-“pluck” sound has no attack, a short delay, no sustain, and no release,
-while a “pad” sound may have a long attack and decay, a middle sustain,
-and a long release.</p>
-<p>Remember that attack, decay, and release all control the time, while
-sustain controls the level.</p>
+<p>The envelope is the primary way of shaping of a sound, especially
+when routed to the filter cutoff. For example, a typical “pluck” sound
+has no attack, a short delay, no sustain, and no release, while a “pad”
+sound may have a long attack and decay, a middle sustain, and a long
+release.</p>
 <p>On the SB01, the envelope controls are:</p>
 <ul>
-<li><code>A</code> - controls the attack time of the envelope</li>
-<li><code>D</code> - controls the decay time of the envelope</li>
-<li><code>S</code> - controls the envelope sustain level</li>
-<li><code>R</code> - controls the release time of the envelope</li>
+<li><code>A</code> – Attack time of the envelope</li>
+<li><code>D</code> – Decay time of the envelope</li>
+<li><code>S</code> – Sustain level of the envelope</li>
+<li><code>R</code> – Release time of the envelope</li>
 </ul>
-<p>The three settings of the <code>ENV</code> mode switch controls how
-the envelope is triggered.</p>
-<p>In <code>GATE</code> mode, the envelope is started by a keypress
+<p>Additionally, the three settings of the <code>ENV</code> mode switch
+controls how the envelope is triggered.</p>
+<ol type="1">
+<li><p>In <code>GATE</code> mode, the envelope is started by a keypress
 event and will transition to the release phase when the last key is let
 go. If additional notes are played, the envelope will not reset to the
-beginning.</p>
-<p>In <code>GATE+TRIG</code> mode, the envelope will be started by a
+beginning.</p></li>
+<li><p>In <code>GATE+TRIG</code> mode, the envelope will be started by a
 keypress event and will transition to the release phase when any key is
 let go. If additional notes are played, the envelope will reset at the
-beginning for the new note.</p>
-<p>In <code>LFO</code> mode, the envelope will be triggered by each
+beginning of each new note.</p></li>
+<li><p>In <code>LFO</code> mode, the envelope will be triggered by each
 cycle of the <code>LFO</code> when a note on the keyboard is played and
-held.</p>
+held. The <code>LFO/CLK RATE</code> will also now reset on the first key
+press.</p></li>
+</ol>
 </article>
 <hr />
 <h2 id="modulator-lfoclk">Modulator (LFO/CLK)</h2>
@@ -430,13 +509,14 @@ and is not affected by the rate control.</p>
 <p>Portamento is the musical term for continuous pitch glide or slew
 between notes.</p>
 <p>To enable portamento, toggle the <code>PORTAMENTO</code> switch to
-either <code>ON</code> or <code>AUTO</code>. The time of the glide can
-be controlled using the <code>PORTAMENTO</code> knob.</p>
-<p>In the <code>ON</code> position, the SB01 will glide the pitch
-between every note.</p>
-<p>In <code>AUTO</code> mode, the SB01’s glide effect activates only
-when you play a key <em>while still holding a previous key</em>. This
-“hold-and-glide” allows for expressive control.</p>
+either <code>ON</code> or <code>AUTO</code>. The glide speed can be
+controlled using the <code>PORTAMENTO</code> knob.</p>
+<p>In the <code>ON</code> position, the SB01 will glide in pitch between
+every note change.</p>
+<p>In <code>AUTO</code> mode, the glide effect activates only when
+playing a new key while the previous key is still held down
+(<em>legato</em> playing). This “hold-and-glide” allows for selective
+control over how portamento is applied.</p>
 <p><strong>Example:</strong></p>
 <ol type="1">
 <li>Hold the C key. Then, play the G key.</li>
@@ -444,12 +524,12 @@ when you play a key <em>while still holding a previous key</em>. This
 <li>If you release the C key before playing G, no glide will occur.</li>
 </ol>
 <p>In the <code>OFF</code> position, the glide effect will not be
-applied to any played notes.</p>
-<p>The SB01 has independent portamento states for each channel, so you
-can operate either channel with any <code>PORTAMENTO</code> setting.
-However, the portamento speed will be the same between both channels.
-Moving the toggle in each mode refreshes the <code>PORTAMENTO</code>
-state in each channel.</p>
+applied.</p>
+<p><strong>Tip:</strong> The SB01 has independent
+<code>PORTAMENTO</code> settings for each channel of
+<code>INTERNAL</code> or <code>EXTERNAL</code> control. Portamento speed
+will be the same between both channels, while changing the toggle in
+each channel refreshes the <code>PORTAMENTO</code> state.</p>
 </article>
 <hr />
 <h2 id="bender">Bender</h2>
@@ -502,9 +582,10 @@ from a sequence track.</p>
 <article>
 <p>The SB01 has 32 keys and 2.5 octaves, but can be played as a 56 key
 keyboard by using the <code>TRANSPOSE</code> button.</p>
-<p>With the <code>RANGE</code> of the VCO is set to 8’ and the
-<code>TRANSPOSE</code> is set to <code>NORMAL</code>, the lowest C note
-maps to the middle C of a piano.</p>
+<p>With the <code>RANGE</code> of the <code>VCO</code> is set to
+<code>8'</code> and the <code>TRANSPOSE</code> is set to
+<code>NORMAL</code>, the lowest C note maps to the middle C of a
+piano.</p>
 <h3 id="hold">Hold</h3>
 <p>Any key played can be held on after release by using the
 <code>HOLD</code> button (indicator will light).</p>
@@ -514,20 +595,21 @@ sustain every note. The <code>PEDAL</code> input will also activate the
 a piano.</p>
 <h3 id="chord-mode">Chord Mode</h3>
 <p><code>CHORD</code> Mode is a keyboard feature available on the
-<code>EXTERNAL</code> Channel while using MIDI. This mode allows a held
-programmed interval or chord to played back by a single keypress.</p>
+<code>EXTERNAL</code> Channel while using <code>MIDI</code>. This mode
+allows a programmed interval or chord to played back by a single
+keypress.</p>
 <p>Press <code>SHIFT</code> + <code>HOLD</code> to activate the
 <code>CHORD</code> function. If the chord requires more than one hand,
 use the <code>HOLD</code> function to play and hold down the individual
 notes, then activate the <code>CHORD</code> function. The lowest note of
-the saved chord will now trigger and transpose the entire interval
+the saved interval will now trigger and transpose the entire chord
 across the keyboard.</p>
 <section id="transpose" class="prevent-break">
 <h3>Transpose</h3>
-<p>To enable the Transpose function, hold the <code>TRANSPOSE</code>
-button down while pressing any key except for the lowest C key. The
-indicator will light and the keyboard will now play in the key of the
-chosen note.</p>
+<p>To enable the keyboard transpose function, hold the
+<code>TRANSPOSE</code> button down while pressing any key except for the
+lowest C key. The indicator will light and the keyboard will now play in
+the key of the chosen note.</p>
 <ul>
 <li>If you press a key <em>lower</em> than the lowest C, it will be
 transposed <em>down</em> by the distance in pitch between the pressed
@@ -538,7 +620,7 @@ C.</li>
 </ul>
 <p>To disable the Transpose function, hold the <code>TRANSPOSE</code>
 button down while pressing the lowest C. The indicator will go out and
-the SB01 has retruend to the normal condition (the key of C.)</p>
+the SB01 has returned to the normal condition (the key of C.)</p>
 <p><em>Tip:</em> You can freely change transposition while the
 Arpeggiator or Sequencer are playing.</p>
 </section>
@@ -582,10 +664,6 @@ pattern will move two steps backward and one step forward</li>
 <li><code>DOWN</code> + <code>U+D</code> + <code>UP</code>: plays the
 arpeggiated notes in random order</li>
 </ol>
-<p><em>✳ Available in beta firmware <code>Oct 5 2025 17:19:32</code> and
-later. You can check what firmware you are on in the <a
-href="https://control.playsuperlative.com" target="_blank">control
-app</a></em></p>
 </section>
 <p><em>Tip:</em> You can switch modes while the Arpeggiator is
 playing.</p>
@@ -598,13 +676,14 @@ feature are both available to use with the arpeggiator.</p>
 <h1 id="sequencer">Sequencer</h1>
 <article>
 <p>The SB01 features a digital sequencer capable of storing and playing
-up to 256 steps.</p>
+up to 256 steps in different creative patterns.</p>
 <section id="tempo-control" class="unlisted prevent-break">
 <h3 class="unlisted">Tempo Control</h3>
 <ul>
-<li>Adjust the tempo using the LFO/CLK RATE knob.</li>
-<li>Connect an external clock signal to the TRIG input.</li>
-<li>Synchronize with an external MIDI clock.</li>
+<li>Adjust the tempo using the <code>LFO/CLK RATE</code> knob.</li>
+<li>Connect an external clock signal to the <code>TRIG</code>
+input.</li>
+<li>Synchronize with an external <code>MIDI</code> clock.</li>
 </ul>
 </section>
 <section id="sequence-loading" class="prevent-break">
@@ -617,7 +696,8 @@ again.</li>
 <li><strong>Add Rests:</strong> While recording, press the
 <code>REST</code> button to add an empty step.</li>
 <li><strong>Add Legato/Slides:</strong> While recording, press and hold
-the <code>LEGATO</code> button to tie notes together.</li>
+the <code>LEGATO</code> button while entering notes to tie them
+together.</li>
 </ul>
 </section>
 <section id="sequence-playback" class="prevent-break">
@@ -632,8 +712,8 @@ the <code>RESET</code> button to reset a running sequence to the first
 step.</li>
 </ul>
 </section>
-<section id="sequencer-play-directions" class="prevent-break">
-<h3>Sequencer Play Directions</h3>
+<section id="sequence-play-directions" class="prevent-break">
+<h3>Sequence Play Directions</h3>
 <p>To change the sequencer playback direction, hold <code>SHIFT</code>
 and press or combine any of the three Arpeggiator mode buttons:</p>
 <ol type="1">
@@ -642,11 +722,11 @@ and press or combine any of the three Arpeggiator mode buttons:</p>
 note</li>
 <li><code>DOWN</code>: plays the sequence from last note to first</li>
 <li><code>U+D</code> + <code>UP</code>: caterpillar up mode — the
-sequence will move two steps forward and one step backward ✳</li>
+sequence will move two steps forward and one step backward</li>
 <li><code>UP</code> + <code>DOWN</code>: corner mode — the sequence will
-repeat the first and last steps before changing direction ✳</li>
+repeat the first and last steps before changing direction</li>
 <li><code>DOWN</code> + <code>U+D</code>: caterpillar down mode — the
-sequence will move two steps backward and one step forward ✳</li>
+sequence will move two steps backward and one step forward</li>
 <li><code>DOWN</code> + <code>U+D</code> + <code>UP</code>: plays the
 sequence in random order</li>
 </ol>
@@ -655,10 +735,6 @@ is playing.</p>
 <p>Both the <code>INT</code> and <code>EXT</code> tracks can have
 independent sequencer directions.</p>
 <p>Sequence directions are not retained when storing a sequence.</p>
-<p><em>✳ Available in beta firmware <code>Oct 5 2025 17:19:32</code> and
-later. You can check what firmware you are on in the <a
-href="https://control.playsuperlative.com" target="_blank">control
-app</a></em></p>
 </section>
 </article>
 <hr />
@@ -681,8 +757,8 @@ memory while while stopped or playing.</p>
 <p><strong>Tip:</strong> Writing to a save location will overwrite any
 existing stored sequence.</p>
 </section>
-<section id="select-active-bank" class="prevent-break">
-<h3>Select Active Bank</h3>
+<section id="selecting-active-bank" class="prevent-break">
+<h3>Selecting Active Bank</h3>
 <ul>
 <li>Hold the <code>BANK SELECT</code> button and press
 <code>WRITE A</code> or <code>WRITE B</code> to select bank A or B for
@@ -730,21 +806,33 @@ the current state of the sequencer, arpeggiator, hold, and transpose
 functions for the selected channel. Both channels share the same clock,
 and can also be controlled together in <code>BOTH</code> mode.</p>
 <h3 id="internal-channel">Internal Channel</h3>
-<p>The <code>INTERNAL</code> track will always correspond to the
-internal synth “engine” of the SB01.</p>
+<p>The <code>INTERNAL</code> track will always correspond to and control
+the internal synth “engine” of the SB01. It can also be configured to
+send <code>MIDI</code> data out.</p>
 <h3 id="external-channel">External Channel</h3>
 <p>The <code>EXTERNAL</code> track offers another control layer on top
 of the internal synth, allowing a second keyboard, arpeggiator, and
-sequencer to freely control an external device that accepts CV, MIDI, or
-USB MIDI.</p>
+sequencer to independently control an external device that accepts
+<code>CV / GATE</code> or <code>TRS / USB MIDI</code>.</p>
 <h3 id="both-mode">BOTH Mode</h3>
-<p>Hold the <code>INTERNAL</code> and <code>EXTERNAL</code> buttons
+<p>Press the <code>INTERNAL</code> and <code>EXTERNAL</code> buttons
 together to enter <code>BOTH</code> mode. While both channel LED’s are
 lit, all button actions will now apply to both channels.</p>
-<p>When a function is active in both tracks, the button will toggle
+<p>Similarly, all keyboard inputs will apply to both channels even if
+they are in different modes. For example, different arpeggiator mode
+settings at the same time in each channel will respond differently to
+the same chord input from the keyboard.</p>
+<p>When a function is active in both channels, the button will toggle
 between <code>INT</code> and <code>EXT</code> channel colors to reflect
-this. Exit BOTH mode by pressing INT or EXT to enter an individual
-channel’s control.</p>
+this. Exit <code>BOTH</code> mode by pressing <code>INT</code> or
+<code>EXT</code> to enter an individual channel’s control.</p>
+<p><strong>Tip:</strong> While using <code>BOTH</code> mode to control
+both channels simultaneously, the interface will follow a paradigm to
+prioritize action towards unifying channel states. For example, if one
+channel is in <code>PLAY</code> and another is stopped, pressing the
+<code>PLAY</code> button in <code>BOTH</code> mode will cause the
+stopped channel to start playing so they are now both in
+<code>PLAY</code>. Another press will stop both channels.</p>
 </article>
 <hr />
 <h1 id="power">Power</h1>
@@ -752,15 +840,18 @@ channel’s control.</p>
 <div class="prevent-break">
 <p>The SB01 is powered by a rechargeable battery. To turn the synth on,
 slide the power switch on the left corner of the unit towards the right.
-The power LED above the <code>TUNE</code> knob will light amber.</p>
+<em>The power LED above the <code>TUNE</code> knob will light
+amber.</em></p>
 <p>To charge the synth, connect a USB-C power supply to the
-<code>USB</code> connection on the back of the unit. The LED above the
-<code>TUNE</code> knob will turn green to indicate that the unit is
-currently charging.</p>
-<p>If the unit is low on battery, the LED above the <code>TUNE</code>
-knob will begin blinking at the rate of the <code>LFO</code>. If
-depleted, the LED will flash but the synth will not play until charged
-again.</p>
+<code>USB</code> connection on the back of the unit. <em>The power LED
+will turn green to indicate that the unit is currently
+charging.</em></p>
+<ul>
+<li>If the synth is low on battery, the power LED will begin blinking at
+the rate of the <code>LFO</code>.</li>
+<li>If depleted, the power LED will flash but the synth will not play
+until charged again.</li>
+</ul>
 </div>
 <section id="checking-battery-level" class="unlisted prevent-break">
 <h3 class="unlisted">Checking Battery Level</h3>
@@ -774,6 +865,9 @@ indicated by the seven LEDs in the sequencer section.</p>
 it’s built-in battery. Simply connect a device to the USB port on the
 back of the synth while power is active. You can even charge your phone
 from it.</p>
+<ul>
+<li>The maximum power output is 5V / 0.5A</li>
+</ul>
 </section>
 </article>
 <hr />
@@ -812,7 +906,7 @@ clock and sets the speed of the arpeggiator and sequencer.</p>
 <h4 id="range">32’ Range</h4>
 <p>When enabled, the <code>RANGE</code> toggle will span from 32’ to 4’
 instead of the default 16’ to 2’ — letting you access the lowest
-possible octave the VCO can produce.</p>
+possible octave the <code>VCO</code> can produce.</p>
 <h4 id="reset-to-factory-defaults">Reset to Factory Defaults</h4>
 <p>User configuration can be reset to factory defaults by holding both
 <code>MEMORY</code> buttons (<code>JUMP</code> + <code>CHAIN</code>)
@@ -833,9 +927,9 @@ href="#browser-chart">WebUSB enabled browser</a>.</p>
 <figcaption aria-hidden="true">FIGURE 2.2</figcaption>
 </figure>
 <p>An adjustable tuning offset can be applied to each key on the SB01 in
-cents (-99 to +99). You can click and drag on a key to adjust its
-offset, or enter a value directly in the input box. After entry, the
-offset will be applied to the connected synth immediately.</p>
+cents (-99 to +99). Click and drag on a key to adjust its offset, or
+enter a value directly in the input box. After entry, the offset will be
+directly applied to the connected synth.</p>
 <p>Upon saving, the tuning table will be stored in the user tuning table
 slot.</p>
 <h4 id="setting-active-table">Setting Active Table</h4>
@@ -843,12 +937,79 @@ slot.</p>
 table will be loaded. If no key is held at startup, the default tuning
 table will be loaded.</p>
 <h4 id="load-custom-tuning-tables">Load Custom Tuning Tables</h4>
-<p>Import a .tun file to load an existing tuning table directly. A .tun
-file will let you go beyond +-99 cents. Press the LOAD button and
-navigate to a .tun file, and the table will be applied immediately.</p>
+<p>Importing a .tun file allows you to load an existing tuning table
+directly and go beyond +-99 cents. Press the <code>IMPORT .TUN</code>
+button and navigate to a .tun file, and the table will be applied.</p>
 <h4 id="preset-tuning-tables">Preset Tuning Tables</h4>
 <p>For microtonal exploration, several presets options are
 available.</p>
+</article>
+<hr />
+<h1 id="midi-implementation-chart">MIDI Implementation Chart</h1>
+<p><em>Applies to both TRS MIDI and USB MIDI</em></p>
+<table>
+<colgroup>
+<col style="width: 48%" />
+<col style="width: 28%" />
+<col style="width: 24%" />
+</colgroup>
+<thead>
+<tr>
+<th>Function</th>
+<th>Transmitted</th>
+<th>Recognized</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>MIDI channels</td>
+<td>1 to 16</td>
+<td>1 to 16</td>
+</tr>
+<tr>
+<td>Note numbers (A4 = 440 Hz)</td>
+<td>F2 (41) to C7 (96)</td>
+<td>F2 (41) to C7 (96)</td>
+</tr>
+<tr>
+<td>Pitch Bend</td>
+<td>No</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Mod Wheel</td>
+<td>No</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Sustain Pedal (CC# 64)</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>MIDI Clock</td>
+<td>No</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Song Select</td>
+<td>No</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Start / Continue / Stop</td>
+<td>No</td>
+<td>Yes</td>
+</tr>
+</tbody>
+</table>
+<h4 id="midi-mod-wheel">MIDI Mod Wheel</h4>
+<p>Incoming mod wheel messages to the <code>INTERNAL</code> channel will
+control the same <code>CV</code> as the <code>MOD CV</code> input. This
+can be used to control the filter or oscillator.</p>
+<h4 id="midi-latency">MIDI Latency</h4>
+<p>The SB01 features class-leading <code>MIDI</code> latency, measuring
+at 30µs-1ms on <code>USB</code>.</p>
 </article>
 <hr />
 <h1 id="firmware-update">Firmware Update</h1>
@@ -857,12 +1018,11 @@ available.</p>
 <ol type="1">
 <li>Turn off your SB01 using its power switch</li>
 <li>Connect to your computer with a USB-C cable</li>
-<li>Press and hold the <code>SHIFT</code> key while turning power
+<li>Press and hold the <code>SHIFT</code> button while turning power
 on</li>
 </ol>
-<p>The <code>LFO/CLK RATE</code> LED should now blink orange and
-green.</p>
-<p>In a compatible browser, navigate to <a
+<p>The <code>LFO/CLK RATE</code> LED should now blink orange and green.
+In a compatible browser, navigate to <a
 href="https://firmware.playsuperlative.com/"
 target="_blank">firmware.playsuperlative.com</a>. Note that in some
 instances your browser may automatically prompt you for this when the
@@ -917,93 +1077,6 @@ again.</p>
 access to the USB device. Refer to <a
 href="#linux-webusb-compatibility">this guide</a> for more
 information.</em></p>
-</article>
-<hr />
-<h1 id="midi-implementation-chart">MIDI Implementation Chart</h1>
-<p><em>Applies to both TRS MIDI and USB MIDI</em></p>
-<h4 id="basic-information">Basic Information</h4>
-<table>
-<colgroup>
-<col style="width: 48%" />
-<col style="width: 28%" />
-<col style="width: 24%" />
-</colgroup>
-<thead>
-<tr>
-<th>Function</th>
-<th>Transmitted</th>
-<th>Recognized</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>MIDI channels</td>
-<td>1 to 16</td>
-<td>1 to 16</td>
-</tr>
-<tr>
-<td>Note numbers (A4 = 440 Hz)</td>
-<td>F2 (41) to C7 (96)</td>
-<td>F2 (41) to C7 (96)</td>
-</tr>
-<tr>
-<td>Pitch Bend</td>
-<td>No</td>
-<td>Yes</td>
-</tr>
-<tr>
-<td>Mod Wheel</td>
-<td>No</td>
-<td>Yes</td>
-</tr>
-<tr>
-<td>Sustain Pedal (CC# 64)</td>
-<td>Yes</td>
-<td>Yes</td>
-</tr>
-</tbody>
-</table>
-<h4 id="timing-and-synchronization">Timing and Synchronization</h4>
-<table>
-<thead>
-<tr>
-<th>Function</th>
-<th>Transmitted</th>
-<th>Recognized</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>MIDI Clock</td>
-<td>No</td>
-<td>Yes</td>
-</tr>
-<tr>
-<td>Song Select</td>
-<td>No</td>
-<td>Yes</td>
-</tr>
-<tr>
-<td>Start</td>
-<td>No</td>
-<td>Yes</td>
-</tr>
-<tr>
-<td>Continue</td>
-<td>No</td>
-<td>Yes</td>
-</tr>
-<tr>
-<td>Stop</td>
-<td>No</td>
-<td>Yes</td>
-</tr>
-</tbody>
-</table>
-<h4 id="midi-mod-wheel">MIDI Mod Wheel</h4>
-<p>Incoming mod wheel messages to the <code>INTERNAL</code> channel will
-control the same CV as the MOD CV input. This can be used to control the
-filter or oscillator.</p>
 </article>
 <hr />
 <h2 class="unlisted" id="linux-webusb-compatibility">Linux WebUSB

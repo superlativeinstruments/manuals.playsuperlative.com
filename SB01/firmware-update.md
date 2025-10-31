@@ -6,11 +6,9 @@ To enter firmware update mode, perform the following:
 
 1. Turn off your SB01 using its power switch
 2. Connect to your computer with a USB-C cable
-3. Press and hold the `SHIFT` key while turning power on
+3. Press and hold the `SHIFT` button while turning power on
 
-The `LFO/CLK RATE` LED should now blink orange and green.
-
-In a compatible browser, navigate to [firmware.playsuperlative.com](https://firmware.playsuperlative.com/){target="_blank"}. Note that in some instances your browser may automatically prompt you for this when the device is first connected.
+The `LFO/CLK RATE` LED should now blink orange and green. In a compatible browser, navigate to [firmware.playsuperlative.com](https://firmware.playsuperlative.com/){target="_blank"}. Note that in some instances your browser may automatically prompt you for this when the device is first connected.
 
 To exit firmware update mode, simply turn your synth on and off again.
 
