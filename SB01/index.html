@@ -123,7 +123,7 @@ Update</a></li>
 </colgroup>
 <thead>
 <tr>
-<th>Jack</th>
+<th>Connection</th>
 <th>Description</th>
 <th>Specification</th>
 </tr>
@@ -131,8 +131,8 @@ Update</a></li>
 <tbody>
 <tr>
 <td><code>USB</code></td>
-<td>Charging and data</td>
-<td>5V / 1.5A</td>
+<td>USB-C for charging and data</td>
+<td>5 V / 1.5 A</td>
 </tr>
 <tr>
 <td><code>MIDI IN</code></td>
@@ -152,37 +152,37 @@ Update</a></li>
 <tr>
 <td><code>MOD CV</code></td>
 <td>CV input to <code>VCO/VCF</code> modulation</td>
-<td>0 ~ 5V</td>
+<td>0 ~ 5 V</td>
 </tr>
 <tr>
 <td><code>TRIG IN</code></td>
 <td>Trigger input</td>
-<td>+2.5V Min.</td>
+<td>+2.5 V Min.</td>
 </tr>
 <tr>
 <td><code>TRIG OUT</code></td>
 <td>Trigger output</td>
-<td>14V</td>
+<td>14 V</td>
 </tr>
 <tr>
 <td><code>CV IN</code></td>
 <td>Control voltage input</td>
-<td>1V/oct, 0 ~ 7V</td>
+<td>1 V/oct, 0 ~ 7 V</td>
 </tr>
 <tr>
 <td><code>GATE IN</code></td>
 <td>Gate input</td>
-<td>+2.5V Min.</td>
+<td>+2.5 V Min.</td>
 </tr>
 <tr>
 <td><code>CV OUT</code></td>
 <td>CV output from <code>EXTERNAL</code> channel</td>
-<td>0.415V ~ 5V</td>
+<td>0.415 V ~ 5 V</td>
 </tr>
 <tr>
 <td><code>GATE OUT</code></td>
 <td>Gate output from <code>EXTERNAL</code> channel</td>
-<td>14V</td>
+<td>14 V</td>
 </tr>
 <tr>
 <td><code>PHONES</code></td>
@@ -256,16 +256,18 @@ Update</a></li>
 <p>The voltage controlled oscillator (<code>VCO</code>) is where the
 multiple oscillator waveforms or tone sources of the SB01 are
 created.</p>
-<p>The <code>MOD</code> control adjusts the amount that the
-<code>LFO</code> will modulate the pitch of the oscillator.</p>
-<p>The <code>RANGE</code> knob controls the pitch of the oscillator in
-one octave steps from 16’ to 2’. When this knob is set to 8’ and the
-<code>TRANSPOSE</code> is set to M, the lowest C note maps to the middle
-C of a piano.</p>
+<p>The <code>MOD</code> depth control adjusts the amount that the
+<code>LFO</code> will modulate the pitch of the oscillator, depending on
+the waveform selected in the <code>MODULATOR</code> section.</p>
+<p>The <code>RANGE</code> selector knob controls the pitch of the
+oscillator in one octave steps from 16’ to 2’. When this knob is set to
+8’ and the <code>TRANSPOSE</code> is set to M, the lowest C note maps to
+the middle C of a piano.</p>
 <p><strong>Tip:</strong> In the <code>CONFIGURATION TOOL</code>, there
 is an option to toggle the <code>RANGE</code> to a <code>32'</code>
 setting for access to even lower pitches.</p>
 <div class="prevent-break">
+<h4 id="waveforms">Waveforms</h4>
 <p>The <code>SAW</code> wave contains a fundamental sine wave and its
 integral harmonic sine waves at a fixed ratio of 1/<em>n</em>. This wave
 makes a good starting point for brass, string, and guitar tones.</p>
@@ -320,14 +322,14 @@ modulation applied.</p></li>
 </div>
 <p>The <code>SOURCE MIXER</code> section contains controls to sum
 together the tone sources created by the <code>VCO</code> into various
-timbre combinations, with the addition of white noise and sub-oscillator
-waveforms.</p>
-<p>The <code>PULSE</code> slider controls the amount of pulse waveform
+proportions before sending them to the <code>VCF</code>, with the
+addition of white noise and sub-oscillator waveforms.</p>
+<p>The <code>PULSE</code> level controls the amount of pulse waveform
 that is mixed in. The pulse width is configured using the controls in
 the <code>VCO</code> section.</p>
-<p>The <code>SAW</code> slider controls the amount of sawtooth wave that
+<p>The <code>SAW</code> level controls the amount of sawtooth wave that
 is mixed in.</p>
-<p>The <code>SUB OSC</code> slider controls the amount of sub-oscillator
+<p>The <code>SUB OSC</code> level controls the amount of sub-oscillator
 that is mixed in. The sub-oscillator is divided down from the oscillator
 and will thus be exactly one or two octaves lower than the
 <code>VCO</code> pitch. Using the <code>SUB OSC</code> switch, the
@@ -337,7 +339,7 @@ output can be set to:</p>
 <li>A square wave two octaves below</li>
 <li>A 25% duty cycle pulse wave two octaves below</li>
 </ul>
-<p>The <code>NOISE</code> slider controls the amount of white noise that
+<p>The <code>NOISE</code> level controls the amount of white noise that
 is mixed in.</p>
 </article>
 <hr />

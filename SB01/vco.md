@@ -8,14 +8,16 @@
 
 The voltage controlled oscillator (`VCO`) is where the multiple oscillator waveforms or tone sources of the SB01 are created.
 
-The `MOD` control adjusts the amount that the `LFO` will modulate the pitch of the oscillator.
+The `MOD` depth control adjusts the amount that the `LFO` will modulate the pitch of the oscillator, depending on the waveform selected in the `MODULATOR` section.
 
-The `RANGE` knob controls the pitch of the oscillator in one octave steps from 16' to 2'. When this knob is set to 8' and the `TRANSPOSE` is set to M, the lowest C note maps to the middle C of a piano.
+The `RANGE` selector knob controls the pitch of the oscillator in one octave steps from 16' to 2'. When this knob is set to 8' and the `TRANSPOSE` is set to M, the lowest C note maps to the middle C of a piano.
 
 **Tip:** In the `CONFIGURATION TOOL`, there is an option to toggle the `RANGE` to a `32'` setting for access to even lower pitches.
 
 ::: {.prevent-break}
 
+
+#### Waveforms
 
 The `SAW` wave contains a fundamental sine wave and its integral harmonic sine waves at a fixed ratio of 1/*n*. This wave makes a good starting point for brass, string, and guitar tones.
 
