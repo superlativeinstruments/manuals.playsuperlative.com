@@ -3,7 +3,7 @@
 <article>
 
 ::: {.16/12}
-![FIGURE 1.3](assets/sb01-modulator-bw.svg)
+![FIGURE 1.11](assets/sb01-modulator-bw.svg)
 :::
 ::: {.prevent-break}
 The `MODULATOR` section houses a low-frequency oscillator (`LFO`) and `RANDOM` waveform (Sample & Hold) that can be used to modulate several parameters across the synth including pitch, pulse width, and filter cutoff.

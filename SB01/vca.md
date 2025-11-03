@@ -3,7 +3,7 @@
 <article>
 
 ::: {.16/12}
-![FIGURE 1.9](assets/sb01-vca-bw.svg)
+![FIGURE 1.8](assets/sb01-vca-bw.svg)
 :::
 
 The voltage controlled amplifier (`VCA`) section controls the amplitude, or volume of a note over time as it is played.

@@ -3,7 +3,7 @@
 <article>
 
 ::: {.16/12}
-![FIGURE 1.4](assets/sb01-vco-bw.svg)
+![FIGURE 1.3](assets/sb01-vco-bw.svg)
 :::
 
 The voltage controlled oscillator (`VCO`) is where the multiple oscillator waveforms or tone sources of the SB01 are created.
@@ -29,7 +29,7 @@ The `PULSE` wave contains the same fundamental sine wave and harmonics as the sa
 
 <div class="w2/3">
 
-![FIGURE 1.5](assets/pulse-width-1.svg)
+![FIGURE 1.4](assets/pulse-width-1.svg)
 
 </div>
 
@@ -37,7 +37,7 @@ While a wave with a narrower pulse width may look like this:
 
 <div class="w2/3">
 
-![FIGURE 1.6](assets/pulse-width-2.svg)
+![FIGURE 1.5](assets/pulse-width-2.svg)
 
 </div>
 :::
