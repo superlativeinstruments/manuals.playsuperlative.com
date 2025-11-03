@@ -1,3 +1,6 @@
+.PHONY: all
+all: SB01 MONOLAB
+
 .PHONY: SB01
 SB01:
 	pandoc --standalone --toc --template SB01/template.html -f markdown -t html5 -o SB01/index.html \
@@ -25,7 +28,10 @@ SB01:
 		SB01/linux.md \
 		SB01/support.md
 
-all: SB01
+.PHONY: MONOLAB
+MONOLAB:
+	pandoc --standalone --toc --template MONOLAB/template.html -f markdown -t html5 -o MONOLAB/index.html \
+		MONOLAB/index.md
 
 .PHONY: stage
 stage:
