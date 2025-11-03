@@ -163,7 +163,6 @@ table {
 	border-color: black;
 	border-collapse: collapse;
 	margin: 2rem 0;
-	break-inside: avoid;
 	page-break-inside: avoid;
 }
 
@@ -183,11 +182,28 @@ tr {
 
 td {
 	height: calc((0.5rem * 3.36) + 1rem);
-	white-space: nowrap;
 }
 
 thead tr {
 	border-bottom: 0.5rem solid black;
+}
+
+dl {
+	margin: 2rem 0;
+}
+
+dt {
+	font-family: 'SL-Regular-Condensed', sans-serif;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin-top: 1rem;
+	display: inline;
+}
+
+dd {
+	margin-left: 1rem;
+	margin-bottom: 1rem;
+	display: block;
 }
 
 header a {
