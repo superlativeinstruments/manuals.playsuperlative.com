@@ -1,0 +1,72 @@
+# Specifications
+
+<article>
+
+::: {.prevent-break}
+
+DIMENSIONS   —   224 x 224 x 24  MM
+
+WEIGHT   —   1.2  KG  
+
+&nbsp;
+
+### VCO
+
+* (1 V / OCT, 0-10 V INPUT)
+* WAVEFORMS (TRIANGLE, SAW, SQUARE, PULSE)
+* SYNCHRONIZATION (STRONG, WEAK)
+* RANGE (32’, 16', 8', 4', 2’)
+* LO MODE (4 HZ ~15 KHZ)
+* PULSE WIDTH MODULATION (10% ~90%)
+* TUNE (+/- 6 SEMITONES)
+
+### VCF
+
+* CUTOFF FREQUENCY (10 HZ ~20 KHZ)
+* KEY CV FOLLOW (0 ~100%)
+* VOLTAGE CONTROLLED RESONANCE (0 ~100%) 
+
+### VCA
+
+* CONTROL MODES (LINEAR, EXPONENTIAL)
+* INITIAL GAIN (0 ~100%)
+* OUTPUT (LOW ~1 V, HIGH ~10 V)
+
+### ENV
+
+* MODES (LFO, GATE, CYCLE)
+* VOLTAGE CONTROLLED TIME (1 X ~5 X)
+* ATTACK TIME (1 MS ~10 S)
+* DECAY TIME (2 MS ~20 S)
+* SUSTAIN LEVEL (0 ~100%)
+* RELEASE TIME (2 MS ~20 S) 
+
+:::
+
+### LFO
+
+* (1 V / OCT, 0-10 V INPUT)
+* WAVEFORMS (SINE, SAW, RAMP, SQUARE)
+* PHASE RESET (ON, OFF)
+* RATE (0.2 HZ ~4 KHZ) 
+* WIDE MODE (0.04 HZ ~12 KHZ)
+* DELAY TIME (0 ~7 S)
+
+RATE (0.2 HZ ~ 8 HZ)
+(with MANUAL maximum up to 4 KHZ) 
+WIDE MODE (0.04 HZ ~ 50 HZ)
+(with MANUAL maximum up to 12 KHZ)
+
+### SAMPLE AND HOLD
+* SAMPLE RATE (0 ~16 KHZ)
+* LAG (0.1 MS ~1 S)
+
+### NOISE
+* COLOR (PINK ~WHITE)
+
+### POWER
+* USB TYPE-C (5V / 0.2A INPUT) 
+
+</article>
+
+---

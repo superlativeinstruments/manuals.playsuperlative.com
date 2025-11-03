@@ -30,8 +30,9 @@ SB01:
 
 .PHONY: MONOLAB
 MONOLAB:
-	pandoc --standalone --toc --template MONOLAB/template.html -f markdown -t html5 -o MONOLAB/index.html \
-		MONOLAB/index.md
+	pandoc --standalone --toc --template MONOLAB/template.html -f markdown -t html5 -o Monolab/index.html \
+		Monolab/index.md \
+		Monolab/specifications.md
 
 .PHONY: stage
 stage:
