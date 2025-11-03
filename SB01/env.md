@@ -3,7 +3,7 @@
 <article>
 
 ::: {.16/12}
-![FIGURE 1.10](assets/sb01-env-bw.svg)
+![FIGURE 1.9](assets/sb01-env-bw.svg)
 :::
 
 The envelope generator is a standard four-stage envelope. It can be used to modulate pulse width, filter cutoff, and most commonly- the amplitude of sound over time.
@@ -14,7 +14,7 @@ Once the note is released, the envelope will return to zero voltage. The amount 
 
 <div class="w2/3">
 
-![FIGURE 1.11](assets/adsr.svg)
+![FIGURE 1.10](assets/adsr.svg)
 
 </div>
 

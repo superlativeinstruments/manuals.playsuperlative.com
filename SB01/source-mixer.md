@@ -3,7 +3,7 @@
 <article>
 
 ::: {.16/12}
-![FIGURE 1.7](assets/sb01-source-mixer-bw.svg)
+![FIGURE 1.6](assets/sb01-source-mixer-bw.svg)
 :::
 
 The `SOURCE MIXER` section contains controls to sum together the tone sources created by the `VCO` into various proportions before sending them to the `VCF`, with the addition of white noise and sub-oscillator waveforms.
