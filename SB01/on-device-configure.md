@@ -3,7 +3,7 @@
 <article>
 
 Although the preferred way of configuring SB01 is through the [Control App](https://control.playsuperlative.com/), there is a way of configuring without connecting a computer.  
-While holding `SHIFT`, the on-device configuration menu is presented on the SB01 keyboard
+While holding `SHIFT`, the on-device configuration menu is presented on the SB01 keyboard.
 
 After pressing and holding `SHIFT` you are at the top-level menu described in [FIGURE 3.1](#figure-3.1). Press the key that corresponds to the parameter you want to adjust, and while still holding `SHIFT` press the key representing the value you wish to set.
 
