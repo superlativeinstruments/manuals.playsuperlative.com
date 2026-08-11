@@ -13,22 +13,22 @@ If you wish to save the changes, press and hold `SHIFT` and then press the last 
 
 </article>
 
-### Top Level Menu
+#### Top Level Menu
 ![FIGURE 3.1](assets/on-device-configure-top-level.svg){#figure-3.1}
 
-### INTERNAL MIDI CHANNEL IN<br/>INTERNAL MIDI CHANNEL OUT<br/>EXTERNAL MIDI CHANNEL IN<br/>EXTERNAL MIDI CHANNEL OUT
+#### INTERNAL MIDI CHANNEL IN<br/>INTERNAL MIDI CHANNEL OUT<br/>EXTERNAL MIDI CHANNEL IN<br/>EXTERNAL MIDI CHANNEL OUT
 ![FIGURE 3.2](assets/on-device-configure-midi-channel.svg){#figure-3.2}
 
-### MIDI CLOCK
+#### MIDI CLOCK
 ![FIGURE 3.3](assets/on-device-configure-midi-clock.svg){#figure-3.3}
 
-### MIDI CLOCK SUBDIVISION
+#### MIDI CLOCK SUBDIVISION
 ![FIGURE 3.4](assets/on-device-configure-midi-clock-subdivision.svg){#figure-3.4}
 
-### MIDI NOTE OFFSET
+#### MIDI NOTE OFFSET
 ![FIGURE 3.5](assets/on-device-configure-midi-note-offset.svg){#figure-3.5}
 
-### MIDI SOFT-THRU
+#### MIDI SOFT-THRU
 ![FIGURE 3.6](assets/on-device-configure-midi-soft-thru.svg){#figure-3.6}
 
 ---
