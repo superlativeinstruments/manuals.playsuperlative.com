@@ -23,6 +23,7 @@ SB01:
 		SB01/power.md \
 		SB01/configure.md \
 		SB01/microtuning.md \
+		SB01/on-device-configure.md \
 		SB01/midi.md \
 		SB01/firmware-update.md \
 		SB01/linux.md \
