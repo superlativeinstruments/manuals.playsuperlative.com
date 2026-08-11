@@ -28,8 +28,8 @@ If you wish to save the changes, press and hold `SHIFT` and then press the last 
 #### MIDI NOTE OFFSET
 ![FIGURE 3.5](assets/on-device-configure-midi-note-offset.svg){#figure-3.5}
 
-#### MIDI SOFT-THRU
-![FIGURE 3.6](assets/on-device-configure-midi-soft-thru.svg){#figure-3.6}
+#### MIDI TRS-TRS SOFT-THRU<br/>MIDI USB-TRS SOFT-THRU
+![FIGURE 3.6](assets/on-device-configure-enabled-disabled.svg){#figure-3.6}
 
 ---
 
