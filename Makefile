@@ -1,3 +1,6 @@
+.PHONY: all
+all: SB01 MONOLAB
+
 .PHONY: SB01
 SB01:
 	pandoc --standalone --toc --template SB01/template.html -f markdown -t html5 -o SB01/index.html \
@@ -20,12 +23,17 @@ SB01:
 		SB01/power.md \
 		SB01/configure.md \
 		SB01/microtuning.md \
+		SB01/on-device-configure.md \
 		SB01/midi.md \
 		SB01/firmware-update.md \
 		SB01/linux.md \
 		SB01/support.md
 
-all: SB01
+.PHONY: MONOLAB
+MONOLAB:
+	pandoc --standalone --toc --template MONOLAB/template.html -f markdown -t html5 -o Monolab/index.html \
+		Monolab/index.md \
+		Monolab/specifications.md
 
 .PHONY: stage
 stage:

@@ -64,8 +64,10 @@ header > * {
 main {
 	position: relative;
 	display: grid;
+	grid-auto-rows: min-content;
 	grid-area: main;
-	gap: 4rem;
+	gap: 8rem;
+	align-content: center;
 	align-items: center;
 	justify-items: center;
 	padding: 2rem;

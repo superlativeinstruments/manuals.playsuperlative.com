@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Superlative Manuals</title>
+	<title>Superlative Manuals - SB01</title>
 
 	<meta name="author" content="Superlative" />
 	<meta name="Copyright" content="Superlative Instruments, 2025." />
@@ -100,6 +100,8 @@ Channel</a></li>
 id="toc-configuration-tool">Configuration Tool</a></li>
 <li><a href="#microtuning-tool" id="toc-microtuning-tool">Microtuning
 Tool</a></li>
+<li><a href="#on-device-configuration"
+id="toc-on-device-configuration">On-Device Configuration</a></li>
 <li><a href="#midi-implementation-chart"
 id="toc-midi-implementation-chart">MIDI Implementation Chart</a></li>
 <li><a href="#firmware-update" id="toc-firmware-update">Firmware
@@ -943,10 +945,72 @@ button and navigate to a .tun file, and the table will be applied.</p>
 available.</p>
 </article>
 <hr />
+<h1 id="on-device-configuration">On-Device Configuration</h1>
+<article>
+<p>Although the preferred way of configuring SB01 is through the <a
+href="https://control.playsuperlative.com/">Control App</a>, there is a
+way of configuring without connecting a computer.<br />
+While holding <code>SHIFT</code>, the on-device configuration menu is
+presented on the SB01 keyboard.</p>
+<p>After pressing and holding <code>SHIFT</code> you are at the
+top-level menu described in <a href="#figure-3.1">FIGURE 3.1</a>. Press
+the key that corresponds to the parameter you want to adjust, and while
+still holding <code>SHIFT</code> press the key representing the value
+you wish to set.</p>
+<p>The values for each parameter are described in <a
+href="#figure-3.2">FIGURE 3.2-3.6</a>.</p>
+<p>If you wish to save the changes, press and hold <code>SHIFT</code>
+and then press the last key (the key directly under <code>SHIFT</code>)
+on the keyboard.</p>
+</article>
+<h4 id="top-level-menu">Top Level Menu</h4>
+<figure id="figure-3.1">
+<img src="assets/on-device-configure-top-level.svg" alt="FIGURE 3.1" />
+<figcaption aria-hidden="true">FIGURE 3.1</figcaption>
+</figure>
+<h4
+id="internal-midi-channel-in-internal-midi-channel-out-external-midi-channel-in-external-midi-channel-out">INTERNAL
+MIDI CHANNEL IN<br/>INTERNAL MIDI CHANNEL OUT<br/>EXTERNAL MIDI CHANNEL
+IN<br/>EXTERNAL MIDI CHANNEL OUT</h4>
+<figure id="figure-3.2">
+<img src="assets/on-device-configure-midi-channel.svg"
+alt="FIGURE 3.2" />
+<figcaption aria-hidden="true">FIGURE 3.2</figcaption>
+</figure>
+<h4 id="midi-clock">MIDI CLOCK</h4>
+<figure id="figure-3.3">
+<img src="assets/on-device-configure-midi-clock.svg" alt="FIGURE 3.3" />
+<figcaption aria-hidden="true">FIGURE 3.3</figcaption>
+</figure>
+<h4 id="midi-clock-subdivision">MIDI CLOCK SUBDIVISION</h4>
+<figure id="figure-3.4">
+<img src="assets/on-device-configure-midi-clock-subdivision.svg"
+alt="FIGURE 3.4" />
+<figcaption aria-hidden="true">FIGURE 3.4</figcaption>
+</figure>
+<h4 id="midi-note-offset">MIDI NOTE OFFSET</h4>
+<figure id="figure-3.5">
+<img src="assets/on-device-configure-midi-note-offset.svg"
+alt="FIGURE 3.5" />
+<figcaption aria-hidden="true">FIGURE 3.5</figcaption>
+</figure>
+<h4 id="midi-trs-trs-soft-thru-midi-usb-trs-soft-thru">MIDI TRS-TRS
+SOFT-THRU<br/>MIDI USB-TRS SOFT-THRU</h4>
+<figure id="figure-3.6">
+<img src="assets/on-device-configure-enabled-disabled.svg"
+alt="FIGURE 3.6" />
+<figcaption aria-hidden="true">FIGURE 3.6</figcaption>
+</figure>
+<hr />
 <h1 id="midi-implementation-chart">MIDI Implementation Chart</h1>
 <article>
 <p><em>Applies to both TRS MIDI and USB MIDI</em></p>
 <table>
+<colgroup>
+<col style="width: 41%" />
+<col style="width: 29%" />
+<col style="width: 29%" />
+</colgroup>
 <thead>
 <tr>
 <th>Function</th>
@@ -961,9 +1025,9 @@ available.</p>
 <td>1 to 16</td>
 </tr>
 <tr>
-<td>Note numbers (A4 = 440 Hz)</td>
-<td>F2 (41) to C7 (96)</td>
-<td>F2 (41) to C7 (96)</td>
+<td>Note numbers (A4 = 440 Hz)</td>
+<td>F2 (41) to C7 (96)</td>
+<td>F2 (41) to C7 (96)</td>
 </tr>
 <tr>
 <td>Pitch Bend</td>
@@ -976,7 +1040,12 @@ available.</p>
 <td>Yes</td>
 </tr>
 <tr>
-<td>Sustain Pedal (CC# 64)</td>
+<td>Vibrato toggle (CC #21)</td>
+<td>No</td>
+<td>Yes (&lt;64 = OFF)</td>
+</tr>
+<tr>
+<td>Sustain Pedal (CC #64)</td>
 <td>Yes</td>
 <td>Yes</td>
 </tr>
