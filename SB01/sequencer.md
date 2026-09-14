@@ -20,6 +20,17 @@ The SB01 features a digital sequencer capable of storing and playing up to 256 s
 * **Add Legato/Slides:** While recording, press and hold the `LEGATO` button while entering notes to tie them together.
 :::
 
+### Sequence Live Editing
+
+A previously loaded sequence can be edited in real-time while the sequence is playing.
+
+* **Start Live Edit:** After loading a sequence, hold `SHIFT` and press the `REC` button.
+* **Stop Live Edit:** Press `LOAD` or `PLAY` button.
+* **Change Event to note-on staccato:** Holding a key when the clock ticks changes the current sequence step to a staccato event.
+* **Change Event to note-on legato:** Holding the `LEGATO` button when the clock ticks changes the current sequence step to a legato event if the current event is a note event. The note value is kept as is. Holding a key + `LEGATO` changes the event to a legato event and updates the note to the held key.
+* **Change Event To Rest:** Holding the `REST` button when the clock ticks changes the current sequence step to a rest event.
+* **Add Legato/Slides:** While recording, press and hold the `LEGATO` button while entering notes to tie them together.
+
 ::: {.prevent-break}
 ### Sequence Playback
 
