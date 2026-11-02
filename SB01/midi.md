@@ -7,7 +7,7 @@
 | Function                      | Transmitted          | Recognized           |
 |-------------------------------|----------------------|----------------------|
 | MIDI channels                 | 1 to 16              | 1 to 16              |
-| Note numbers (A4\ =\ 440\ Hz) | F2\ (41) to C7\ (96) | F2\ (41) to C7\ (96) |
+| Note numbers (A4\ =\ 440\ Hz) | C1\ (36) to C5\ (84) | C1\ (36) to C5\ (84) |
 | Pitch Bend                    | No                   | Yes                  |
 | Mod Wheel                     | No                   | Yes                  |
 | Vibrato toggle (CC\ #21)      | No                   | Yes (<64\ =\ OFF)    |
